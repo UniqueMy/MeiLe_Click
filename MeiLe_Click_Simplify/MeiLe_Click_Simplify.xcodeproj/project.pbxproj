@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		7A0527991E54247D0013D3C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0527981E54247D0013D3C2 /* main.m */; };
-		7A05279C1E54247D0013D3C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A05279B1E54247D0013D3C2 /* AppDelegate.m */; };
-		7A05279F1E54247D0013D3C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A05279E1E54247D0013D3C2 /* ViewController.m */; };
 		7A0527A21E54247D0013D3C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A0527A01E54247D0013D3C2 /* Main.storyboard */; };
 		7A0527A41E54247D0013D3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A0527A31E54247D0013D3C2 /* Assets.xcassets */; };
 		7A0527A71E54247D0013D3C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A0527A51E54247D0013D3C2 /* LaunchScreen.storyboard */; };
+		7A0527B61E542A3F0013D3C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0527B21E542A3F0013D3C2 /* AppDelegate.m */; };
+		7A0527BB1E542A9A0013D3C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0527BA1E542A9A0013D3C2 /* ViewController.m */; };
+		7A0527CF1E542DDC0013D3C2 /* 美乐生活用户注册协议.html in Resources */ = {isa = PBXBuildFile; fileRef = 7A0527CD1E542DDC0013D3C2 /* 美乐生活用户注册协议.html */; };
+		7A0527D01E542DDC0013D3C2 /* 用户积分.html in Resources */ = {isa = PBXBuildFile; fileRef = 7A0527CE1E542DDC0013D3C2 /* 用户积分.html */; };
+		7CD36E545A891669B4AE43D7 /* Pods_MeiLe_Click_Simplify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053A0A97E4A6ACAC5B020E6F /* Pods_MeiLe_Click_Simplify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		053A0A97E4A6ACAC5B020E6F /* Pods_MeiLe_Click_Simplify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeiLe_Click_Simplify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2424E3845C41FE369FF6A13C /* Pods-MeiLe_Click_Simplify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiLe_Click_Simplify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeiLe_Click_Simplify/Pods-MeiLe_Click_Simplify.debug.xcconfig"; sourceTree = "<group>"; };
 		7A0527941E54247D0013D3C2 /* MeiLe_Click_Simplify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiLe_Click_Simplify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0527981E54247D0013D3C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7A05279A1E54247D0013D3C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7A05279B1E54247D0013D3C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7A05279D1E54247D0013D3C2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7A05279E1E54247D0013D3C2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7A0527A11E54247D0013D3C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A0527A31E54247D0013D3C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A0527A61E54247D0013D3C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A0527A81E54247D0013D3C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A0527B11E542A3F0013D3C2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7A0527B21E542A3F0013D3C2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7A0527B91E542A9A0013D3C2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7A0527BA1E542A9A0013D3C2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7A0527CD1E542DDC0013D3C2 /* 美乐生活用户注册协议.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "美乐生活用户注册协议.html"; sourceTree = "<group>"; };
+		7A0527CE1E542DDC0013D3C2 /* 用户积分.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "用户积分.html"; sourceTree = "<group>"; };
+		81F15D75BE9AEFE24E57458E /* Pods-MeiLe_Click_Simplify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiLe_Click_Simplify.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeiLe_Click_Simplify/Pods-MeiLe_Click_Simplify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD36E545A891669B4AE43D7 /* Pods_MeiLe_Click_Simplify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E8317FAFD6F7F2956C2AA5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2424E3845C41FE369FF6A13C /* Pods-MeiLe_Click_Simplify.debug.xcconfig */,
+				81F15D75BE9AEFE24E57458E /* Pods-MeiLe_Click_Simplify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7A05278B1E54247D0013D3C2 = {
 			isa = PBXGroup;
 			children = (
 				7A0527961E54247D0013D3C2 /* MeiLe_Click_Simplify */,
 				7A0527951E54247D0013D3C2 /* Products */,
+				1E8317FAFD6F7F2956C2AA5D /* Pods */,
+				AC79DF30C462413F76204A2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +78,14 @@
 		7A0527961E54247D0013D3C2 /* MeiLe_Click_Simplify */ = {
 			isa = PBXGroup;
 			children = (
-				7A05279A1E54247D0013D3C2 /* AppDelegate.h */,
-				7A05279B1E54247D0013D3C2 /* AppDelegate.m */,
-				7A05279D1E54247D0013D3C2 /* ViewController.h */,
-				7A05279E1E54247D0013D3C2 /* ViewController.m */,
-				7A0527A01E54247D0013D3C2 /* Main.storyboard */,
-				7A0527A31E54247D0013D3C2 /* Assets.xcassets */,
-				7A0527A51E54247D0013D3C2 /* LaunchScreen.storyboard */,
-				7A0527A81E54247D0013D3C2 /* Info.plist */,
+				7A0527B01E542A3F0013D3C2 /* AppDelegate */,
+				7A0527BE1E542B750013D3C2 /* HomePage */,
+				7A0527BD1E542B750013D3C2 /* Customization */,
+				7A0527C11E542B750013D3C2 /* WareHouse */,
+				7A0527C01E542B750013D3C2 /* Person */,
+				7A0527BF1E542B750013D3C2 /* Login&Register */,
+				7A0527B81E542A9A0013D3C2 /* Main */,
+				7A0527BC1E542B750013D3C2 /* CommonFile */,
 				7A0527971E54247D0013D3C2 /* Supporting Files */,
 			);
 			path = MeiLe_Click_Simplify;
@@ -74,9 +94,171 @@
 		7A0527971E54247D0013D3C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7A0527CD1E542DDC0013D3C2 /* 美乐生活用户注册协议.html */,
+				7A0527CE1E542DDC0013D3C2 /* 用户积分.html */,
+				7A0527A01E54247D0013D3C2 /* Main.storyboard */,
+				7A0527A31E54247D0013D3C2 /* Assets.xcassets */,
+				7A0527A51E54247D0013D3C2 /* LaunchScreen.storyboard */,
+				7A0527A81E54247D0013D3C2 /* Info.plist */,
 				7A0527981E54247D0013D3C2 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A0527B01E542A3F0013D3C2 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7A0527B11E542A3F0013D3C2 /* AppDelegate.h */,
+				7A0527B21E542A3F0013D3C2 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7A0527B81E542A9A0013D3C2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7A0527B91E542A9A0013D3C2 /* ViewController.h */,
+				7A0527BA1E542A9A0013D3C2 /* ViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7A0527BC1E542B750013D3C2 /* CommonFile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonFile;
+			sourceTree = "<group>";
+		};
+		7A0527BD1E542B750013D3C2 /* Customization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Customization;
+			sourceTree = "<group>";
+		};
+		7A0527BE1E542B750013D3C2 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		7A0527BF1E542B750013D3C2 /* Login&Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Login&Register";
+			sourceTree = "<group>";
+		};
+		7A0527C01E542B750013D3C2 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				7A0527C71E542D040013D3C2 /* Manager */,
+				7A0527C31E542D040013D3C2 /* BaseInfo */,
+				7A0527C61E542D040013D3C2 /* Integral */,
+				7A0527C81E542D040013D3C2 /* MyShopping */,
+				7A0527CC1E542D040013D3C2 /* Warehouse */,
+				7A0527C41E542D040013D3C2 /* Family */,
+				7A0527C21E542D040013D3C2 /* Address */,
+				7A0527CA1E542D040013D3C2 /* Record */,
+				7A0527C51E542D040013D3C2 /* Feedback */,
+				7A0527C91E542D040013D3C2 /* QRCode */,
+				7A0527CB1E542D040013D3C2 /* Set */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		7A0527C11E542B750013D3C2 /* WareHouse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WareHouse;
+			sourceTree = "<group>";
+		};
+		7A0527C21E542D040013D3C2 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		7A0527C31E542D040013D3C2 /* BaseInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseInfo;
+			sourceTree = "<group>";
+		};
+		7A0527C41E542D040013D3C2 /* Family */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Family;
+			sourceTree = "<group>";
+		};
+		7A0527C51E542D040013D3C2 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		7A0527C61E542D040013D3C2 /* Integral */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Integral;
+			sourceTree = "<group>";
+		};
+		7A0527C71E542D040013D3C2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		7A0527C81E542D040013D3C2 /* MyShopping */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyShopping;
+			sourceTree = "<group>";
+		};
+		7A0527C91E542D040013D3C2 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		7A0527CA1E542D040013D3C2 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		7A0527CB1E542D040013D3C2 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
+		7A0527CC1E542D040013D3C2 /* Warehouse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Warehouse;
+			sourceTree = "<group>";
+		};
+		AC79DF30C462413F76204A2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				053A0A97E4A6ACAC5B020E6F /* Pods_MeiLe_Click_Simplify.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A0527AB1E54247D0013D3C2 /* Build configuration list for PBXNativeTarget "MeiLe_Click_Simplify" */;
 			buildPhases = (
+				B75CCC95BE4DE4CA70A0C3FA /* [CP] Check Pods Manifest.lock */,
 				7A0527901E54247D0013D3C2 /* Sources */,
 				7A0527911E54247D0013D3C2 /* Frameworks */,
 				7A0527921E54247D0013D3C2 /* Resources */,
+				AB607BA1B7E758A5E69BF9F1 /* [CP] Embed Pods Frameworks */,
+				6CC6EEDFC83F620CB838F91C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,19 +325,69 @@
 			files = (
 				7A0527A71E54247D0013D3C2 /* LaunchScreen.storyboard in Resources */,
 				7A0527A41E54247D0013D3C2 /* Assets.xcassets in Resources */,
+				7A0527CF1E542DDC0013D3C2 /* 美乐生活用户注册协议.html in Resources */,
 				7A0527A21E54247D0013D3C2 /* Main.storyboard in Resources */,
+				7A0527D01E542DDC0013D3C2 /* 用户积分.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CC6EEDFC83F620CB838F91C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeiLe_Click_Simplify/Pods-MeiLe_Click_Simplify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB607BA1B7E758A5E69BF9F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeiLe_Click_Simplify/Pods-MeiLe_Click_Simplify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B75CCC95BE4DE4CA70A0C3FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A0527901E54247D0013D3C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A05279F1E54247D0013D3C2 /* ViewController.m in Sources */,
-				7A05279C1E54247D0013D3C2 /* AppDelegate.m in Sources */,
+				7A0527BB1E542A9A0013D3C2 /* ViewController.m in Sources */,
+				7A0527B61E542A3F0013D3C2 /* AppDelegate.m in Sources */,
 				7A0527991E54247D0013D3C2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +504,7 @@
 		};
 		7A0527AC1E54247D0013D3C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2424E3845C41FE369FF6A13C /* Pods-MeiLe_Click_Simplify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -283,6 +519,7 @@
 		};
 		7A0527AD1E54247D0013D3C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81F15D75BE9AEFE24E57458E /* Pods-MeiLe_Click_Simplify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -314,6 +551,7 @@
 				7A0527AD1E54247D0013D3C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
