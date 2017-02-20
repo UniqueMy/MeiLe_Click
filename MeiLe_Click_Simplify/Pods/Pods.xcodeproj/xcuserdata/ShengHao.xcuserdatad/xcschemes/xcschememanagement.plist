@@ -9,7 +9,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>EAIntroView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>EARestrictedScrollView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MeiLe_Click_Simplify.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YYModel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>20016633B811D18003B9B3D130E1A97D</key>
+		<key>01D26D7E151D59AD7EA6A82BD45EDB4A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>58AAD2C9E898747F2F4ABF348E6325F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>822DA31A6A34C7EF41E1EC7A5EF8FC2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>924D16B0A84A0D55FCE28DBFD1A4DDC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3F91286227E80FD9CCB646238951BCC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

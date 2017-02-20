@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "20016633B811D18003B9B3D130E1A97D"
+               BlueprintIdentifier = "01D26D7E151D59AD7EA6A82BD45EDB4A"
                BuildableName = "Pods_MeiLe_Click_Simplify.framework"
                BlueprintName = "Pods-MeiLe_Click_Simplify"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "20016633B811D18003B9B3D130E1A97D"
+            BlueprintIdentifier = "01D26D7E151D59AD7EA6A82BD45EDB4A"
             BuildableName = "Pods_MeiLe_Click_Simplify.framework"
             BlueprintName = "Pods-MeiLe_Click_Simplify"
             ReferencedContainer = "container:Pods.xcodeproj">
