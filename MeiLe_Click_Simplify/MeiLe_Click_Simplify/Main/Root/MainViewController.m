@@ -82,8 +82,8 @@
 {
     navigationController.navigationBar.translucent = NO;
     [navigationController.navigationBar setTintColor:[UIColor blackColor]];
-    [navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-    navigationController.navigationBar.shadowImage =[UIImage new];
+//    [navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+//    navigationController.navigationBar.shadowImage =[UIImage new];
     navigationController.navigationBar.barTintColor = [UIColor colorWithRed:249/255.0 green:249/255.0 blue:249/255.0 alpha:0.5];
     
 }

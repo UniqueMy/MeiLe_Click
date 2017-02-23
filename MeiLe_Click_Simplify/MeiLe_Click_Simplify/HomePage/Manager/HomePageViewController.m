@@ -8,8 +8,17 @@
 
 #import "HomePageViewController.h"
 #import "UserRequestModel.h"
+#import "UIViewController+BarButton.h"
+#import "ResolveConflicScrollView.h"
+#import "ChangeTitleView.h"
+#import "FuWuHuiViewController.h"
+#import "WuYeTongViewController.h"
+#import "ZhouBianGouViewController.h"
 
-@interface HomePageViewController ()
+@interface HomePageViewController ()<UIScrollViewDelegate,ChangeTitleViewDelegate>
+
+@property (nonatomic,strong) ResolveConflicScrollView *scrollView;
+@property (nonatomic,strong) ChangeTitleView          *titleCollectView;
 
 @end
 
@@ -18,12 +27,69 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    /**
+     添加左视图 -- 扫描
+     */
+    [self addLeftScanQRCodeBarButtonItem];
     
-   NSString *loginName = [[NSUserDefaults standardUserDefaults] objectForKey:USER_ADMIN_LOGINNAME_KEY];
-    NSLog(@"--- loginName --- %@",loginName);
-    NSLog(@" ---  %@",[UserRequestModel getUserLogin].password);
+    /**
+     添加右视图 -- 消息
+     */
+    [self addRightNewsBarButtonItemWithAlreadyRead:NO];
+    
+    [self createUI];
 }
 
+- (void)createUI {
+    
+    NSArray *titleArray = @[@"周边购",@"物业通",@"服务汇"];
+    _titleCollectView   = [[ChangeTitleView alloc] initWithFrame:CGRectMake(0, 0, viewWidth, 40)];
+    _titleCollectView.dataArray = titleArray;
+    _titleCollectView.delegate = self;
+    [_titleCollectView selectedTitle:0];
+    [self.view addSubview:_titleCollectView];
+    
+    _scrollView = [[ResolveConflicScrollView alloc] init];
+    _scrollView.frame = CGRectMake(0,
+                                   CGRectGetMaxY(_titleCollectView.frame),
+                                   viewWidth,
+                                   viewHeight - 90);
+    _scrollView.showsHorizontalScrollIndicator = NO;
+    _scrollView.contentSize   = CGSizeMake(viewWidth * titleArray.count, viewHeight - 90);
+    _scrollView.pagingEnabled = YES;
+    _scrollView.bounces  = NO;
+    _scrollView.delegate = self;
+    _scrollView.decelerationRate     = 0.2;
+    _scrollView.delaysContentTouches = YES;
+   
+    _scrollView.scrollEnabled = YES;
+    [self.view addSubview: _scrollView];
 
+    ZhouBianGouViewController *zhoubiangouVC = [[ZhouBianGouViewController alloc] init];
+    [self addChildViewController:zhoubiangouVC];
+    zhoubiangouVC.view.frame = CGRectMake(0, 0, CGRectGetWidth(_scrollView.frame), CGRectGetHeight(_scrollView.frame));
+    [self.scrollView addSubview:zhoubiangouVC.view];
+    
+    WuYeTongViewController *wuyetongVC = [[WuYeTongViewController alloc] init];
+    [self addChildViewController:wuyetongVC];
+    wuyetongVC.view.frame = CGRectMake(viewWidth, 0, CGRectGetWidth(_scrollView.frame), CGRectGetHeight(_scrollView.frame));
+    [self.scrollView addSubview:wuyetongVC.view];
+    
+    FuWuHuiViewController *fuwuhuiVC = [[FuWuHuiViewController alloc] init];
+    [self addChildViewController:fuwuhuiVC];
+    fuwuhuiVC.view.frame = CGRectMake(viewWidth * 2, 0, CGRectGetWidth(_scrollView.frame), CGRectGetHeight(_scrollView.frame));
+    [self.scrollView addSubview:fuwuhuiVC.view];
+    
+}
 
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    
+    NSInteger number = scrollView.contentOffset.x / viewWidth;
+    [_titleCollectView selectedTitle:number];
+}
+
+- (void)didClickTitleIndex:(NSInteger)index {
+    
+    [_scrollView setContentOffset:CGPointMake(index*viewWidth, 0) animated:YES];
+}
 @end
