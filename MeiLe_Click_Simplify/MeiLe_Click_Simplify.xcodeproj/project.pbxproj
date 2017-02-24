@@ -14,6 +14,8 @@
 		7A0527B61E542A3F0013D3C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0527B21E542A3F0013D3C2 /* AppDelegate.m */; };
 		7A0527CF1E542DDC0013D3C2 /* 美乐生活用户注册协议.html in Resources */ = {isa = PBXBuildFile; fileRef = 7A0527CD1E542DDC0013D3C2 /* 美乐生活用户注册协议.html */; };
 		7A0527D01E542DDC0013D3C2 /* 用户积分.html in Resources */ = {isa = PBXBuildFile; fileRef = 7A0527CE1E542DDC0013D3C2 /* 用户积分.html */; };
+		7A07C7621E5FC9FB00E018F7 /* SHRollScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A07C7611E5FC9FB00E018F7 /* SHRollScrollView.m */; };
+		7A07C7651E5FFB5400E018F7 /* XMGInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A07C7631E5FFB5400E018F7 /* XMGInfiniteScrollView.m */; };
 		7A0DBC341E5BD418006359D2 /* UIViewController+BarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DBC331E5BD418006359D2 /* UIViewController+BarButton.m */; };
 		7A0DBC361E5BD567006359D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0DBC351E5BD567006359D2 /* AVFoundation.framework */; };
 		7A0DBC3A1E5BD669006359D2 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DBC391E5BD669006359D2 /* NavigationController.m */; };
@@ -40,7 +42,6 @@
 		7A46B11F1E5D3F4400B90799 /* ZhouBianGouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A46B11E1E5D3F4400B90799 /* ZhouBianGouViewController.m */; };
 		7A46B1221E5D3F4F00B90799 /* WuYeTongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A46B1211E5D3F4F00B90799 /* WuYeTongViewController.m */; };
 		7A46B1251E5D3F5B00B90799 /* FuWuHuiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A46B1241E5D3F5B00B90799 /* FuWuHuiViewController.m */; };
-		7A46B1641E5D810E00B90799 /* SHRollScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A46B1631E5D810E00B90799 /* SHRollScrollView.m */; };
 		7A49280D1E5A87AA00F6AB93 /* Login&Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A49280C1E5A87AA00F6AB93 /* Login&Register.storyboard */; };
 		7A4928101E5ABC0500F6AB93 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A49280F1E5ABC0500F6AB93 /* RegisterViewController.m */; };
 		7A4928271E5AC8D100F6AB93 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4928261E5AC8D100F6AB93 /* HomePageViewController.m */; };
@@ -63,6 +64,10 @@
 		7A0527B21E542A3F0013D3C2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7A0527CD1E542DDC0013D3C2 /* 美乐生活用户注册协议.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "美乐生活用户注册协议.html"; sourceTree = "<group>"; };
 		7A0527CE1E542DDC0013D3C2 /* 用户积分.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "用户积分.html"; sourceTree = "<group>"; };
+		7A07C7601E5FC9FB00E018F7 /* SHRollScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRollScrollView.h; sourceTree = "<group>"; };
+		7A07C7611E5FC9FB00E018F7 /* SHRollScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRollScrollView.m; sourceTree = "<group>"; };
+		7A07C7631E5FFB5400E018F7 /* XMGInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGInfiniteScrollView.m; sourceTree = "<group>"; };
+		7A07C7641E5FFB5400E018F7 /* XMGInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGInfiniteScrollView.h; sourceTree = "<group>"; };
 		7A0DBC321E5BD418006359D2 /* UIViewController+BarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BarButton.h"; sourceTree = "<group>"; };
 		7A0DBC331E5BD418006359D2 /* UIViewController+BarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BarButton.m"; sourceTree = "<group>"; };
 		7A0DBC351E5BD567006359D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -187,8 +192,6 @@
 		7A46B1211E5D3F4F00B90799 /* WuYeTongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuYeTongViewController.m; sourceTree = "<group>"; };
 		7A46B1231E5D3F5B00B90799 /* FuWuHuiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuWuHuiViewController.h; sourceTree = "<group>"; };
 		7A46B1241E5D3F5B00B90799 /* FuWuHuiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuWuHuiViewController.m; sourceTree = "<group>"; };
-		7A46B1621E5D810E00B90799 /* SHRollScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRollScrollView.h; sourceTree = "<group>"; };
-		7A46B1631E5D810E00B90799 /* SHRollScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRollScrollView.m; sourceTree = "<group>"; };
 		7A49280C1E5A87AA00F6AB93 /* Login&Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Login&Register.storyboard"; sourceTree = "<group>"; };
 		7A49280E1E5ABC0500F6AB93 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		7A49280F1E5ABC0500F6AB93 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
@@ -717,6 +720,8 @@
 		7A49281F1E5AC86800F6AB93 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7A07C7631E5FFB5400E018F7 /* XMGInfiniteScrollView.m */,
+				7A07C7641E5FFB5400E018F7 /* XMGInfiniteScrollView.h */,
 				7A46B11D1E5D3F4400B90799 /* ZhouBianGouViewController.h */,
 				7A46B11E1E5D3F4400B90799 /* ZhouBianGouViewController.m */,
 			);
@@ -765,8 +770,8 @@
 				7A0DBC4C1E5BE07C006359D2 /* ChangeTitleView.m */,
 				7A0DBC4E1E5BED00006359D2 /* TitleCollectionViewCell.h */,
 				7A0DBC4F1E5BED00006359D2 /* TitleCollectionViewCell.m */,
-				7A46B1621E5D810E00B90799 /* SHRollScrollView.h */,
-				7A46B1631E5D810E00B90799 /* SHRollScrollView.m */,
+				7A07C7601E5FC9FB00E018F7 /* SHRollScrollView.h */,
+				7A07C7611E5FC9FB00E018F7 /* SHRollScrollView.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -938,7 +943,7 @@
 				7A0DBC3A1E5BD669006359D2 /* NavigationController.m in Sources */,
 				7A0DBC4D1E5BE07C006359D2 /* ChangeTitleView.m in Sources */,
 				7A0DBC421E5BD68E006359D2 /* MainViewController.m in Sources */,
-				7A46B1641E5D810E00B90799 /* SHRollScrollView.m in Sources */,
+				7A07C7621E5FC9FB00E018F7 /* SHRollScrollView.m in Sources */,
 				7A4928271E5AC8D100F6AB93 /* HomePageViewController.m in Sources */,
 				7A0527B61E542A3F0013D3C2 /* AppDelegate.m in Sources */,
 				7A0DBC341E5BD418006359D2 /* UIViewController+BarButton.m in Sources */,
@@ -948,6 +953,7 @@
 				7A46B1251E5D3F5B00B90799 /* FuWuHuiViewController.m in Sources */,
 				7A0DBC4A1E5BDE6B006359D2 /* ResolveConflicScrollView.m in Sources */,
 				7A1FD9AD1E557FB1001857E4 /* NSDictionary+RemoveNull.m in Sources */,
+				7A07C7651E5FFB5400E018F7 /* XMGInfiniteScrollView.m in Sources */,
 				7A1FD9391E553ADE001857E4 /* LoginViewController.m in Sources */,
 				7A0DBC431E5BD68E006359D2 /* RootViewController.m in Sources */,
 				7A1FD9401E553D75001857E4 /* UserLoginModel.m in Sources */,

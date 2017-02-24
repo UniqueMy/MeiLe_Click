@@ -2,16 +2,15 @@
 //  SHRollScrollView.h
 //  MeiLe_Click_Simplify
 //
-//  Created by 盛浩 on 2017/2/22.
+//  Created by 盛浩 on 2017/2/24.
 //  Copyright © 2017年 ShengHao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface SHRollScrollView : UIScrollView
+@interface SHRollScrollView : UIView
 
-- (void)addPageControl;
+@property (nonatomic, strong) NSArray *imageArray;
 
-- (instancetype)initWithFrame:(CGRect)frame viewController:(UIViewController *)viewController;
 
 @end

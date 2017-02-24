@@ -9,10 +9,10 @@
 #import "ZhouBianGouViewController.h"
 #import "SHRollScrollView.h"
 
+
 #define SCROLLVIEW_HEIGHT 148
 
 @interface ZhouBianGouViewController ()<UIScrollViewDelegate>
-
 
 @end
 
@@ -24,9 +24,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
        
-    SHRollScrollView *rollScrollView = [[SHRollScrollView alloc] initWithFrame:CGRectMake(0, 0, viewWidth, SCROLLVIEW_HEIGHT) viewController:self];
-    [self.view addSubview:rollScrollView];
-    [rollScrollView addPageControl];
+    SHRollScrollView *scrollView = [[SHRollScrollView alloc] initWithFrame:CGRectMake(0, 0, viewWidth, SCROLLVIEW_HEIGHT)];
+//    scrollView.frame      = ;
+    scrollView.imageArray = @[@"homepage_zbg_scroll_0",@"homepage_zbg_scroll_0"];
+    [self.view addSubview:scrollView];
+    
+    
+//    XMGInfiniteScrollView *scrollView = [[XMGInfiniteScrollView alloc] initWithFrame:CGRectMake(0, 0, viewWidth, SCROLLVIEW_HEIGHT)];
+//    //    scrollView.frame      = ;
+//    scrollView.imageNames = @[@"homepage_zbg_scroll_0",@"homepage_zbg_scroll_0"];
+//    [self.view addSubview:scrollView];
     
 }
 

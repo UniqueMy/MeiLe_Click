@@ -18,7 +18,7 @@ static NSString const *_newsButton = @"rightNewsButton";
 
 /**
  Runtime 给分类添加属性
-
+ 
  @return UIButton
  */
 - (UIButton *)newsButton {
@@ -36,9 +36,15 @@ static NSString const *_newsButton = @"rightNewsButton";
  添加左视图 -- 扫描
  */
 - (void)addLeftScanQRCodeBarButtonItem {
-    UIBarButtonItem *leftburbtton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"common_scan"] style:UIBarButtonItemStyleDone target:self action:@selector(scanCodeController)];
     
-    self.navigationItem.leftBarButtonItem = leftburbtton;
+    UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [leftButton setImage:[UIImage imageNamed:@"common_scan"] forState:UIControlStateNormal];;
+    [leftButton addTarget:self action:@selector(scanCodeController) forControlEvents:UIControlEventTouchUpInside];
+    
+    leftButton.imageEdgeInsets     = UIEdgeInsetsMake(0, -22, 0, 0);
+    UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+    self.navigationItem.leftBarButtonItem = leftBarButton;
+    
 }
 
 - (void)scanCodeController {
@@ -48,7 +54,7 @@ static NSString const *_newsButton = @"rightNewsButton";
     //读取设备授权状态
     AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:mediaType];
     if (authStatus == AVAuthorizationStatusRestricted || authStatus ==  AVAuthorizationStatusDenied) {
-         NSString *errorStr = @"应用相机权限受限,请在设置中启用";
+        NSString *errorStr = @"应用相机权限受限,请在设置中启用";
         [SVProgressHUD showInfoWithStatus:errorStr];
         [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
         return;
@@ -59,14 +65,14 @@ static NSString const *_newsButton = @"rightNewsButton";
 }
 
 /**
- 添加右视图 -- 消息
+ 添加右视图 -- 消息 
  */
 - (void)addRightNewsBarButtonItemWithAlreadyRead:(BOOL)isRead {
     
     if (!self.newsButton) {
         self.newsButton = [[UIButton alloc] initWithFrame:CGRectMake(-10, 0, 30, 30)];
-         [self.newsButton setImage:[UIImage imageNamed:@"common_news_no"] forState:UIControlStateNormal];;
-         [self.newsButton addTarget:self action:@selector(onMessageButtonTouchAction:) forControlEvents:UIControlEventTouchUpInside];
+        [self.newsButton setImage:[UIImage imageNamed:@"common_news_no"] forState:UIControlStateNormal];;
+        [self.newsButton addTarget:self action:@selector(onMessageButtonTouchAction:) forControlEvents:UIControlEventTouchUpInside];
         self.newsButton.imageEdgeInsets   = UIEdgeInsetsMake(0, 8, 0, -8);
         UIBarButtonItem *rightBurButton = [[UIBarButtonItem alloc] initWithCustomView:self.newsButton];
         self.navigationItem.rightBarButtonItem = rightBurButton;

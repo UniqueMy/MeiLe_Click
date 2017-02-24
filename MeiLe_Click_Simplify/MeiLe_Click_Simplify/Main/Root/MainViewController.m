@@ -80,7 +80,7 @@
 
 - (void)setNavigationBarStyle:(UINavigationController *)navigationController
 {
-    navigationController.navigationBar.translucent = NO;
+   navigationController.navigationBar.translucent = NO;
     [navigationController.navigationBar setTintColor:[UIColor blackColor]];
 //    [navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
 //    navigationController.navigationBar.shadowImage =[UIImage new];
@@ -120,7 +120,7 @@
     [self setNavigationBarStyle:personNavigation];
     
     [self setViewControllers:@[homePageNavigation,customzationNavigation,wareHouseNavigation,personNavigation]];
-    self.tabBar.tintColor = [UIColor blackColor];
+    self.tabBar.tintColor = RGB(180, 40, 45);
     [self.tabBar setBarTintColor:[UIColor colorWithRed:249/255.90 green:249/255.0 blue:249/255.0 alpha:1.0]];
     
 }
