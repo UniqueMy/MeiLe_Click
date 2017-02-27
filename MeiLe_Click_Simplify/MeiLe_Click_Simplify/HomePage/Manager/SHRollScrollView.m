@@ -174,7 +174,6 @@ static NSUInteger const ImageCount = 3;
             
         }
     }
-    
     // 设置页码
     self.pageControl.currentPage = centerImageIndex;
     
@@ -200,7 +199,7 @@ static NSUInteger const ImageCount = 3;
 
 #pragma mark - 定时器处理
 // 开启定时器
-- (void)startTimer{
+- (void)startTimer {
     
     self.timer = [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(nextPage) userInfo:nil repeats:YES];
     

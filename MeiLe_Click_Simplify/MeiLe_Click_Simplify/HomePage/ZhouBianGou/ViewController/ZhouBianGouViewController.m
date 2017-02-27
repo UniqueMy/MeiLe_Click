@@ -8,34 +8,71 @@
 
 #import "ZhouBianGouViewController.h"
 #import "SHRollScrollView.h"
+#import "zhoubiangouTableViewCell.h"
 
+static NSString *identifier = @"zhoubiangouTableViewCell";
 
 #define SCROLLVIEW_HEIGHT 148
 
-@interface ZhouBianGouViewController ()<UIScrollViewDelegate>
+@interface ZhouBianGouViewController ()<UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic,strong) UITableView *tableView;
 
 @end
 
 @implementation ZhouBianGouViewController
 {
-   
+    
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    CGRect tableFrame = CGRectMake(0, 0, viewWidth, self.view.bounds.size.height - 64);
+    _tableView.frame = tableFrame;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-       
-    SHRollScrollView *scrollView = [[SHRollScrollView alloc] initWithFrame:CGRectMake(0, 0, viewWidth, SCROLLVIEW_HEIGHT)];
-//    scrollView.frame      = ;
-    scrollView.imageArray = @[@"homepage_zbg_scroll_0",@"homepage_zbg_scroll_0"];
-    [self.view addSubview:scrollView];
     
-    
-//    XMGInfiniteScrollView *scrollView = [[XMGInfiniteScrollView alloc] initWithFrame:CGRectMake(0, 0, viewWidth, SCROLLVIEW_HEIGHT)];
-//    //    scrollView.frame      = ;
-//    scrollView.imageNames = @[@"homepage_zbg_scroll_0",@"homepage_zbg_scroll_0"];
-//    [self.view addSubview:scrollView];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    _tableView.delegate   = self;
+    _tableView.dataSource = self;
+    _tableView.rowHeight  = 70 + 10;
+    _tableView.showsVerticalScrollIndicator = NO;
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([zhoubiangouTableViewCell class]) bundle:nil] forCellReuseIdentifier:identifier];
+    [self.view addSubview:_tableView];
     
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    
+    return SCROLLVIEW_HEIGHT;
+}
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    SHRollScrollView *scrollView = [[SHRollScrollView alloc] initWithFrame:CGRectMake(0, 0, viewWidth, SCROLLVIEW_HEIGHT)];
+    scrollView.imageArray = @[@"homepage_zbg_scroll_0",@"homepage_zbg_scroll_0"];
+    
+    return scrollView;
+
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 10;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    zhoubiangouTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
+    
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //取消选中
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 @end

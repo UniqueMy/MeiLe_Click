@@ -39,6 +39,8 @@
 		7A1FD9A91E5573E6001857E4 /* TEncryptorRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FD9A31E5573E6001857E4 /* TEncryptorRSA.m */; };
 		7A1FD9AD1E557FB1001857E4 /* NSDictionary+RemoveNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FD9AC1E557FB1001857E4 /* NSDictionary+RemoveNull.m */; };
 		7A1FD9B01E557FE5001857E4 /* NSArray+RemoveNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FD9AF1E557FE5001857E4 /* NSArray+RemoveNull.m */; };
+		7A363D4E1E63C3A9004870C8 /* zhoubiangouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A363D4C1E63C3A9004870C8 /* zhoubiangouTableViewCell.m */; };
+		7A363D4F1E63C3A9004870C8 /* zhoubiangouTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A363D4D1E63C3A9004870C8 /* zhoubiangouTableViewCell.xib */; };
 		7A46B11F1E5D3F4400B90799 /* ZhouBianGouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A46B11E1E5D3F4400B90799 /* ZhouBianGouViewController.m */; };
 		7A46B1221E5D3F4F00B90799 /* WuYeTongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A46B1211E5D3F4F00B90799 /* WuYeTongViewController.m */; };
 		7A46B1251E5D3F5B00B90799 /* FuWuHuiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A46B1241E5D3F5B00B90799 /* FuWuHuiViewController.m */; };
@@ -66,8 +68,8 @@
 		7A0527CE1E542DDC0013D3C2 /* 用户积分.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "用户积分.html"; sourceTree = "<group>"; };
 		7A07C7601E5FC9FB00E018F7 /* SHRollScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRollScrollView.h; sourceTree = "<group>"; };
 		7A07C7611E5FC9FB00E018F7 /* SHRollScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRollScrollView.m; sourceTree = "<group>"; };
-		7A07C7631E5FFB5400E018F7 /* XMGInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGInfiniteScrollView.m; sourceTree = "<group>"; };
-		7A07C7641E5FFB5400E018F7 /* XMGInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGInfiniteScrollView.h; sourceTree = "<group>"; };
+		7A07C7631E5FFB5400E018F7 /* XMGInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMGInfiniteScrollView.m; path = MeiLe_Click_Simplify/HomePage/ZhouBianGou/ViewController/XMGInfiniteScrollView.m; sourceTree = SOURCE_ROOT; };
+		7A07C7641E5FFB5400E018F7 /* XMGInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMGInfiniteScrollView.h; path = MeiLe_Click_Simplify/HomePage/ZhouBianGou/ViewController/XMGInfiniteScrollView.h; sourceTree = SOURCE_ROOT; };
 		7A0DBC321E5BD418006359D2 /* UIViewController+BarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BarButton.h"; sourceTree = "<group>"; };
 		7A0DBC331E5BD418006359D2 /* UIViewController+BarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BarButton.m"; sourceTree = "<group>"; };
 		7A0DBC351E5BD567006359D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -186,6 +188,9 @@
 		7A1FD9AC1E557FB1001857E4 /* NSDictionary+RemoveNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RemoveNull.m"; sourceTree = "<group>"; };
 		7A1FD9AE1E557FE5001857E4 /* NSArray+RemoveNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RemoveNull.h"; sourceTree = "<group>"; };
 		7A1FD9AF1E557FE5001857E4 /* NSArray+RemoveNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RemoveNull.m"; sourceTree = "<group>"; };
+		7A363D4B1E63C3A9004870C8 /* zhoubiangouTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhoubiangouTableViewCell.h; sourceTree = "<group>"; };
+		7A363D4C1E63C3A9004870C8 /* zhoubiangouTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhoubiangouTableViewCell.m; sourceTree = "<group>"; };
+		7A363D4D1E63C3A9004870C8 /* zhoubiangouTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = zhoubiangouTableViewCell.xib; sourceTree = "<group>"; };
 		7A46B11D1E5D3F4400B90799 /* ZhouBianGouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhouBianGouViewController.h; sourceTree = "<group>"; };
 		7A46B11E1E5D3F4400B90799 /* ZhouBianGouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhouBianGouViewController.m; sourceTree = "<group>"; };
 		7A46B1201E5D3F4F00B90799 /* WuYeTongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuYeTongViewController.h; sourceTree = "<group>"; };
@@ -713,6 +718,11 @@
 		7A49281E1E5AC86800F6AB93 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7A07C7631E5FFB5400E018F7 /* XMGInfiniteScrollView.m */,
+				7A07C7641E5FFB5400E018F7 /* XMGInfiniteScrollView.h */,
+				7A363D4B1E63C3A9004870C8 /* zhoubiangouTableViewCell.h */,
+				7A363D4C1E63C3A9004870C8 /* zhoubiangouTableViewCell.m */,
+				7A363D4D1E63C3A9004870C8 /* zhoubiangouTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -720,8 +730,6 @@
 		7A49281F1E5AC86800F6AB93 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7A07C7631E5FFB5400E018F7 /* XMGInfiniteScrollView.m */,
-				7A07C7641E5FFB5400E018F7 /* XMGInfiniteScrollView.h */,
 				7A46B11D1E5D3F4400B90799 /* ZhouBianGouViewController.h */,
 				7A46B11E1E5D3F4400B90799 /* ZhouBianGouViewController.m */,
 			);
@@ -870,6 +878,7 @@
 				7A0527A41E54247D0013D3C2 /* Assets.xcassets in Resources */,
 				7A0527CF1E542DDC0013D3C2 /* 美乐生活用户注册协议.html in Resources */,
 				7A49280D1E5A87AA00F6AB93 /* Login&Register.storyboard in Resources */,
+				7A363D4F1E63C3A9004870C8 /* zhoubiangouTableViewCell.xib in Resources */,
 				7A0527A21E54247D0013D3C2 /* Main.storyboard in Resources */,
 				7A1FD9A71E5573E6001857E4 /* rsa_public_key.pem in Resources */,
 				7A0527D01E542DDC0013D3C2 /* 用户积分.html in Resources */,
@@ -945,6 +954,7 @@
 				7A0DBC421E5BD68E006359D2 /* MainViewController.m in Sources */,
 				7A07C7621E5FC9FB00E018F7 /* SHRollScrollView.m in Sources */,
 				7A4928271E5AC8D100F6AB93 /* HomePageViewController.m in Sources */,
+				7A363D4E1E63C3A9004870C8 /* zhoubiangouTableViewCell.m in Sources */,
 				7A0527B61E542A3F0013D3C2 /* AppDelegate.m in Sources */,
 				7A0DBC341E5BD418006359D2 /* UIViewController+BarButton.m in Sources */,
 				7A0DBC441E5BD68E006359D2 /* UserGuideViewController.m in Sources */,

@@ -64,10 +64,11 @@
    
     _scrollView.scrollEnabled = YES;
     [self.view addSubview: _scrollView];
-
+    
+    
     ZhouBianGouViewController *zhoubiangouVC = [[ZhouBianGouViewController alloc] init];
-    [self addChildViewController:zhoubiangouVC];
     zhoubiangouVC.view.frame = CGRectMake(0, 0, CGRectGetWidth(_scrollView.frame), CGRectGetHeight(_scrollView.frame));
+    [self addChildViewController:zhoubiangouVC];
     [self.scrollView addSubview:zhoubiangouVC.view];
     
     WuYeTongViewController *wuyetongVC = [[WuYeTongViewController alloc] init];
