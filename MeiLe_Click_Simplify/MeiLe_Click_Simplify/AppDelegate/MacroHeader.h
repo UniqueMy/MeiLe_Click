@@ -22,8 +22,9 @@ static NSString *const  HTTP_BASE_HOST = @"http://114.215.96.146"; // 测试
 #define viewWidth      [UIScreen mainScreen].bounds.size.width     // 屏幕宽度
 #define viewHeight     [UIScreen mainScreen].bounds.size.height    // 屏幕高度
 
-#define RGBA(r,g,b,a)     [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:a]
-#define RGB(r,g,b)     [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:1]
+#define Navigation_Height  64
+#define RGBA(r,g,b,a)      [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:a]
+#define RGB(r,g,b)         [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:1]
 
 #define USER_ADMIN_TICKET_KEY         @"com.hdzc.tenement.user.admin.ticket"
 #define USER_ADMIN_LOGINNAME_KEY      @"com.hdzc.tenement.user.admin.name"
