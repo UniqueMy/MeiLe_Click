@@ -34,6 +34,10 @@
 		7A14D1351E653E3A0034B42F /* ShopDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14D1331E653E3A0034B42F /* ShopDetailsViewController.m */; };
 		7A14D13A1E6545420034B42F /* WuyetongTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14D1381E6545420034B42F /* WuyetongTableViewCell.m */; };
 		7A14D13B1E6545420034B42F /* WuyetongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A14D1391E6545420034B42F /* WuyetongTableViewCell.xib */; };
+		7A14D13E1E6561EF0034B42F /* FuwuhuiHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14D13D1E6561EF0034B42F /* FuwuhuiHeadView.m */; };
+		7A14D1411E6561FC0034B42F /* FuwuhuiFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14D1401E6561FC0034B42F /* FuwuhuiFootView.m */; };
+		7A14D1481E656ADE0034B42F /* FuwuhuiCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14D1461E656ADE0034B42F /* FuwuhuiCollectionViewCell.m */; };
+		7A14D1491E656ADE0034B42F /* FuwuhuiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A14D1471E656ADE0034B42F /* FuwuhuiCollectionViewCell.xib */; };
 		7A1FD9391E553ADE001857E4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FD9361E553ADE001857E4 /* LoginViewController.m */; };
 		7A1FD93C1E553B9D001857E4 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FD93B1E553B9D001857E4 /* UserModel.m */; };
 		7A1FD9401E553D75001857E4 /* UserLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FD93F1E553D75001857E4 /* UserLoginModel.m */; };
@@ -111,6 +115,13 @@
 		7A14D1371E6545420034B42F /* WuyetongTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuyetongTableViewCell.h; sourceTree = "<group>"; };
 		7A14D1381E6545420034B42F /* WuyetongTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuyetongTableViewCell.m; sourceTree = "<group>"; };
 		7A14D1391E6545420034B42F /* WuyetongTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WuyetongTableViewCell.xib; sourceTree = "<group>"; };
+		7A14D13C1E6561EF0034B42F /* FuwuhuiHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuwuhuiHeadView.h; sourceTree = "<group>"; };
+		7A14D13D1E6561EF0034B42F /* FuwuhuiHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuwuhuiHeadView.m; sourceTree = "<group>"; };
+		7A14D13F1E6561FC0034B42F /* FuwuhuiFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuwuhuiFootView.h; sourceTree = "<group>"; };
+		7A14D1401E6561FC0034B42F /* FuwuhuiFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuwuhuiFootView.m; sourceTree = "<group>"; };
+		7A14D1451E656ADE0034B42F /* FuwuhuiCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuwuhuiCollectionViewCell.h; sourceTree = "<group>"; };
+		7A14D1461E656ADE0034B42F /* FuwuhuiCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuwuhuiCollectionViewCell.m; sourceTree = "<group>"; };
+		7A14D1471E656ADE0034B42F /* FuwuhuiCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FuwuhuiCollectionViewCell.xib; sourceTree = "<group>"; };
 		7A1FD9351E553ADE001857E4 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		7A1FD9361E553ADE001857E4 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7A1FD93A1E553B9D001857E4 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
@@ -797,6 +808,13 @@
 		7A4928161E5AC86800F6AB93 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7A14D13C1E6561EF0034B42F /* FuwuhuiHeadView.h */,
+				7A14D13D1E6561EF0034B42F /* FuwuhuiHeadView.m */,
+				7A14D13F1E6561FC0034B42F /* FuwuhuiFootView.h */,
+				7A14D1401E6561FC0034B42F /* FuwuhuiFootView.m */,
+				7A14D1451E656ADE0034B42F /* FuwuhuiCollectionViewCell.h */,
+				7A14D1461E656ADE0034B42F /* FuwuhuiCollectionViewCell.m */,
+				7A14D1471E656ADE0034B42F /* FuwuhuiCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -998,6 +1016,7 @@
 				7A14D13B1E6545420034B42F /* WuyetongTableViewCell.xib in Resources */,
 				7A0527A41E54247D0013D3C2 /* Assets.xcassets in Resources */,
 				7A0527CF1E542DDC0013D3C2 /* 美乐生活用户注册协议.html in Resources */,
+				7A14D1491E656ADE0034B42F /* FuwuhuiCollectionViewCell.xib in Resources */,
 				7A49280D1E5A87AA00F6AB93 /* Login&Register.storyboard in Resources */,
 				7A363D661E63EBDC004870C8 /* zhoubiangouTableViewCell.xib in Resources */,
 				7A0527A21E54247D0013D3C2 /* Main.storyboard in Resources */,
@@ -1080,6 +1099,7 @@
 				7A07C7621E5FC9FB00E018F7 /* SHRollScrollView.m in Sources */,
 				7A4928271E5AC8D100F6AB93 /* HomePageViewController.m in Sources */,
 				7A0527B61E542A3F0013D3C2 /* AppDelegate.m in Sources */,
+				7A14D13E1E6561EF0034B42F /* FuwuhuiHeadView.m in Sources */,
 				7A0DBC341E5BD418006359D2 /* UIViewController+BarButton.m in Sources */,
 				7A0DBC441E5BD68E006359D2 /* UserGuideViewController.m in Sources */,
 				7A14D13A1E6545420034B42F /* WuyetongTableViewCell.m in Sources */,
@@ -1092,8 +1112,10 @@
 				7A14D12A1E6528BB0034B42F /* TitleTableViewCell.m in Sources */,
 				7A363D671E63EBDC004870C8 /* XMGInfiniteScrollView.m in Sources */,
 				7A1FD9391E553ADE001857E4 /* LoginViewController.m in Sources */,
+				7A14D1411E6561FC0034B42F /* FuwuhuiFootView.m in Sources */,
 				7A0DBC431E5BD68E006359D2 /* RootViewController.m in Sources */,
 				7A1FD9401E553D75001857E4 /* UserLoginModel.m in Sources */,
+				7A14D1481E656ADE0034B42F /* FuwuhuiCollectionViewCell.m in Sources */,
 				7A4928321E5AC9C000F6AB93 /* PersonViewController.m in Sources */,
 				7A1FD9441E553FD6001857E4 /* UserRequestModel.m in Sources */,
 				7A14D1281E6528BB0034B42F /* ContentTableViewCell.m in Sources */,

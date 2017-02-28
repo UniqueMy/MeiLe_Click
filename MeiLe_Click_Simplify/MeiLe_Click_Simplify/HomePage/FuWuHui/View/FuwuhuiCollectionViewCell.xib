@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FuwuhuiCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="108"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homepage_zbg_scroll_0" translatesAutoresizingMaskIntoConstraints="NO" id="RKI-mF-bpM">
+                        <rect key="frame" x="33.5" y="0.0" width="54" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="fBO-x0-5Gp"/>
+                            <constraint firstAttribute="width" constant="54" id="pRz-ZY-bxw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机开门" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfe-dQ-Was">
+                        <rect key="frame" x="31.5" y="58" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.48621892929077148" green="0.48630648851394653" blue="0.48621344566345215" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="RKI-mF-bpM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FdN-O4-LyZ"/>
+                <constraint firstItem="xfe-dQ-Was" firstAttribute="centerX" secondItem="RKI-mF-bpM" secondAttribute="centerX" id="Nff-kB-3Zm"/>
+                <constraint firstItem="xfe-dQ-Was" firstAttribute="top" secondItem="RKI-mF-bpM" secondAttribute="bottom" constant="10" id="f4n-HP-eLC"/>
+                <constraint firstItem="RKI-mF-bpM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="pT8-bL-Hod"/>
+            </constraints>
+            <size key="customSize" width="120" height="108"/>
+            <point key="canvasLocation" x="60" y="81"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="homepage_zbg_scroll_0" width="385" height="152"/>
+    </resources>
+</document>
