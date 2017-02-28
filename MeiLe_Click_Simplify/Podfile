@@ -7,6 +7,6 @@ target 'MeiLe_Click_Simplify' do
     pod 'YYModel'
     pod 'SVProgressHUD'
     pod 'EAIntroView'
-
+    pod 'BaiduMapKit'
 
 end

@@ -9,7 +9,7 @@
 #import "ZhouBianGouViewController.h"
 #import "SHRollScrollView.h"
 #import "zhoubiangouTableViewCell.h"
-#import "ShopViewController.h"
+#import "ShopListViewController.h"
 
 static NSString *identifier = @"zhoubiangouTableViewCell";
 
@@ -29,7 +29,7 @@ static NSString *identifier = @"zhoubiangouTableViewCell";
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     CGRect tableFrame = CGRectMake(0, 0, viewWidth, self.view.bounds.size.height - Navigation_Height);
-    _tableView.frame = tableFrame;
+    _tableView.frame  = tableFrame;
 }
 
 - (void)viewDidLoad {
@@ -76,6 +76,6 @@ static NSString *identifier = @"zhoubiangouTableViewCell";
     //取消选中
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    [self.navigationController pushViewController:[ShopViewController new] animated:YES];
+    [self.navigationController pushViewController:[ShopListViewController new] animated:YES];
 }
 @end

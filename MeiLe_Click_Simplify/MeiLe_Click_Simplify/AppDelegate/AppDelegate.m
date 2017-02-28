@@ -15,7 +15,9 @@
 @end
 
 @implementation AppDelegate
-
+{
+    BMKMapManager* _mapManager;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
@@ -25,9 +27,22 @@
     // 设置根视图
     [self makeWindowVisible:launchOptions];
     
-    
+    // 初始化第三方库
+    [self basicSetup];
     
     return YES;
+}
+
+#pragma mark - 初始化第三方库
+- (void)basicSetup {
+    
+    // 百度地图初始化
+    _mapManager           = [[BMKMapManager alloc]init];
+    BOOL ret = [_mapManager start:BaiduMap_Appkey generalDelegate:nil];
+    if (!ret) {
+        NSLog(@"百度地图初始化失败！");
+    }
+    
 }
 
 #pragma mark - Make window visible

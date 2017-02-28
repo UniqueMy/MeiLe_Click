@@ -46,7 +46,7 @@ static NSString *const  HTTP_BASE_HOST = @"http://114.215.96.146"; // 测试
 #define HTTP_AES_KEY                  @"com.hdzc.tenement.aeskey" 
 
 
-
+#define BaiduMap_Appkey               @"GWDbonG1Gmlv8fsb5zxSEh6CNVsAFNlw"
 
 
 

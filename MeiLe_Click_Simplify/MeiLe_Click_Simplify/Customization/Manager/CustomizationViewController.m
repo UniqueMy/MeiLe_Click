@@ -8,6 +8,7 @@
 
 #import "CustomizationViewController.h"
 #import "SHRollScrollView.h"
+#define MapHeight  215
 
 #define kWidthOfScreen  [[UIScreen mainScreen] bounds].size.width
 #define kHeightOfScreen [[UIScreen mainScreen] bounds].size.height
@@ -15,7 +16,7 @@
 @interface CustomizationViewController ()<UIScrollViewDelegate>
 
 
-
+@property (nonatomic,strong) BMKMapView  *mapView;
 
 
 @end
@@ -25,8 +26,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    SHRollScrollView *rollScrollView = [[SHRollScrollView alloc] initWithFrame:CGRectMake(0, 0, viewWidth, 152)];
-    [self.view addSubview:rollScrollView];
+    _mapView = [[BMKMapView alloc] initWithFrame:CGRectMake(0, 0, viewWidth, MapHeight)];
+    _mapView.showMapScaleBar   = YES;
+    _mapView.showsUserLocation = YES;
+    _mapView.mapType           = BMKMapTypeStandard; // 标准地图
+//    _mapView.delegate          = self;
+    _mapView.minZoomLevel      = 5;
+    _mapView.zoomLevel         = 17;
+    [self.view addSubview:_mapView];
+
 }
 
 

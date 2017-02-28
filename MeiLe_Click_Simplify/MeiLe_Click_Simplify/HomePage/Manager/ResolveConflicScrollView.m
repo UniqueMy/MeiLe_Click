@@ -9,47 +9,51 @@
 #import "ResolveConflicScrollView.h"
 #import "SHRollScrollView.h"
 
+#define MapHeight  215
+#define SCROLLVIEW_HEIGHT 148
+
 @implementation ResolveConflicScrollView
 
-- (BOOL)touchesShouldBegin:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event inContentView:(UIView *)view
-{
-    if ([view isKindOfClass:NSClassFromString(@"SHRollScrollView")]) {
-       
-        return NO;
-        
-    } else {
-        
-        return [super touchesShouldBegin:touches withEvent:event inContentView:view];
-    }
-}
-
-- (BOOL)touchesShouldCancelInContentView:(UIView *)view
-{
-    if ([view isKindOfClass:NSClassFromString(@"SHRollScrollView")]) {
-       
-        return NO;
-        
-    } else {
-        
-        return [super touchesShouldCancelInContentView:view];
-    }
-}
-
-
-//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
-//    
-//    
-//    CGPoint current = [touch locationInView:self];
-//    
-//    if (0 < current.x && current.x < viewWidth * 2 && current.y < viewWidth * 0.7) {
-//        // 在地图上
-//        return NO;
-//    } else {
-//        // 不在地图上
+//- (BOOL)touchesShouldBegin:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event inContentView:(UIView *)view
+//{
+//    NSLog(@"view %@",view.class);
+//    if ([view isKindOfClass:NSClassFromString(@"SHRollScrollView")] || [view isKindOfClass:NSClassFromString(@"TapDetectingView")]) {
+//       
 //        return YES;
 //        
+//    } else {
+//        
+//        return [super touchesShouldBegin:touches withEvent:event inContentView:view];
 //    }
-//    
 //}
+//
+//- (BOOL)touchesShouldCancelInContentView:(UIView *)view
+//{
+//    if ([view isKindOfClass:NSClassFromString(@"SHRollScrollView")] || [view isKindOfClass:NSClassFromString(@"TapDetectingView")]) {
+//       
+//        return NO;
+//        
+//    } else {
+//        
+//        return [super touchesShouldCancelInContentView:view];
+//    }
+//}
+
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    
+    
+    CGPoint current = [touch locationInView:self];
+    
+    if ((0 < current.x  && current.x < viewWidth * 2 && current.y <= SCROLLVIEW_HEIGHT) || (viewWidth < current.x  && current.x < viewWidth * 2 && current.y <= MapHeight)) {
+        // 在地图上
+        return NO;
+    } else {
+        // 不在地图上
+        return YES;
+        
+    }
+    
+}
 
 @end
