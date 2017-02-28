@@ -48,10 +48,12 @@ NSString const *UIButton_badgeValueKey = @"UIButton_badgeValueKey";
 
 - (void)initBadgeLabel {
     
-    CGRect labelFrame = CGRectMake(self.frame.size.width - self.badge.frame.size.width - 11,
+    
+    CGFloat labelWidth = self.badgeValue.length <= 2 ? 18 : 21;
+    CGRect labelFrame = CGRectMake(self.frame.size.width - self.badge.frame.size.width - labelWidth / 2,
                                    0,
-                                   22,
-                                   22);
+                                   labelWidth,
+                                   labelWidth);
     
     self.badge = [[UILabel alloc] initWithFrame:labelFrame];
     self.badge.backgroundColor = BaseCommonRedColor;
@@ -61,7 +63,7 @@ NSString const *UIButton_badgeValueKey = @"UIButton_badgeValueKey";
     self.badge.text            = self.badgeValue;
     [self addSubview:self.badge];
     
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.badge.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(11, 11)];
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.badge.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(labelWidth / 2, labelWidth / 2)];
     
     CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
     maskLayer.frame         = self.badge.bounds;

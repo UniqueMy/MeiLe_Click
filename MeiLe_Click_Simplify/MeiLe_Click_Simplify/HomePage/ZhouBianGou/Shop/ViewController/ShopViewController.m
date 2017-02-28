@@ -72,7 +72,7 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
     [_contentTableView registerNib:[UINib nibWithNibName:NSStringFromClass([ContentTableViewCell class]) bundle:nil] forCellReuseIdentifier:contentIdentifier];
     [self.view addSubview:_contentTableView];
     
-    self.shopCar.badgeValue = @"1";
+    self.shopCar.badgeValue = @"3";
     
     
 }
