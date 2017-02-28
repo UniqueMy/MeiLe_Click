@@ -120,7 +120,7 @@
     [self setNavigationBarStyle:personNavigation];
     
     [self setViewControllers:@[homePageNavigation,customzationNavigation,wareHouseNavigation,personNavigation]];
-    self.tabBar.tintColor = RGB(180, 40, 45);
+    self.tabBar.tintColor = BaseCommonRedColor;
     [self.tabBar setBarTintColor:[UIColor colorWithRed:249/255.90 green:249/255.0 blue:249/255.0 alpha:1.0]];
     
 }

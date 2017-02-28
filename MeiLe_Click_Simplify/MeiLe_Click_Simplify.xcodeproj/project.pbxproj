@@ -25,6 +25,7 @@
 		7A0DBC4A1E5BDE6B006359D2 /* ResolveConflicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DBC491E5BDE6B006359D2 /* ResolveConflicScrollView.m */; };
 		7A0DBC4D1E5BE07C006359D2 /* ChangeTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DBC4C1E5BE07C006359D2 /* ChangeTitleView.m */; };
 		7A0DBC501E5BED00006359D2 /* TitleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DBC4F1E5BED00006359D2 /* TitleCollectionViewCell.m */; };
+		7A14D1171E6513FB0034B42F /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14D1161E6513FB0034B42F /* UIButton+Badge.m */; };
 		7A1FD9391E553ADE001857E4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FD9361E553ADE001857E4 /* LoginViewController.m */; };
 		7A1FD93C1E553B9D001857E4 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FD93B1E553B9D001857E4 /* UserModel.m */; };
 		7A1FD9401E553D75001857E4 /* UserLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FD93F1E553D75001857E4 /* UserLoginModel.m */; };
@@ -92,6 +93,8 @@
 		7A0DBC4C1E5BE07C006359D2 /* ChangeTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeTitleView.m; sourceTree = "<group>"; };
 		7A0DBC4E1E5BED00006359D2 /* TitleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleCollectionViewCell.h; sourceTree = "<group>"; };
 		7A0DBC4F1E5BED00006359D2 /* TitleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleCollectionViewCell.m; sourceTree = "<group>"; };
+		7A14D1151E6513FB0034B42F /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
+		7A14D1161E6513FB0034B42F /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
 		7A1FD9351E553ADE001857E4 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		7A1FD9361E553ADE001857E4 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7A1FD93A1E553B9D001857E4 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
@@ -641,6 +644,8 @@
 				7A1FD9AF1E557FE5001857E4 /* NSArray+RemoveNull.m */,
 				7A0DBC321E5BD418006359D2 /* UIViewController+BarButton.h */,
 				7A0DBC331E5BD418006359D2 /* UIViewController+BarButton.m */,
+				7A14D1151E6513FB0034B42F /* UIButton+Badge.h */,
+				7A14D1161E6513FB0034B42F /* UIButton+Badge.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1025,6 +1030,7 @@
 				7A0DBC441E5BD68E006359D2 /* UserGuideViewController.m in Sources */,
 				7A1FD9A91E5573E6001857E4 /* TEncryptorRSA.m in Sources */,
 				7A4928101E5ABC0500F6AB93 /* RegisterViewController.m in Sources */,
+				7A14D1171E6513FB0034B42F /* UIButton+Badge.m in Sources */,
 				7A46B1251E5D3F5B00B90799 /* FuWuHuiViewController.m in Sources */,
 				7A0DBC4A1E5BDE6B006359D2 /* ResolveConflicScrollView.m in Sources */,
 				7A1FD9AD1E557FB1001857E4 /* NSDictionary+RemoveNull.m in Sources */,

@@ -21,11 +21,7 @@
         self.titleLabel.textColor = RGB(71, 71, 71);
         self.titleLabel.font      = [UIFont systemFontOfSize:14];
         [self addSubview:self.titleLabel];
-//        
-//        self.moveView       = [[UIView alloc] init];
-//        self.moveView.frame = CGRectMake((self.bounds.size.width - 59) / 2, self.bounds.size.height - 2, 59, 2);
-//        self.moveView.backgroundColor = RGB(180, 40, 45);
-//        [self addSubview:self.moveView];
+
         
         
     }
@@ -36,8 +32,8 @@
     
     [super setSelected:selected];
     
-    self.titleLabel.textColor = selected ? RGB(180, 40, 45) : RGB(71, 71, 71);
-//    self.moveView.backgroundColor       = selected ? RGB(180, 40, 45) : RGB(249, 249, 249);
+    self.titleLabel.textColor = selected ? BaseCommonRedColor : RGB(71, 71, 71);
+
 }
 
 @end

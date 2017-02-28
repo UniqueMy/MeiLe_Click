@@ -58,7 +58,7 @@ static NSString *identifier = @"titleButtonCell";
     [collection registerClass:[TitleCollectionViewCell class] forCellWithReuseIdentifier:identifier];
     
     moveView                 = [[UIView alloc] init];
-    moveView.backgroundColor = RGB(180, 40, 45);
+    moveView.backgroundColor = BaseCommonRedColor;
     [self addSubview:moveView];
     
 }

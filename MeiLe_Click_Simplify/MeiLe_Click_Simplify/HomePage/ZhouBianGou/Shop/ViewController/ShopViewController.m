@@ -8,6 +8,7 @@
 
 #import "ShopViewController.h"
 #import "TitleTableViewCell.h"
+#import "UIButton+Badge.h"
 #import "ContentTableViewCell.h"
 
 #define TITLEWIDTH   86
@@ -26,10 +27,26 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
 
 @property (nonatomic,strong) UITableView *titleTableView;
 @property (nonatomic,strong) UITableView *contentTableView;
+@property (nonatomic,strong) UIButton    *shopCar;
 
 @end
 
 @implementation ShopViewController
+
+- (UIButton *)shopCar {
+    
+    if (!_shopCar) {
+        _shopCar = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        _shopCar.frame = CGRectMake(viewWidth - 42 - 16,
+                                    viewHeight - 42 - 40 - Navigation_Height,
+                                    42,
+                                    42);
+        [_shopCar setBackgroundImage:[UIImage imageNamed:@"homepage_zbg_shopcar"] forState:UIControlStateNormal];
+        [self.view addSubview:_shopCar];
+    }
+    return _shopCar;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -54,6 +71,10 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
     _contentTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [_contentTableView registerNib:[UINib nibWithNibName:NSStringFromClass([ContentTableViewCell class]) bundle:nil] forCellReuseIdentifier:contentIdentifier];
     [self.view addSubview:_contentTableView];
+    
+    self.shopCar.badgeValue = @"1";
+    
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

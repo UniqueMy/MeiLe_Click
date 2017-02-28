@@ -20,7 +20,7 @@
     [super setSelected:selected animated:animated];
     self.showView.hidden = !selected;
     self.titleLabel.font = selected ? [UIFont systemFontOfSize:13] : [UIFont systemFontOfSize:12];
-    self.titleLabel.textColor = selected ? RGB(180, 40, 45) : RGB(70, 70, 70);
+    self.titleLabel.textColor = selected ? BaseCommonRedColor : RGB(70, 70, 70);
 }
 
 @end
