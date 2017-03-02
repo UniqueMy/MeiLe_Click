@@ -178,11 +178,18 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
     self.shopCar.badge.text = self.shopCar.badgeValue;
     
 }
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [self.navigationController pushViewController:[ShopDetailsViewController new] animated:YES];
-    
+    if (tableView.tag == TableViewType_Title) {
+        
+        
+    } else if (tableView.tag == TableViewType_Content) {
+        
+        [self.navigationController pushViewController:[ShopDetailsViewController new] animated:YES];
+        
+    } else {
+        
+    };
 }
 
 - (void)shopCarClick:(UIButton *)button {
