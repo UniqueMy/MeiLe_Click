@@ -25,6 +25,7 @@
 		7A0DBC4A1E5BDE6B006359D2 /* ResolveConflicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DBC491E5BDE6B006359D2 /* ResolveConflicScrollView.m */; };
 		7A0DBC4D1E5BE07C006359D2 /* ChangeTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DBC4C1E5BE07C006359D2 /* ChangeTitleView.m */; };
 		7A0DBC501E5BED00006359D2 /* TitleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DBC4F1E5BED00006359D2 /* TitleCollectionViewCell.m */; };
+		7A0E5ED61E665EE00011778B /* ContentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E5ED51E665EE00011778B /* ContentHeaderView.m */; };
 		7A14D1171E6513FB0034B42F /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14D1161E6513FB0034B42F /* UIButton+Badge.m */; };
 		7A14D1281E6528BB0034B42F /* ContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14D1201E6528BB0034B42F /* ContentTableViewCell.m */; };
 		7A14D1291E6528BB0034B42F /* ContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A14D1211E6528BB0034B42F /* ContentTableViewCell.xib */; };
@@ -53,7 +54,6 @@
 		7A1FD9B01E557FE5001857E4 /* NSArray+RemoveNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FD9AF1E557FE5001857E4 /* NSArray+RemoveNull.m */; };
 		7A363D651E63EBDC004870C8 /* zhoubiangouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A363D5D1E63EBDC004870C8 /* zhoubiangouTableViewCell.m */; };
 		7A363D661E63EBDC004870C8 /* zhoubiangouTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A363D5E1E63EBDC004870C8 /* zhoubiangouTableViewCell.xib */; };
-		7A363D671E63EBDC004870C8 /* XMGInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A363D611E63EBDC004870C8 /* XMGInfiniteScrollView.m */; };
 		7A363D681E63EBDC004870C8 /* ZhouBianGouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A363D631E63EBDC004870C8 /* ZhouBianGouViewController.m */; };
 		7A46B1221E5D3F4F00B90799 /* WuYeTongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A46B1211E5D3F4F00B90799 /* WuYeTongViewController.m */; };
 		7A46B1251E5D3F5B00B90799 /* FuWuHuiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A46B1241E5D3F5B00B90799 /* FuWuHuiViewController.m */; };
@@ -100,6 +100,8 @@
 		7A0DBC4C1E5BE07C006359D2 /* ChangeTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeTitleView.m; sourceTree = "<group>"; };
 		7A0DBC4E1E5BED00006359D2 /* TitleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleCollectionViewCell.h; sourceTree = "<group>"; };
 		7A0DBC4F1E5BED00006359D2 /* TitleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleCollectionViewCell.m; sourceTree = "<group>"; };
+		7A0E5ED41E665EE00011778B /* ContentHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentHeaderView.h; sourceTree = "<group>"; };
+		7A0E5ED51E665EE00011778B /* ContentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentHeaderView.m; sourceTree = "<group>"; };
 		7A14D1151E6513FB0034B42F /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
 		7A14D1161E6513FB0034B42F /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
 		7A14D11F1E6528BB0034B42F /* ContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentTableViewCell.h; sourceTree = "<group>"; };
@@ -224,8 +226,6 @@
 		7A363D5C1E63EBDC004870C8 /* zhoubiangouTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhoubiangouTableViewCell.h; sourceTree = "<group>"; };
 		7A363D5D1E63EBDC004870C8 /* zhoubiangouTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhoubiangouTableViewCell.m; sourceTree = "<group>"; };
 		7A363D5E1E63EBDC004870C8 /* zhoubiangouTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = zhoubiangouTableViewCell.xib; sourceTree = "<group>"; };
-		7A363D601E63EBDC004870C8 /* XMGInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGInfiniteScrollView.h; sourceTree = "<group>"; };
-		7A363D611E63EBDC004870C8 /* XMGInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGInfiniteScrollView.m; sourceTree = "<group>"; };
 		7A363D621E63EBDC004870C8 /* ZhouBianGouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhouBianGouViewController.h; sourceTree = "<group>"; };
 		7A363D631E63EBDC004870C8 /* ZhouBianGouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhouBianGouViewController.m; sourceTree = "<group>"; };
 		7A46B1201E5D3F4F00B90799 /* WuYeTongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuYeTongViewController.h; sourceTree = "<group>"; };
@@ -560,6 +560,8 @@
 		7A14D11E1E6528BB0034B42F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7A0E5ED41E665EE00011778B /* ContentHeaderView.h */,
+				7A0E5ED51E665EE00011778B /* ContentHeaderView.m */,
 				7A14D11F1E6528BB0034B42F /* ContentTableViewCell.h */,
 				7A14D1201E6528BB0034B42F /* ContentTableViewCell.m */,
 				7A14D1211E6528BB0034B42F /* ContentTableViewCell.xib */,
@@ -780,8 +782,6 @@
 		7A363D5F1E63EBDC004870C8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7A363D601E63EBDC004870C8 /* XMGInfiniteScrollView.h */,
-				7A363D611E63EBDC004870C8 /* XMGInfiniteScrollView.m */,
 				7A363D621E63EBDC004870C8 /* ZhouBianGouViewController.h */,
 				7A363D631E63EBDC004870C8 /* ZhouBianGouViewController.m */,
 			);
@@ -1110,7 +1110,6 @@
 				7A0DBC4A1E5BDE6B006359D2 /* ResolveConflicScrollView.m in Sources */,
 				7A1FD9AD1E557FB1001857E4 /* NSDictionary+RemoveNull.m in Sources */,
 				7A14D12A1E6528BB0034B42F /* TitleTableViewCell.m in Sources */,
-				7A363D671E63EBDC004870C8 /* XMGInfiniteScrollView.m in Sources */,
 				7A1FD9391E553ADE001857E4 /* LoginViewController.m in Sources */,
 				7A14D1411E6561FC0034B42F /* FuwuhuiFootView.m in Sources */,
 				7A0DBC431E5BD68E006359D2 /* RootViewController.m in Sources */,
@@ -1119,6 +1118,7 @@
 				7A4928321E5AC9C000F6AB93 /* PersonViewController.m in Sources */,
 				7A1FD9441E553FD6001857E4 /* UserRequestModel.m in Sources */,
 				7A14D1281E6528BB0034B42F /* ContentTableViewCell.m in Sources */,
+				7A0E5ED61E665EE00011778B /* ContentHeaderView.m in Sources */,
 				7A0527991E54247D0013D3C2 /* main.m in Sources */,
 				7A1FD93C1E553B9D001857E4 /* UserModel.m in Sources */,
 			);

@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol ContentCellDelegate <NSObject>
+
+- (void)changeShopNumber:(BOOL)isAdd;
+
+@end
+
 @interface ContentTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIButton *reduceButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *addButton;
+
+@property (weak, nonatomic) IBOutlet UILabel *amountLabel;
+
+@property (nonatomic,assign) NSInteger shopNumber;
+
+@property (nonatomic,weak) id <ContentCellDelegate> delegate;
 
 @end

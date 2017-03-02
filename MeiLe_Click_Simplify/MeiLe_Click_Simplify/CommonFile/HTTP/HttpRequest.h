@@ -65,6 +65,16 @@ typedef void(^HttpRequestBlockType_Failure)(NSString *path,NSError *error);
                                       fail:(HttpRequestBlockType_Failure)error;
 
 /**
+ 画虚线
+ 
+ @param lineView 变成虚线的view
+ @param lineLength 单个虚线的长度
+ @param lineSpacing 虚线间的间隔
+ @param lineColor 虚线颜色
+ */
++ (void)drawDashLine:(UIView *)lineView lineLength:(int)lineLength lineSpacing:(int)lineSpacing lineColor:(UIColor *)lineColor;
+
+/**
  安全散列算法
  
  @param string 传入NSDictionary
@@ -106,6 +116,7 @@ typedef void(^HttpRequestBlockType_Failure)(NSString *path,NSError *error);
  @return  返回NSMutableDictionary
  */
 +(NSMutableDictionary *)RSAdecodeWithDictionary:(NSDictionary*)dict;
+
 
 
 

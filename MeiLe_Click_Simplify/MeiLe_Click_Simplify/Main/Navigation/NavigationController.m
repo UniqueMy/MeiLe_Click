@@ -21,7 +21,8 @@
     if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         self.interactivePopGestureRecognizer.delegate = weakSelf;
     }
-   
+    [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : RGB(71, 71, 71),NSFontAttributeName:[UIFont systemFontOfSize:16]}];
+    
 }
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {

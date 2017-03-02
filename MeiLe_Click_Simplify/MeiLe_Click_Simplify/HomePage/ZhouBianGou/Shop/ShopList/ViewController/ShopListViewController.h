@@ -10,4 +10,7 @@
 
 @interface ShopListViewController : UIViewController
 
+@property (nonatomic,assign) NSInteger shopNumber;
+
+
 @end

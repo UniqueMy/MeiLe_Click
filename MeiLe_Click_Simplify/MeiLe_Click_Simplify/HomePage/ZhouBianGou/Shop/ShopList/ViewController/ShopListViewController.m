@@ -12,12 +12,17 @@
 #import "ContentTableViewCell.h"
 #import "WareHouseViewController.h"
 #import "ShopDetailsViewController.h"
+#import "ContentHeaderView.h"
+#import "NavigationController.h"
+
 
 #define TITLEWIDTH   86
-#define CONTENTWIDTH viewWidth - 86
+#define CONTENTWIDTH viewWidth - TITLEWIDTH
 
 static NSString *titleIdentifier   = @"TitleTableViewCell";
 static NSString *contentIdentifier = @"ContentTableViewCell";
+
+
 
 typedef NS_ENUM(NSInteger,TableView_Type) {
     TableViewType_Title,
@@ -25,11 +30,12 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
     
 };
 
-@interface ShopListViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ShopListViewController ()<UITableViewDelegate,UITableViewDataSource,ContentCellDelegate>
 
 @property (nonatomic,strong) UITableView *titleTableView;
 @property (nonatomic,strong) UITableView *contentTableView;
 @property (nonatomic,strong) UIButton    *shopCar;
+@property (nonatomic,assign) NSInteger   carNumber;
 
 @end
 
@@ -45,6 +51,7 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
                                     42);
         [_shopCar setBackgroundImage:[UIImage imageNamed:@"homepage_zbg_shopcar"] forState:UIControlStateNormal];
         [_shopCar addTarget:self action:@selector(shopCarClick:) forControlEvents:UIControlEventTouchUpInside];
+        
         [self.view addSubview:_shopCar];
     }
     return _shopCar;
@@ -72,11 +79,42 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
     _contentTableView.dataSource = self;
     _contentTableView.tag        = TableViewType_Content;
     _contentTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [_contentTableView registerNib:[UINib nibWithNibName:NSStringFromClass([ContentTableViewCell class]) bundle:nil] forCellReuseIdentifier:contentIdentifier];
+    [_contentTableView registerNib:[UINib nibWithNibName:NSStringFromClass([ContentTableViewCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:contentIdentifier];
     [self.view addSubview:_contentTableView];
     
-//    self.shopCar.badgeValue = @"3";
     [self shopCar];
+    
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    
+    if (tableView.tag == TableViewType_Title) {
+        
+        return 0;
+        
+    } else if (tableView.tag == TableViewType_Content) {
+        
+        return 37;
+        
+    } else {
+        
+        return 0;
+    };
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    if (tableView.tag == TableViewType_Content) {
+        ContentHeaderView *headerView = [[ContentHeaderView alloc] initWithFrame:CGRectMake(TITLEWIDTH, 0, CONTENTWIDTH, 37)];
+        headerView.business = @"营业时间：早8:30-晚22:00";
+        headerView.money    = @"起送¥30";
+        return headerView;
+    } else {
+        
+        return nil;
+    }
+    
     
 }
 
@@ -100,24 +138,31 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
 {
     if (tableView.tag == TableViewType_Title) {
         
-        TitleTableViewCell *titleCell = [tableView dequeueReusableCellWithIdentifier:titleIdentifier forIndexPath:indexPath];
+        TitleTableViewCell *titleCell = [_titleTableView dequeueReusableCellWithIdentifier:titleIdentifier forIndexPath:indexPath];
         
         [tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:YES scrollPosition:UITableViewScrollPositionNone];
         return titleCell;
         
     } else if (tableView.tag == TableViewType_Content) {
         
-        ContentTableViewCell *contentCell = [tableView dequeueReusableCellWithIdentifier:contentIdentifier forIndexPath:indexPath];
+        ContentTableViewCell *contentCell = [_contentTableView dequeueReusableCellWithIdentifier:contentIdentifier];
+        contentCell.delegate = self;
         
-        [tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:YES scrollPosition:UITableViewScrollPositionNone];
         return contentCell;
         
     } else {
         
         return nil;
     };
+}
+
+
+- (void)changeShopNumber:(BOOL)isAdd {
     
-   
+    isAdd ? _carNumber++ : _carNumber--;
+    
+    self.shopCar.badgeValue = [NSString stringWithFormat:@"%ld",(long)_carNumber];
+    self.shopCar.badge.text = self.shopCar.badgeValue;
     
 }
 
@@ -128,9 +173,10 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
 }
 
 - (void)shopCarClick:(UIButton *)button {
-
-    [self.navigationController pushViewController:[WareHouseViewController new] animated:YES];
+    
+    
+    self.tabBarController.selectedIndex = 2;
+    [self.navigationController popToRootViewControllerAnimated:NO];
 }
-
 
 @end

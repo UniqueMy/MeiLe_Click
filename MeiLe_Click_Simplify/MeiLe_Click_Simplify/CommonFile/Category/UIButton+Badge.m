@@ -23,6 +23,7 @@ NSString const *UIButton_badgeValueKey = @"UIButton_badgeValueKey";
 - (void)setBadge:(UILabel *)badge {
     
     objc_setAssociatedObject(self, &UIButton_badgeKey, badge, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//    [self initBadgeLabel];
 }
 
 /**************************************************************************************************/
@@ -49,7 +50,7 @@ NSString const *UIButton_badgeValueKey = @"UIButton_badgeValueKey";
 - (void)initBadgeLabel {
     
     
-    CGFloat labelWidth = self.badgeValue.length <= 2 ? 18 : 21;
+    CGFloat labelWidth = self.badge.text.length <= 2 ? 18 : 21;
     CGRect labelFrame = CGRectMake(self.frame.size.width - self.badge.frame.size.width - labelWidth / 2,
                                    0,
                                    labelWidth,
@@ -69,8 +70,14 @@ NSString const *UIButton_badgeValueKey = @"UIButton_badgeValueKey";
     maskLayer.frame         = self.badge.bounds;
     maskLayer.path          = maskPath.CGPath;
     self.badge.layer.mask   = maskLayer;
+//    [self updateBadgeValue];
     
 }
+
+//- (void)updateBadgeValue {
+//    
+//    self.badge.text = self.badgeValue;
+//}
 
 - (void)removeBadge
 {
