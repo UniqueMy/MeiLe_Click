@@ -63,6 +63,10 @@
 		7A49282C1E5AC9A500F6AB93 /* CustomizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A49282B1E5AC9A500F6AB93 /* CustomizationViewController.m */; };
 		7A49282F1E5AC9B200F6AB93 /* WareHouseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A49282E1E5AC9B200F6AB93 /* WareHouseViewController.m */; };
 		7A4928321E5AC9C000F6AB93 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4928311E5AC9C000F6AB93 /* PersonViewController.m */; };
+		7AE3D18A1E6D04B600AD690B /* PersonTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1891E6D04B600AD690B /* PersonTopView.m */; };
+		7AE3D18C1E6D04C300AD690B /* PersonTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D18B1E6D04C300AD690B /* PersonTopView.xib */; };
+		7AE3D1901E6D37BB00AD690B /* PersonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D18E1E6D37BB00AD690B /* PersonCollectionViewCell.m */; };
+		7AE3D1911E6D37BB00AD690B /* PersonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D18F1E6D37BB00AD690B /* PersonCollectionViewCell.xib */; };
 		7CD36E545A891669B4AE43D7 /* Pods_MeiLe_Click_Simplify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053A0A97E4A6ACAC5B020E6F /* Pods_MeiLe_Click_Simplify.framework */; };
 /* End PBXBuildFile section */
 
@@ -243,6 +247,12 @@
 		7A49282E1E5AC9B200F6AB93 /* WareHouseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WareHouseViewController.m; sourceTree = "<group>"; };
 		7A4928301E5AC9C000F6AB93 /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
 		7A4928311E5AC9C000F6AB93 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
+		7AE3D1881E6D04B600AD690B /* PersonTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonTopView.h; sourceTree = "<group>"; };
+		7AE3D1891E6D04B600AD690B /* PersonTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTopView.m; sourceTree = "<group>"; };
+		7AE3D18B1E6D04C300AD690B /* PersonTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonTopView.xib; sourceTree = "<group>"; };
+		7AE3D18D1E6D37BB00AD690B /* PersonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCollectionViewCell.h; sourceTree = "<group>"; };
+		7AE3D18E1E6D37BB00AD690B /* PersonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCollectionViewCell.m; sourceTree = "<group>"; };
+		7AE3D18F1E6D37BB00AD690B /* PersonCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonCollectionViewCell.xib; sourceTree = "<group>"; };
 		81F15D75BE9AEFE24E57458E /* Pods-MeiLe_Click_Simplify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiLe_Click_Simplify.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeiLe_Click_Simplify/Pods-MeiLe_Click_Simplify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -444,6 +454,12 @@
 			children = (
 				7A4928301E5AC9C000F6AB93 /* PersonViewController.h */,
 				7A4928311E5AC9C000F6AB93 /* PersonViewController.m */,
+				7AE3D1881E6D04B600AD690B /* PersonTopView.h */,
+				7AE3D1891E6D04B600AD690B /* PersonTopView.m */,
+				7AE3D18B1E6D04C300AD690B /* PersonTopView.xib */,
+				7AE3D18D1E6D37BB00AD690B /* PersonCollectionViewCell.h */,
+				7AE3D18E1E6D37BB00AD690B /* PersonCollectionViewCell.m */,
+				7AE3D18F1E6D37BB00AD690B /* PersonCollectionViewCell.xib */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -1017,12 +1033,14 @@
 				7A0527A41E54247D0013D3C2 /* Assets.xcassets in Resources */,
 				7A0527CF1E542DDC0013D3C2 /* 美乐生活用户注册协议.html in Resources */,
 				7A14D1491E656ADE0034B42F /* FuwuhuiCollectionViewCell.xib in Resources */,
+				7AE3D1911E6D37BB00AD690B /* PersonCollectionViewCell.xib in Resources */,
 				7A49280D1E5A87AA00F6AB93 /* Login&Register.storyboard in Resources */,
 				7A363D661E63EBDC004870C8 /* zhoubiangouTableViewCell.xib in Resources */,
 				7A0527A21E54247D0013D3C2 /* Main.storyboard in Resources */,
 				7A1FD9A71E5573E6001857E4 /* rsa_public_key.pem in Resources */,
 				7A0527D01E542DDC0013D3C2 /* 用户积分.html in Resources */,
 				7A14D1291E6528BB0034B42F /* ContentTableViewCell.xib in Resources */,
+				7AE3D18C1E6D04C300AD690B /* PersonTopView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1118,6 +1136,8 @@
 				7A4928321E5AC9C000F6AB93 /* PersonViewController.m in Sources */,
 				7A1FD9441E553FD6001857E4 /* UserRequestModel.m in Sources */,
 				7A14D1281E6528BB0034B42F /* ContentTableViewCell.m in Sources */,
+				7AE3D1901E6D37BB00AD690B /* PersonCollectionViewCell.m in Sources */,
+				7AE3D18A1E6D04B600AD690B /* PersonTopView.m in Sources */,
 				7A0E5ED61E665EE00011778B /* ContentHeaderView.m in Sources */,
 				7A0527991E54247D0013D3C2 /* main.m in Sources */,
 				7A1FD93C1E553B9D001857E4 /* UserModel.m in Sources */,

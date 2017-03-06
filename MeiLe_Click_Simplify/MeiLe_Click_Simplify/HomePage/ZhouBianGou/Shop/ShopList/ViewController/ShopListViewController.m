@@ -84,7 +84,6 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
     
     [self shopCar];
     
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -114,8 +113,6 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
         
         return nil;
     }
-    
-    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -156,7 +153,6 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
     };
 }
 
-
 - (void)changeShopNumber:(BOOL)isAdd {
     
     isAdd ? _carNumber++ : _carNumber--;
@@ -179,12 +175,9 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
         
     };
     
-   
-    
 }
 
 - (void)shopCarClick:(UIButton *)button {
-    
     
     self.tabBarController.selectedIndex = 2;
     [self.navigationController popToRootViewControllerAnimated:NO];

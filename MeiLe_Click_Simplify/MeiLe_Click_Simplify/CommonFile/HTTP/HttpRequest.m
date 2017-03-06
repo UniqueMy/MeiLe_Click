@@ -109,9 +109,9 @@
 }
 
 /**
-  * 登录
-  *
-  * URL、responseObject、body、code
+ * 登录
+ *
+ * URL、responseObject、body、code
  */
 - (void)userLogindictionary:(NSDictionary *)dictionary
                     success:(HttpRequestBlockType_Success)loginSuccess
@@ -127,7 +127,7 @@
     [dataParameters setObject:sessionId forKey:@"sessionid"];
     [dataParameters setObject:loginNameString forKey:@"loginName"];
     [dataParameters setObject:passwordString  forKey:@"password"];
-      
+    
     
     [self baseRequestWithUrl:@"/tenement-service/user/user.toLogin.json" body_data:dataParameters needTicket:HttpRequest_TicketType_NOT_TICKET success:^(NSString *path, NSDictionary *responseJson, id responseBody, NSInteger code) {
         
@@ -140,7 +140,7 @@
 
 /**
  刷新票据
-
+ 
  @param successBlock URL、responseObject、body、code
  @param error error
  */
@@ -248,7 +248,7 @@
         bodyJson = [bodyJson dictionaryByRemovingNull];
         
         successBlock(urlString,responseJson,bodyJson,code);
-
+        
         
     } fail:^(NSString *path, NSError *error) {
         
@@ -308,13 +308,13 @@
         
         if (successBlock) {
             
-             NSDictionary *responseJson = [HttpRequest AESdecodeWithDictionary:responseObject];
+            NSDictionary *responseJson = [HttpRequest AESdecodeWithDictionary:responseObject];
             
             NSLog(@"--- BASE ---  URL  %@ \r --- ResponseObject ---  %@ \r --- body --- %@ \r --- Message --- %@",urlString,responseObject,responseJson,[[responseObject objectForKey:@"head"] objectForKey:@"rtnMsg"]);
             
             NSInteger code = [self isSuccessFromResponseJsonObject:responseObject];
             
-           
+            
             
             if (code == HttpRequest_ReCodeType_SUCCESS) {
                 
@@ -322,7 +322,7 @@
                     
                     NSMutableDictionary *bodyJson = [NSMutableDictionary dictionaryWithDictionary:responseJson] ;
                     bodyJson = [bodyJson dictionaryByRemovingNull];
-            
+                    
                     successBlock(urlString,responseJson,bodyJson,code);
                     
                 }
@@ -333,20 +333,20 @@
                 [[HttpRequest sharedInstance] userRefrshTicketWithSuccess:^(NSString *path, NSDictionary *responseJson, id responseBody, NSInteger code) {
                     
                     
-                  
+                    
                     
                     [self baseRequestWithUrl:urlString body_data:bodyData needTicket:needTicket success:^(NSString *path, NSDictionary *responseJson, id responseBody, NSInteger code) {
                         
-//                        if ([responseJson isKindOfClass:[NSDictionary class]]) {
-//                            
-//                            NSMutableDictionary *bodyJson = [NSMutableDictionary dictionaryWithDictionary:responseJson] ;
-//                            bodyJson = [bodyJson dictionaryByRemovingNull];
-//                            
-//
-//
-                         successBlock(urlString,responseObject,responseBody,code);
+                        //                        if ([responseJson isKindOfClass:[NSDictionary class]]) {
+                        //
+                        //                            NSMutableDictionary *bodyJson = [NSMutableDictionary dictionaryWithDictionary:responseJson] ;
+                        //                            bodyJson = [bodyJson dictionaryByRemovingNull];
+                        //
+                        //
+                        //
+                        successBlock(urlString,responseObject,responseBody,code);
                         
-//                        }
+                        //                        }
                         
                     } fail:^(NSString *path, NSError *error) {}];
                     
@@ -354,7 +354,7 @@
                 
             } else {
                 
-                 NSLog(@"----- 请求返回Other ----- ");
+                NSLog(@"----- 请求返回Other ----- ");
                 [SVProgressHUD showInfoWithStatus:[[responseObject objectForKey:@"head"] objectForKey:@"rtnMsg"]];
                 [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
             }
@@ -393,11 +393,33 @@
     return NO;
 }
 
+#pragma mark - 贝塞尔曲线切圆角
+
+/**
+ 贝塞尔曲线画圆角
+ 
+ @param view 圆角视图
+ @param rect 范围
+ @param corners 圆角方位
+ @param radiiSize 大小
+ */
++ (void)bezierPathWithView:(UIView *)view corners:(UIRectCorner)corners radii:(CGSize)radiiSize {
+    
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:view.bounds byRoundingCorners:corners cornerRadii:radiiSize];
+    
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame         = view.bounds;
+    maskLayer.path          = maskPath.CGPath;
+    view.layer.mask         = maskLayer;
+//    view.layer.masksToBounds = YES;
+    
+}
+
 #pragma mark - 画虚线
 
 /**
  画虚线
-
+ 
  @param lineView 变成虚线的view
  @param lineLength 单个虚线的长度
  @param lineSpacing 虚线间的间隔

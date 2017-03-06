@@ -23,6 +23,7 @@ static NSString *const  HTTP_BASE_HOST = @"http://114.215.96.146"; // 测试
 #define viewHeight     [UIScreen mainScreen].bounds.size.height    // 屏幕高度
 
 #define Navigation_Height  64
+#define Tabbar_Height      49
 
 #define BaseCommonRedColor RGB(180,40,45)
 

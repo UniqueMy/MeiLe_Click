@@ -35,10 +35,13 @@ static NSString const *_newsButton = @"rightNewsButton";
 /**
  添加左视图 -- 扫描
  */
-- (void)addLeftScanQRCodeBarButtonItem {
+- (void)addLeftScanQRCodeBarButtonItemIsPerson:(BOOL)isperson {
     
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-    [leftButton setImage:[UIImage imageNamed:@"common_scan"] forState:UIControlStateNormal];;
+    
+    UIImage *image = isperson ? [UIImage imageNamed:@"common_scan_white"] : [UIImage imageNamed:@"common_scan"];
+    
+    [leftButton setImage:image forState:UIControlStateNormal];;
     [leftButton addTarget:self action:@selector(scanCodeController) forControlEvents:UIControlEventTouchUpInside];
     
     leftButton.imageEdgeInsets     = UIEdgeInsetsMake(0, -22, 0, 0);
@@ -61,17 +64,19 @@ static NSString const *_newsButton = @"rightNewsButton";
     }
     
     ScanQRCodeViewController *scanVC = [[ScanQRCodeViewController alloc] init];
-    [self.navigationController pushViewController:scanVC animated:YES];
+    [self.navigationController pushViewController:scanVC animated:NO];
 }
 
 /**
- 添加右视图 -- 消息 
+ 添加右视图 -- 消息
  */
-- (void)addRightNewsBarButtonItemWithAlreadyRead:(BOOL)isRead {
+- (void)addRightNewsBarButtonItemWithAlreadyRead:(BOOL)isRead isPerson:(BOOL)isperson {
     
     if (!self.newsButton) {
+        UIImage *image = isperson ? [UIImage imageNamed:@"common_news_no_white"] : [UIImage imageNamed:@"common_news_no"];
+        
         self.newsButton = [[UIButton alloc] initWithFrame:CGRectMake(-10, 0, 30, 30)];
-        [self.newsButton setImage:[UIImage imageNamed:@"common_news_no"] forState:UIControlStateNormal];;
+        [self.newsButton setImage:image forState:UIControlStateNormal];;
         [self.newsButton addTarget:self action:@selector(onMessageButtonTouchAction:) forControlEvents:UIControlEventTouchUpInside];
         self.newsButton.imageEdgeInsets   = UIEdgeInsetsMake(0, 8, 0, -8);
         UIBarButtonItem *rightBurButton = [[UIBarButtonItem alloc] initWithCustomView:self.newsButton];
@@ -79,9 +84,12 @@ static NSString const *_newsButton = @"rightNewsButton";
     }
     
     if (isRead) {
-        [self.newsButton setImage:[UIImage imageNamed:@"common_news_yes"] forState:UIControlStateNormal];
+        UIImage *image = isperson ? [UIImage imageNamed:@"common_news_yes_white"] : [UIImage imageNamed:@"common_news_yes"];
+        
+        [self.newsButton setImage:image forState:UIControlStateNormal];
     } else {
-        [self.newsButton setImage:[UIImage imageNamed:@"common_news_no"] forState:UIControlStateNormal];
+        UIImage *image = isperson ? [UIImage imageNamed:@"common_news_no_white"] : [UIImage imageNamed:@"common_news_no"];
+        [self.newsButton setImage:image forState:UIControlStateNormal];
     }
 }
 

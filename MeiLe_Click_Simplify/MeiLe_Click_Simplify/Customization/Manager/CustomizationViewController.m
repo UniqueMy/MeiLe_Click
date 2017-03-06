@@ -65,13 +65,13 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
     /**
      添加左视图 -- 扫描
      */
-    [self addLeftScanQRCodeBarButtonItem];
+    [self addLeftScanQRCodeBarButtonItemIsPerson:NO];
     
     /**
      添加右视图 -- 消息
      */
-    [self addRightNewsBarButtonItemWithAlreadyRead:NO];
-
+    [self addRightNewsBarButtonItemWithAlreadyRead:NO isPerson:NO];
+    
     
     
     self.title = @"定制";
@@ -96,7 +96,6 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
     [self.view addSubview:_contentTableView];
     
     [self shopCar];
-    
     
 }
 
@@ -127,8 +126,6 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
         
         return nil;
     }
-    
-    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -169,7 +166,6 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
     };
 }
 
-
 - (void)changeShopNumber:(BOOL)isAdd {
     
     isAdd ? _carNumber++ : _carNumber--;
@@ -194,7 +190,6 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
 
 - (void)shopCarClick:(UIButton *)button {
     
-//    [self.navigationController pushViewController:[WareHouseViewController new] animated:YES];
     self.tabBarController.selectedIndex = 2;
 }
 @end

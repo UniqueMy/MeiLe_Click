@@ -30,12 +30,12 @@
     /**
      添加左视图 -- 扫描
      */
-    [self addLeftScanQRCodeBarButtonItem];
+    [self addLeftScanQRCodeBarButtonItemIsPerson:NO];
     
     /**
      添加右视图 -- 消息
      */
-    [self addRightNewsBarButtonItemWithAlreadyRead:NO];
+    [self addRightNewsBarButtonItemWithAlreadyRead:NO isPerson:NO];
     
     [self createUI];
 }

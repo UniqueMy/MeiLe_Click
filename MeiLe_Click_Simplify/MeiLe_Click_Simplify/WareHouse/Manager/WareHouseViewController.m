@@ -18,6 +18,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     NSLog(@"仓储");
+    
 }
 
 - (void)didReceiveMemoryWarning {

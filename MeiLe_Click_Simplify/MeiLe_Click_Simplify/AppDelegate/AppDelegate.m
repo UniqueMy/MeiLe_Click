@@ -5,6 +5,15 @@
 //  Created by 盛浩 on 2017/2/15.
 //  Copyright © 2017年 ShengHao. All rights reserved.
 //
+/*
+ 借呗   10000
+ 微信   15000
+ 百度   28500
+ 招联   9500
+ 信用   20000
+ 京东   3700
+ 
+ */
 
 #import "AppDelegate.h"
 #import "RootViewController.h"

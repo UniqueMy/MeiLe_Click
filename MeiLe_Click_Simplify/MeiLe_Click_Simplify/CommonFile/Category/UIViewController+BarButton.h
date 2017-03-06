@@ -14,12 +14,12 @@
 /**
  添加左视图 -- 扫描
  */
-- (void)addLeftScanQRCodeBarButtonItem;
+- (void)addLeftScanQRCodeBarButtonItemIsPerson:(BOOL)isperson;
 
 /**
  添加右视图 -- 消息
  */
 @property (nonatomic,strong) UIButton *newsButton;
 
-- (void)addRightNewsBarButtonItemWithAlreadyRead:(BOOL)isRead;
+- (void)addRightNewsBarButtonItemWithAlreadyRead:(BOOL)isRead isPerson:(BOOL)isperson;
 @end

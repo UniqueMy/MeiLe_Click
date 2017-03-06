@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1Mm-CS-Him" customClass="PersonTopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person_topBaseImage_2" translatesAutoresizingMaskIntoConstraints="NO" id="0dy-LL-ifI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headImage" translatesAutoresizingMaskIntoConstraints="NO" id="ieS-3r-u0U">
+                    <rect key="frame" x="31" y="25" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="b5U-c4-c4w"/>
+                        <constraint firstAttribute="width" constant="70" id="efF-2b-Zn6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="159王慧卿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH6-z3-bks">
+                    <rect key="frame" x="125" y="37" width="85" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="众美城A区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6w4-I4-xjj">
+                    <rect key="frame" x="125" y="62" width="62" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.73717361688613892" green="0.73730176687240601" blue="0.73716557025909424" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9O8-Yb-oRN">
+                    <rect key="frame" x="326" y="45" width="16" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="QH2-p3-dBz"/>
+                        <constraint firstAttribute="height" constant="31" id="oM9-aJ-01c"/>
+                    </constraints>
+                    <state key="normal" image="common_rightArrow_white"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ieS-3r-u0U" firstAttribute="leading" secondItem="1Mm-CS-Him" secondAttribute="leading" constant="31" id="7NL-sN-9FN"/>
+                <constraint firstItem="NH6-z3-bks" firstAttribute="top" secondItem="1Mm-CS-Him" secondAttribute="top" constant="37" id="7fn-WY-CK6"/>
+                <constraint firstItem="9O8-Yb-oRN" firstAttribute="top" secondItem="1Mm-CS-Him" secondAttribute="top" constant="45" id="Ikg-uC-THL"/>
+                <constraint firstItem="NH6-z3-bks" firstAttribute="leading" secondItem="ieS-3r-u0U" secondAttribute="trailing" constant="24" id="cOa-iT-D62"/>
+                <constraint firstItem="6w4-I4-xjj" firstAttribute="top" secondItem="NH6-z3-bks" secondAttribute="bottom" constant="4" id="fjz-Rt-cCK"/>
+                <constraint firstItem="ieS-3r-u0U" firstAttribute="top" secondItem="1Mm-CS-Him" secondAttribute="top" constant="25" id="odZ-9e-XVH"/>
+                <constraint firstAttribute="trailing" secondItem="9O8-Yb-oRN" secondAttribute="trailing" constant="33" id="sca-YO-euy"/>
+                <constraint firstItem="6w4-I4-xjj" firstAttribute="leading" secondItem="NH6-z3-bks" secondAttribute="leading" id="u5l-kL-Kmh"/>
+            </constraints>
+            <connections>
+                <outlet property="headImage" destination="ieS-3r-u0U" id="aPn-rZ-jzq"/>
+            </connections>
+            <point key="canvasLocation" x="-147.5" y="-147.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_rightArrow_white" width="22" height="22"/>
+        <image name="headImage" width="640" height="480"/>
+        <image name="person_topBaseImage_2" width="375" height="121"/>
+    </resources>
+</document>
