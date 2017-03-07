@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IntegralTopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person_integral_background" translatesAutoresizingMaskIntoConstraints="NO" id="6dM-QK-rVQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="149" id="sbK-KE-kaH"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="49319" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tu-jG-qDD">
+                    <rect key="frame" x="0.0" y="42" width="375" height="43"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计积分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7we-P5-GyJ">
+                    <rect key="frame" x="0.0" y="87" width="375" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7we-P5-GyJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4PJ-Wk-3c8"/>
+                <constraint firstItem="6dM-QK-rVQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4iM-pj-hUd"/>
+                <constraint firstAttribute="trailing" secondItem="7we-P5-GyJ" secondAttribute="trailing" id="7k5-6Y-rgd"/>
+                <constraint firstAttribute="trailing" secondItem="8tu-jG-qDD" secondAttribute="trailing" id="H9s-QI-IlR"/>
+                <constraint firstItem="8tu-jG-qDD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="42" id="RDg-m6-5ns"/>
+                <constraint firstItem="6dM-QK-rVQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VMM-VB-Pu0"/>
+                <constraint firstAttribute="trailing" secondItem="6dM-QK-rVQ" secondAttribute="trailing" id="nEz-OF-PV7"/>
+                <constraint firstItem="7we-P5-GyJ" firstAttribute="top" secondItem="8tu-jG-qDD" secondAttribute="bottom" constant="2" id="pKp-qk-Qyh"/>
+                <constraint firstItem="8tu-jG-qDD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="za6-yy-6eR"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person_integral_background" width="375" height="149"/>
+    </resources>
+</document>

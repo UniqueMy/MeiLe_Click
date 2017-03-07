@@ -23,7 +23,20 @@
     }
     [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : RGB(71, 71, 71),NSFontAttributeName:[UIFont systemFontOfSize:16]}];
     
+   
+    
+    
+    UIImage *backButtonImage = [[UIImage imageNamed:@"common_back"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 25, 0, 0)];
+    
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(NSIntegerMin, NSIntegerMin) forBarMetrics:UIBarMetricsDefault];
+
+        
+    
 }
+
+
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     
@@ -32,7 +45,6 @@
     }
     [super pushViewController:viewController animated:animated];
 }
-
 
 
 

@@ -15,6 +15,11 @@
 		7A0527CF1E542DDC0013D3C2 /* 美乐生活用户注册协议.html in Resources */ = {isa = PBXBuildFile; fileRef = 7A0527CD1E542DDC0013D3C2 /* 美乐生活用户注册协议.html */; };
 		7A0527D01E542DDC0013D3C2 /* 用户积分.html in Resources */ = {isa = PBXBuildFile; fileRef = 7A0527CE1E542DDC0013D3C2 /* 用户积分.html */; };
 		7A07C7621E5FC9FB00E018F7 /* SHRollScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A07C7611E5FC9FB00E018F7 /* SHRollScrollView.m */; };
+		7A08C41D1E6E45D800BD480F /* IntegralHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A08C41C1E6E45D800BD480F /* IntegralHtmlViewController.m */; };
+		7A08C4201E6E481F00BD480F /* IntegralTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A08C41F1E6E481F00BD480F /* IntegralTopView.m */; };
+		7A08C4221E6E482F00BD480F /* IntegralTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A08C4211E6E482F00BD480F /* IntegralTopView.xib */; };
+		7A08C4261E6E4D3B00BD480F /* IntegralTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A08C4241E6E4D3B00BD480F /* IntegralTableViewCell.m */; };
+		7A08C4271E6E4D3B00BD480F /* IntegralTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A08C4251E6E4D3B00BD480F /* IntegralTableViewCell.xib */; };
 		7A0DBC341E5BD418006359D2 /* UIViewController+BarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DBC331E5BD418006359D2 /* UIViewController+BarButton.m */; };
 		7A0DBC361E5BD567006359D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0DBC351E5BD567006359D2 /* AVFoundation.framework */; };
 		7A0DBC3A1E5BD669006359D2 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DBC391E5BD669006359D2 /* NavigationController.m */; };
@@ -67,6 +72,25 @@
 		7AE3D18C1E6D04C300AD690B /* PersonTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D18B1E6D04C300AD690B /* PersonTopView.xib */; };
 		7AE3D1901E6D37BB00AD690B /* PersonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D18E1E6D37BB00AD690B /* PersonCollectionViewCell.m */; };
 		7AE3D1911E6D37BB00AD690B /* PersonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D18F1E6D37BB00AD690B /* PersonCollectionViewCell.xib */; };
+		7AE3D1C21E6D47C900AD690B /* PersonFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1C01E6D47C900AD690B /* PersonFeedbackViewController.m */; };
+		7AE3D1C31E6D47C900AD690B /* PersonFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D1C11E6D47C900AD690B /* PersonFeedbackViewController.xib */; };
+		7AE3D1C71E6D47DE00AD690B /* PersonQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1C51E6D47DE00AD690B /* PersonQRCodeViewController.m */; };
+		7AE3D1C81E6D47DE00AD690B /* PersonQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D1C61E6D47DE00AD690B /* PersonQRCodeViewController.xib */; };
+		7AE3D1CC1E6D47F100AD690B /* PersonSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1CA1E6D47F100AD690B /* PersonSetViewController.m */; };
+		7AE3D1CD1E6D47F100AD690B /* PersonSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D1CB1E6D47F100AD690B /* PersonSetViewController.xib */; };
+		7AE3D1D11E6D482200AD690B /* PersonRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1CF1E6D482200AD690B /* PersonRecordViewController.m */; };
+		7AE3D1D21E6D482200AD690B /* PersonRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D1D01E6D482200AD690B /* PersonRecordViewController.xib */; };
+		7AE3D1D61E6D483B00AD690B /* PersonAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1D41E6D483B00AD690B /* PersonAddressViewController.m */; };
+		7AE3D1D71E6D483B00AD690B /* PersonAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D1D51E6D483B00AD690B /* PersonAddressViewController.xib */; };
+		7AE3D1DB1E6D484D00AD690B /* PersonFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1D91E6D484D00AD690B /* PersonFamilyViewController.m */; };
+		7AE3D1DC1E6D484D00AD690B /* PersonFamilyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D1DA1E6D484D00AD690B /* PersonFamilyViewController.xib */; };
+		7AE3D1E01E6D485F00AD690B /* PersonWareHouseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1DE1E6D485F00AD690B /* PersonWareHouseViewController.m */; };
+		7AE3D1E11E6D485F00AD690B /* PersonWareHouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D1DF1E6D485F00AD690B /* PersonWareHouseViewController.xib */; };
+		7AE3D1E51E6D487000AD690B /* PersonShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1E31E6D487000AD690B /* PersonShoppingViewController.m */; };
+		7AE3D1E61E6D487000AD690B /* PersonShoppingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D1E41E6D487000AD690B /* PersonShoppingViewController.xib */; };
+		7AE3D1EA1E6D488400AD690B /* PersonIntegralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1E81E6D488400AD690B /* PersonIntegralViewController.m */; };
+		7AE3D1F21E6D489C00AD690B /* PersonBaseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1F01E6D489C00AD690B /* PersonBaseInfoViewController.m */; };
+		7AE3D1F31E6D489C00AD690B /* PersonBaseInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D1F11E6D489C00AD690B /* PersonBaseInfoViewController.xib */; };
 		7CD36E545A891669B4AE43D7 /* Pods_MeiLe_Click_Simplify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053A0A97E4A6ACAC5B020E6F /* Pods_MeiLe_Click_Simplify.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +109,14 @@
 		7A0527CE1E542DDC0013D3C2 /* 用户积分.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "用户积分.html"; sourceTree = "<group>"; };
 		7A07C7601E5FC9FB00E018F7 /* SHRollScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRollScrollView.h; sourceTree = "<group>"; };
 		7A07C7611E5FC9FB00E018F7 /* SHRollScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRollScrollView.m; sourceTree = "<group>"; };
+		7A08C41B1E6E45D800BD480F /* IntegralHtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegralHtmlViewController.h; sourceTree = "<group>"; };
+		7A08C41C1E6E45D800BD480F /* IntegralHtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegralHtmlViewController.m; sourceTree = "<group>"; };
+		7A08C41E1E6E481F00BD480F /* IntegralTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegralTopView.h; sourceTree = "<group>"; };
+		7A08C41F1E6E481F00BD480F /* IntegralTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegralTopView.m; sourceTree = "<group>"; };
+		7A08C4211E6E482F00BD480F /* IntegralTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntegralTopView.xib; sourceTree = "<group>"; };
+		7A08C4231E6E4D3B00BD480F /* IntegralTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegralTableViewCell.h; sourceTree = "<group>"; };
+		7A08C4241E6E4D3B00BD480F /* IntegralTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegralTableViewCell.m; sourceTree = "<group>"; };
+		7A08C4251E6E4D3B00BD480F /* IntegralTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntegralTableViewCell.xib; sourceTree = "<group>"; };
 		7A0DBC321E5BD418006359D2 /* UIViewController+BarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BarButton.h"; sourceTree = "<group>"; };
 		7A0DBC331E5BD418006359D2 /* UIViewController+BarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BarButton.m"; sourceTree = "<group>"; };
 		7A0DBC351E5BD567006359D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -253,6 +285,35 @@
 		7AE3D18D1E6D37BB00AD690B /* PersonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCollectionViewCell.h; sourceTree = "<group>"; };
 		7AE3D18E1E6D37BB00AD690B /* PersonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCollectionViewCell.m; sourceTree = "<group>"; };
 		7AE3D18F1E6D37BB00AD690B /* PersonCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonCollectionViewCell.xib; sourceTree = "<group>"; };
+		7AE3D1BF1E6D47C900AD690B /* PersonFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonFeedbackViewController.h; sourceTree = "<group>"; };
+		7AE3D1C01E6D47C900AD690B /* PersonFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonFeedbackViewController.m; sourceTree = "<group>"; };
+		7AE3D1C11E6D47C900AD690B /* PersonFeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonFeedbackViewController.xib; sourceTree = "<group>"; };
+		7AE3D1C41E6D47DE00AD690B /* PersonQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonQRCodeViewController.h; sourceTree = "<group>"; };
+		7AE3D1C51E6D47DE00AD690B /* PersonQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonQRCodeViewController.m; sourceTree = "<group>"; };
+		7AE3D1C61E6D47DE00AD690B /* PersonQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonQRCodeViewController.xib; sourceTree = "<group>"; };
+		7AE3D1C91E6D47F100AD690B /* PersonSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonSetViewController.h; sourceTree = "<group>"; };
+		7AE3D1CA1E6D47F100AD690B /* PersonSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonSetViewController.m; sourceTree = "<group>"; };
+		7AE3D1CB1E6D47F100AD690B /* PersonSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonSetViewController.xib; sourceTree = "<group>"; };
+		7AE3D1CE1E6D482200AD690B /* PersonRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonRecordViewController.h; sourceTree = "<group>"; };
+		7AE3D1CF1E6D482200AD690B /* PersonRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonRecordViewController.m; sourceTree = "<group>"; };
+		7AE3D1D01E6D482200AD690B /* PersonRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonRecordViewController.xib; sourceTree = "<group>"; };
+		7AE3D1D31E6D483B00AD690B /* PersonAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonAddressViewController.h; sourceTree = "<group>"; };
+		7AE3D1D41E6D483B00AD690B /* PersonAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonAddressViewController.m; sourceTree = "<group>"; };
+		7AE3D1D51E6D483B00AD690B /* PersonAddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonAddressViewController.xib; sourceTree = "<group>"; };
+		7AE3D1D81E6D484D00AD690B /* PersonFamilyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonFamilyViewController.h; sourceTree = "<group>"; };
+		7AE3D1D91E6D484D00AD690B /* PersonFamilyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonFamilyViewController.m; sourceTree = "<group>"; };
+		7AE3D1DA1E6D484D00AD690B /* PersonFamilyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonFamilyViewController.xib; sourceTree = "<group>"; };
+		7AE3D1DD1E6D485F00AD690B /* PersonWareHouseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonWareHouseViewController.h; sourceTree = "<group>"; };
+		7AE3D1DE1E6D485F00AD690B /* PersonWareHouseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonWareHouseViewController.m; sourceTree = "<group>"; };
+		7AE3D1DF1E6D485F00AD690B /* PersonWareHouseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonWareHouseViewController.xib; sourceTree = "<group>"; };
+		7AE3D1E21E6D487000AD690B /* PersonShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonShoppingViewController.h; sourceTree = "<group>"; };
+		7AE3D1E31E6D487000AD690B /* PersonShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonShoppingViewController.m; sourceTree = "<group>"; };
+		7AE3D1E41E6D487000AD690B /* PersonShoppingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonShoppingViewController.xib; sourceTree = "<group>"; };
+		7AE3D1E71E6D488400AD690B /* PersonIntegralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonIntegralViewController.h; sourceTree = "<group>"; };
+		7AE3D1E81E6D488400AD690B /* PersonIntegralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonIntegralViewController.m; sourceTree = "<group>"; };
+		7AE3D1EF1E6D489C00AD690B /* PersonBaseInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonBaseInfoViewController.h; sourceTree = "<group>"; };
+		7AE3D1F01E6D489C00AD690B /* PersonBaseInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonBaseInfoViewController.m; sourceTree = "<group>"; };
+		7AE3D1F11E6D489C00AD690B /* PersonBaseInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonBaseInfoViewController.xib; sourceTree = "<group>"; };
 		81F15D75BE9AEFE24E57458E /* Pods-MeiLe_Click_Simplify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiLe_Click_Simplify.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeiLe_Click_Simplify/Pods-MeiLe_Click_Simplify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -417,6 +478,9 @@
 		7A0527C21E542D040013D3C2 /* Address */ = {
 			isa = PBXGroup;
 			children = (
+				7AE3D1A91E6D474100AD690B /* ViewController */,
+				7AE3D1A71E6D474100AD690B /* Model */,
+				7AE3D1A81E6D474100AD690B /* View */,
 			);
 			path = Address;
 			sourceTree = "<group>";
@@ -424,6 +488,9 @@
 		7A0527C31E542D040013D3C2 /* BaseInfo */ = {
 			isa = PBXGroup;
 			children = (
+				7AE3D1EE1E6D489000AD690B /* ViewController */,
+				7AE3D1EC1E6D489000AD690B /* Model */,
+				7AE3D1ED1E6D489000AD690B /* View */,
 			);
 			path = BaseInfo;
 			sourceTree = "<group>";
@@ -431,6 +498,9 @@
 		7A0527C41E542D040013D3C2 /* Family */ = {
 			isa = PBXGroup;
 			children = (
+				7AE3D1A61E6D473900AD690B /* ViewController */,
+				7AE3D1A41E6D473900AD690B /* Model */,
+				7AE3D1A51E6D473900AD690B /* View */,
 			);
 			path = Family;
 			sourceTree = "<group>";
@@ -438,6 +508,9 @@
 		7A0527C51E542D040013D3C2 /* Feedback */ = {
 			isa = PBXGroup;
 			children = (
+				7AE3D1AF1E6D475700AD690B /* ViewController */,
+				7AE3D1AD1E6D475700AD690B /* Model */,
+				7AE3D1AE1E6D475700AD690B /* View */,
 			);
 			path = Feedback;
 			sourceTree = "<group>";
@@ -445,6 +518,9 @@
 		7A0527C61E542D040013D3C2 /* Integral */ = {
 			isa = PBXGroup;
 			children = (
+				7AE3D1941E6D442400AD690B /* ViewController */,
+				7AE3D1921E6D442400AD690B /* Model */,
+				7AE3D1931E6D442400AD690B /* View */,
 			);
 			path = Integral;
 			sourceTree = "<group>";
@@ -467,6 +543,9 @@
 		7A0527C81E542D040013D3C2 /* MyShopping */ = {
 			isa = PBXGroup;
 			children = (
+				7AE3D19A1E6D46FD00AD690B /* ViewController */,
+				7AE3D1981E6D46FD00AD690B /* Model */,
+				7AE3D1991E6D46FD00AD690B /* View */,
 			);
 			path = MyShopping;
 			sourceTree = "<group>";
@@ -474,6 +553,9 @@
 		7A0527C91E542D040013D3C2 /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
+				7AE3D1B21E6D475E00AD690B /* ViewController */,
+				7AE3D1B01E6D475E00AD690B /* Model */,
+				7AE3D1B11E6D475E00AD690B /* View */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -481,6 +563,9 @@
 		7A0527CA1E542D040013D3C2 /* Record */ = {
 			isa = PBXGroup;
 			children = (
+				7AE3D1AC1E6D474D00AD690B /* ViewController */,
+				7AE3D1AA1E6D474D00AD690B /* Model */,
+				7AE3D1AB1E6D474D00AD690B /* View */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -488,6 +573,9 @@
 		7A0527CB1E542D040013D3C2 /* Set */ = {
 			isa = PBXGroup;
 			children = (
+				7AE3D1B51E6D476600AD690B /* ViewController */,
+				7AE3D1B31E6D476600AD690B /* Model */,
+				7AE3D1B41E6D476600AD690B /* View */,
 			);
 			path = Set;
 			sourceTree = "<group>";
@@ -495,6 +583,9 @@
 		7A0527CC1E542D040013D3C2 /* Warehouse */ = {
 			isa = PBXGroup;
 			children = (
+				7AE3D1A01E6D471900AD690B /* ViewController */,
+				7AE3D19E1E6D471900AD690B /* Model */,
+				7AE3D19F1E6D471900AD690B /* View */,
 			);
 			path = Warehouse;
 			sourceTree = "<group>";
@@ -955,6 +1046,253 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		7AE3D1921E6D442400AD690B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AE3D1931E6D442400AD690B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7A08C41E1E6E481F00BD480F /* IntegralTopView.h */,
+				7A08C41F1E6E481F00BD480F /* IntegralTopView.m */,
+				7A08C4211E6E482F00BD480F /* IntegralTopView.xib */,
+				7A08C4231E6E4D3B00BD480F /* IntegralTableViewCell.h */,
+				7A08C4241E6E4D3B00BD480F /* IntegralTableViewCell.m */,
+				7A08C4251E6E4D3B00BD480F /* IntegralTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AE3D1941E6D442400AD690B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7AE3D1E71E6D488400AD690B /* PersonIntegralViewController.h */,
+				7AE3D1E81E6D488400AD690B /* PersonIntegralViewController.m */,
+				7A08C41B1E6E45D800BD480F /* IntegralHtmlViewController.h */,
+				7A08C41C1E6E45D800BD480F /* IntegralHtmlViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7AE3D1981E6D46FD00AD690B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AE3D1991E6D46FD00AD690B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AE3D19A1E6D46FD00AD690B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7AE3D1E21E6D487000AD690B /* PersonShoppingViewController.h */,
+				7AE3D1E31E6D487000AD690B /* PersonShoppingViewController.m */,
+				7AE3D1E41E6D487000AD690B /* PersonShoppingViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7AE3D19E1E6D471900AD690B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AE3D19F1E6D471900AD690B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AE3D1A01E6D471900AD690B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7AE3D1DD1E6D485F00AD690B /* PersonWareHouseViewController.h */,
+				7AE3D1DE1E6D485F00AD690B /* PersonWareHouseViewController.m */,
+				7AE3D1DF1E6D485F00AD690B /* PersonWareHouseViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7AE3D1A41E6D473900AD690B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AE3D1A51E6D473900AD690B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AE3D1A61E6D473900AD690B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7AE3D1D81E6D484D00AD690B /* PersonFamilyViewController.h */,
+				7AE3D1D91E6D484D00AD690B /* PersonFamilyViewController.m */,
+				7AE3D1DA1E6D484D00AD690B /* PersonFamilyViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7AE3D1A71E6D474100AD690B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AE3D1A81E6D474100AD690B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AE3D1A91E6D474100AD690B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7AE3D1D31E6D483B00AD690B /* PersonAddressViewController.h */,
+				7AE3D1D41E6D483B00AD690B /* PersonAddressViewController.m */,
+				7AE3D1D51E6D483B00AD690B /* PersonAddressViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7AE3D1AA1E6D474D00AD690B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AE3D1AB1E6D474D00AD690B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AE3D1AC1E6D474D00AD690B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7AE3D1CE1E6D482200AD690B /* PersonRecordViewController.h */,
+				7AE3D1CF1E6D482200AD690B /* PersonRecordViewController.m */,
+				7AE3D1D01E6D482200AD690B /* PersonRecordViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7AE3D1AD1E6D475700AD690B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AE3D1AE1E6D475700AD690B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AE3D1AF1E6D475700AD690B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7AE3D1BF1E6D47C900AD690B /* PersonFeedbackViewController.h */,
+				7AE3D1C01E6D47C900AD690B /* PersonFeedbackViewController.m */,
+				7AE3D1C11E6D47C900AD690B /* PersonFeedbackViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7AE3D1B01E6D475E00AD690B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AE3D1B11E6D475E00AD690B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AE3D1B21E6D475E00AD690B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7AE3D1C41E6D47DE00AD690B /* PersonQRCodeViewController.h */,
+				7AE3D1C51E6D47DE00AD690B /* PersonQRCodeViewController.m */,
+				7AE3D1C61E6D47DE00AD690B /* PersonQRCodeViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7AE3D1B31E6D476600AD690B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AE3D1B41E6D476600AD690B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AE3D1B51E6D476600AD690B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7AE3D1C91E6D47F100AD690B /* PersonSetViewController.h */,
+				7AE3D1CA1E6D47F100AD690B /* PersonSetViewController.m */,
+				7AE3D1CB1E6D47F100AD690B /* PersonSetViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7AE3D1EC1E6D489000AD690B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AE3D1ED1E6D489000AD690B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AE3D1EE1E6D489000AD690B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7AE3D1EF1E6D489C00AD690B /* PersonBaseInfoViewController.h */,
+				7AE3D1F01E6D489C00AD690B /* PersonBaseInfoViewController.m */,
+				7AE3D1F11E6D489C00AD690B /* PersonBaseInfoViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		AC79DF30C462413F76204A2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1026,19 +1364,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AE3D1DC1E6D484D00AD690B /* PersonFamilyViewController.xib in Resources */,
+				7AE3D1D71E6D483B00AD690B /* PersonAddressViewController.xib in Resources */,
+				7AE3D1CD1E6D47F100AD690B /* PersonSetViewController.xib in Resources */,
+				7AE3D1E11E6D485F00AD690B /* PersonWareHouseViewController.xib in Resources */,
 				7A14D12B1E6528BB0034B42F /* TitleTableViewCell.xib in Resources */,
 				7A0527A71E54247D0013D3C2 /* LaunchScreen.storyboard in Resources */,
 				7A1FD9A61E5573E6001857E4 /* rsa_private_key.pem in Resources */,
+				7A08C4271E6E4D3B00BD480F /* IntegralTableViewCell.xib in Resources */,
 				7A14D13B1E6545420034B42F /* WuyetongTableViewCell.xib in Resources */,
+				7AE3D1F31E6D489C00AD690B /* PersonBaseInfoViewController.xib in Resources */,
 				7A0527A41E54247D0013D3C2 /* Assets.xcassets in Resources */,
 				7A0527CF1E542DDC0013D3C2 /* 美乐生活用户注册协议.html in Resources */,
 				7A14D1491E656ADE0034B42F /* FuwuhuiCollectionViewCell.xib in Resources */,
+				7AE3D1E61E6D487000AD690B /* PersonShoppingViewController.xib in Resources */,
 				7AE3D1911E6D37BB00AD690B /* PersonCollectionViewCell.xib in Resources */,
+				7AE3D1C31E6D47C900AD690B /* PersonFeedbackViewController.xib in Resources */,
 				7A49280D1E5A87AA00F6AB93 /* Login&Register.storyboard in Resources */,
+				7AE3D1D21E6D482200AD690B /* PersonRecordViewController.xib in Resources */,
+				7AE3D1C81E6D47DE00AD690B /* PersonQRCodeViewController.xib in Resources */,
 				7A363D661E63EBDC004870C8 /* zhoubiangouTableViewCell.xib in Resources */,
 				7A0527A21E54247D0013D3C2 /* Main.storyboard in Resources */,
 				7A1FD9A71E5573E6001857E4 /* rsa_public_key.pem in Resources */,
 				7A0527D01E542DDC0013D3C2 /* 用户积分.html in Resources */,
+				7A08C4221E6E482F00BD480F /* IntegralTopView.xib in Resources */,
 				7A14D1291E6528BB0034B42F /* ContentTableViewCell.xib in Resources */,
 				7AE3D18C1E6D04C300AD690B /* PersonTopView.xib in Resources */,
 			);
@@ -1104,6 +1453,7 @@
 				7A1FD9A81E5573E6001857E4 /* TEncryptorAES.m in Sources */,
 				7A49282C1E5AC9A500F6AB93 /* CustomizationViewController.m in Sources */,
 				7A0DBC501E5BED00006359D2 /* TitleCollectionViewCell.m in Sources */,
+				7AE3D1E01E6D485F00AD690B /* PersonWareHouseViewController.m in Sources */,
 				7A1FD94D1E554EEE001857E4 /* HttpRequest.m in Sources */,
 				7A46B1221E5D3F4F00B90799 /* WuYeTongViewController.m in Sources */,
 				7A1FD9B01E557FE5001857E4 /* NSArray+RemoveNull.m in Sources */,
@@ -1120,18 +1470,29 @@
 				7A14D13E1E6561EF0034B42F /* FuwuhuiHeadView.m in Sources */,
 				7A0DBC341E5BD418006359D2 /* UIViewController+BarButton.m in Sources */,
 				7A0DBC441E5BD68E006359D2 /* UserGuideViewController.m in Sources */,
+				7A08C4261E6E4D3B00BD480F /* IntegralTableViewCell.m in Sources */,
 				7A14D13A1E6545420034B42F /* WuyetongTableViewCell.m in Sources */,
+				7AE3D1D61E6D483B00AD690B /* PersonAddressViewController.m in Sources */,
 				7A1FD9A91E5573E6001857E4 /* TEncryptorRSA.m in Sources */,
 				7A4928101E5ABC0500F6AB93 /* RegisterViewController.m in Sources */,
 				7A14D1171E6513FB0034B42F /* UIButton+Badge.m in Sources */,
 				7A46B1251E5D3F5B00B90799 /* FuWuHuiViewController.m in Sources */,
+				7AE3D1CC1E6D47F100AD690B /* PersonSetViewController.m in Sources */,
+				7AE3D1EA1E6D488400AD690B /* PersonIntegralViewController.m in Sources */,
 				7A0DBC4A1E5BDE6B006359D2 /* ResolveConflicScrollView.m in Sources */,
+				7AE3D1C21E6D47C900AD690B /* PersonFeedbackViewController.m in Sources */,
+				7A08C41D1E6E45D800BD480F /* IntegralHtmlViewController.m in Sources */,
 				7A1FD9AD1E557FB1001857E4 /* NSDictionary+RemoveNull.m in Sources */,
 				7A14D12A1E6528BB0034B42F /* TitleTableViewCell.m in Sources */,
 				7A1FD9391E553ADE001857E4 /* LoginViewController.m in Sources */,
+				7A08C4201E6E481F00BD480F /* IntegralTopView.m in Sources */,
 				7A14D1411E6561FC0034B42F /* FuwuhuiFootView.m in Sources */,
+				7AE3D1C71E6D47DE00AD690B /* PersonQRCodeViewController.m in Sources */,
+				7AE3D1E51E6D487000AD690B /* PersonShoppingViewController.m in Sources */,
 				7A0DBC431E5BD68E006359D2 /* RootViewController.m in Sources */,
+				7AE3D1DB1E6D484D00AD690B /* PersonFamilyViewController.m in Sources */,
 				7A1FD9401E553D75001857E4 /* UserLoginModel.m in Sources */,
+				7AE3D1D11E6D482200AD690B /* PersonRecordViewController.m in Sources */,
 				7A14D1481E656ADE0034B42F /* FuwuhuiCollectionViewCell.m in Sources */,
 				7A4928321E5AC9C000F6AB93 /* PersonViewController.m in Sources */,
 				7A1FD9441E553FD6001857E4 /* UserRequestModel.m in Sources */,
@@ -1140,6 +1501,7 @@
 				7AE3D18A1E6D04B600AD690B /* PersonTopView.m in Sources */,
 				7A0E5ED61E665EE00011778B /* ContentHeaderView.m in Sources */,
 				7A0527991E54247D0013D3C2 /* main.m in Sources */,
+				7AE3D1F21E6D489C00AD690B /* PersonBaseInfoViewController.m in Sources */,
 				7A1FD93C1E553B9D001857E4 /* UserModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

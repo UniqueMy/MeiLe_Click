@@ -10,6 +10,18 @@
 #import "PersonTopView.h"
 #import "UIViewController+BarButton.h"
 #import "PersonCollectionViewCell.h"
+#import "PersonIntegralViewController.h"
+#import "PersonShoppingViewController.h"
+#import "PersonWareHouseViewController.h"
+#import "PersonFamilyViewController.h"
+#import "PersonAddressViewController.h"
+#import "PersonRecordViewController.h"
+#import "PersonFeedbackViewController.h"
+#import "PersonQRCodeViewController.h"
+#import "PersonSetViewController.h"
+#import "PersonBaseInfoViewController.h"
+
+#import "AppDelegate.h"
 
 
 static NSString *identifier = @"PersonCollectionViewCell";
@@ -26,6 +38,8 @@ static NSString *identifier = @"PersonCollectionViewCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
     
     /**
      添加左视图 -- 扫描
@@ -83,6 +97,74 @@ static NSString *identifier = @"PersonCollectionViewCell";
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"indexPath %ld",(long)indexPath.row);
+    
+    switch (indexPath.row) {
+        case 0:
+        {
+            PersonIntegralViewController *integral = [[PersonIntegralViewController alloc] init];
+            [self.navigationController pushViewController:integral animated:YES];
+            
+        }
+            break;
+        case 1:
+        {
+            PersonShoppingViewController *shopping = [[PersonShoppingViewController alloc] init];
+            [self.navigationController pushViewController:shopping animated:YES];
+        }
+            break;
+        case 2:
+        {
+            PersonWareHouseViewController *warehouse = [[PersonWareHouseViewController alloc] init];
+            [self.navigationController pushViewController:warehouse animated:YES];
+        }
+            break;
+        case 3:
+        {
+            PersonFamilyViewController *family = [[PersonFamilyViewController alloc] init];
+            [self.navigationController pushViewController:family animated:YES];
+        }
+            break;
+        case 4:
+        {
+            PersonAddressViewController *address = [[PersonAddressViewController alloc] init];
+            [self.navigationController pushViewController:address animated:YES];
+        }
+            break;
+        case 5:
+        {
+            PersonRecordViewController *record = [[PersonRecordViewController alloc] init];
+            [self.navigationController pushViewController:record animated:YES];
+        }
+            break;
+        case 6:
+        {
+            PersonFeedbackViewController *feedback = [[PersonFeedbackViewController alloc] init];
+            [self.navigationController pushViewController:feedback animated:YES];
+        }
+            break;
+        case 7:
+        {
+            PersonQRCodeViewController *QRCode = [[PersonQRCodeViewController alloc] init];
+            [self.navigationController pushViewController:QRCode animated:YES];
+        }
+            break;
+        case 8:
+        {
+            PersonSetViewController *set = [[PersonSetViewController alloc] init];
+            [self.navigationController pushViewController:set animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
+
+
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
@@ -90,20 +172,16 @@ static NSString *identifier = @"PersonCollectionViewCell";
     UIImage *topImage = [UIImage imageNamed:@"person_topBaseImage_1"];
     [self.navigationController.navigationBar setBackgroundImage:topImage forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:16]}];
-    
-  
-    
-    
 }
 
-- (void)viewDidDisappear:(BOOL)animated {
-    
-    [super viewDidDisappear:animated];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
-}
+//- (void)viewDidDisappear:(BOOL)animated {
+//    
+//    [super viewDidDisappear:animated];
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+//    self.navigationController.navigationBar.shadowImage = [UIImage new];
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
+//}
 
 @end
