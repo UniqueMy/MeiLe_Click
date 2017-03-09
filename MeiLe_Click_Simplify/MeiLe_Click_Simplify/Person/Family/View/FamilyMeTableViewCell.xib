@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="KGk-i7-Jjw" customClass="FamilyMeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headImage" translatesAutoresizingMaskIntoConstraints="NO" id="liO-xg-MPz">
+                        <rect key="frame" x="13" y="13" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="AIS-af-TUx"/>
+                            <constraint firstAttribute="width" constant="40" id="Ego-0j-cOC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="186****7972的家庭" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUa-0d-Z13">
+                        <rect key="frame" x="68" y="24.5" width="127" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYp-Q5-B17">
+                        <rect key="frame" x="327" y="21" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="YWZ-e4-Rz0"/>
+                            <constraint firstAttribute="height" constant="24" id="poW-km-n47"/>
+                        </constraints>
+                        <state key="normal" image="person_family_binding"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="liO-xg-MPz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="7NC-SP-5DI"/>
+                    <constraint firstItem="xUa-0d-Z13" firstAttribute="centerY" secondItem="liO-xg-MPz" secondAttribute="centerY" id="O2e-pb-D2d"/>
+                    <constraint firstItem="pYp-Q5-B17" firstAttribute="centerY" secondItem="xUa-0d-Z13" secondAttribute="centerY" id="t0w-Rb-oHY"/>
+                    <constraint firstItem="liO-xg-MPz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="xh4-al-Wal"/>
+                    <constraint firstItem="xUa-0d-Z13" firstAttribute="leading" secondItem="liO-xg-MPz" secondAttribute="trailing" constant="15" id="xiN-uO-mLj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pYp-Q5-B17" secondAttribute="trailing" constant="16" id="y6o-Hu-5LQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="15.5" y="53"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="headImage" width="640" height="480"/>
+        <image name="person_family_binding" width="24" height="24"/>
+    </resources>
+</document>

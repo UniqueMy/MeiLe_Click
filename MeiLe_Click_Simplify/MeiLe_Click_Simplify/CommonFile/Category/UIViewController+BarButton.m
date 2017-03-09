@@ -37,14 +37,14 @@ static NSString const *_newsButton = @"rightNewsButton";
  */
 - (void)addLeftScanQRCodeBarButtonItemIsPerson:(BOOL)isperson {
     
-    UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 22, 22)];
     
     UIImage *image = isperson ? [UIImage imageNamed:@"common_scan_white"] : [UIImage imageNamed:@"common_scan"];
     
     [leftButton setImage:image forState:UIControlStateNormal];;
     [leftButton addTarget:self action:@selector(scanCodeController) forControlEvents:UIControlEventTouchUpInside];
     
-    leftButton.imageEdgeInsets     = UIEdgeInsetsMake(0, -22, 0, 0);
+    leftButton.imageEdgeInsets     = UIEdgeInsetsMake(0, 0, 0, 0);
     UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
     self.navigationItem.leftBarButtonItem = leftBarButton;
     
@@ -75,10 +75,10 @@ static NSString const *_newsButton = @"rightNewsButton";
     if (!self.newsButton) {
         UIImage *image = isperson ? [UIImage imageNamed:@"common_news_no_white"] : [UIImage imageNamed:@"common_news_no"];
         
-        self.newsButton = [[UIButton alloc] initWithFrame:CGRectMake(-10, 0, 30, 30)];
+        self.newsButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 22, 22)];
         [self.newsButton setImage:image forState:UIControlStateNormal];;
         [self.newsButton addTarget:self action:@selector(onMessageButtonTouchAction:) forControlEvents:UIControlEventTouchUpInside];
-        self.newsButton.imageEdgeInsets   = UIEdgeInsetsMake(0, 8, 0, -8);
+        self.newsButton.imageEdgeInsets   = UIEdgeInsetsMake(0, 0, 0, 0);
         UIBarButtonItem *rightBurButton = [[UIBarButtonItem alloc] initWithCustomView:self.newsButton];
         self.navigationItem.rightBarButtonItem = rightBurButton;
     }

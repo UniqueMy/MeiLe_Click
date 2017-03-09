@@ -23,7 +23,7 @@
     }
     [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : RGB(71, 71, 71),NSFontAttributeName:[UIFont systemFontOfSize:16]}];
     
-   
+    [self.navigationBar setBarTintColor:RGB(250, 250, 250)];
     
     
     UIImage *backButtonImage = [[UIImage imageNamed:@"common_back"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 25, 0, 0)];
@@ -31,8 +31,6 @@
     [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(NSIntegerMin, NSIntegerMin) forBarMetrics:UIBarMetricsDefault];
-
-        
     
 }
 

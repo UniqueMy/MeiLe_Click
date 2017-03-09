@@ -15,7 +15,7 @@ static NSString *identifier = @"zhoubiangouTableViewCell";
 
 #define SCROLLVIEW_HEIGHT 148
 
-@interface ZhouBianGouViewController ()<UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
+@interface ZhouBianGouViewController () <UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
 

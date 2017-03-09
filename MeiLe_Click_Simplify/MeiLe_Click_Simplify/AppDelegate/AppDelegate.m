@@ -5,13 +5,17 @@
 //  Created by 盛浩 on 2017/2/15.
 //  Copyright © 2017年 ShengHao. All rights reserved.
 //
-/*
- 借呗   10000
- 微信   15000
- 百度   28500
- 招联   9500
- 信用   20000
- 京东   3700
+/*               3月
+ 借呗   10000     914
+ 微信   15000     0
+ 百度   28500    3153 + 943
+ 招联   9500      880
+ 信用   20000    3013
+ 京东   3700      0
+ 
+ 
+总计：            8903
+ 
  
  */
 
@@ -69,6 +73,10 @@
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    /*  XingYongKa
+     *
+     *
+     */
 }
 
 

@@ -10,9 +10,10 @@
 #import "IntegralHtmlViewController.h"
 #import "IntegralTopView.h"
 #import "IntegralTableViewCell.h"
+#import "UINavigationBar+Image.h"
 
 #define TopView_Height 149
-static NSString *identifier = @"IntegralTableViewCell";
+ static NSString *identifier = @"IntegralTableViewCell";
 
 @interface PersonIntegralViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -23,15 +24,7 @@ static NSString *identifier = @"IntegralTableViewCell";
 
 @implementation PersonIntegralViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    
-    [super viewWillAppear:animated];
-    
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = nil;
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : RGB(70, 70, 70),NSFontAttributeName:[UIFont systemFontOfSize:16]}];
-}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,10 +35,28 @@ static NSString *identifier = @"IntegralTableViewCell";
     
     [self addRightBarItem];
     
+    [self addLeftBarItem];
+    
     [self addTopView];
     
     [self addTableView];
     
+    
+    
+}
+
+- (void)addLeftBarItem {
+    
+    UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"common_back"] style:UIBarButtonItemStyleDone target:self action:@selector(backItemClick)];
+    self.navigationItem.leftBarButtonItem = leftBarButton;
+    
+}
+
+- (void)backItemClick {
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    UIImage *topImage = [UIImage imageNamed:@"person_topBaseImage_1"];
+    [self.navigationController.navigationBar setCustomNavigationBarWithImage:topImage];
 }
 
 - (void)addRightBarItem {

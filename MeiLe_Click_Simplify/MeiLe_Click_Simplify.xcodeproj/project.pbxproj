@@ -20,6 +20,9 @@
 		7A08C4221E6E482F00BD480F /* IntegralTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A08C4211E6E482F00BD480F /* IntegralTopView.xib */; };
 		7A08C4261E6E4D3B00BD480F /* IntegralTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A08C4241E6E4D3B00BD480F /* IntegralTableViewCell.m */; };
 		7A08C4271E6E4D3B00BD480F /* IntegralTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A08C4251E6E4D3B00BD480F /* IntegralTableViewCell.xib */; };
+		7A08C4581E6E640600BD480F /* UINavigationBar+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A08C4571E6E640600BD480F /* UINavigationBar+Image.m */; };
+		7A08C45B1E6E7C6F00BD480F /* FamilyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A08C45A1E6E7C6F00BD480F /* FamilyHeaderView.m */; };
+		7A08C45D1E6E7CD700BD480F /* FamilyHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A08C45C1E6E7CD700BD480F /* FamilyHeaderView.xib */; };
 		7A0DBC341E5BD418006359D2 /* UIViewController+BarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DBC331E5BD418006359D2 /* UIViewController+BarButton.m */; };
 		7A0DBC361E5BD567006359D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0DBC351E5BD567006359D2 /* AVFoundation.framework */; };
 		7A0DBC3A1E5BD669006359D2 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DBC391E5BD669006359D2 /* NavigationController.m */; };
@@ -83,7 +86,6 @@
 		7AE3D1D61E6D483B00AD690B /* PersonAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1D41E6D483B00AD690B /* PersonAddressViewController.m */; };
 		7AE3D1D71E6D483B00AD690B /* PersonAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D1D51E6D483B00AD690B /* PersonAddressViewController.xib */; };
 		7AE3D1DB1E6D484D00AD690B /* PersonFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1D91E6D484D00AD690B /* PersonFamilyViewController.m */; };
-		7AE3D1DC1E6D484D00AD690B /* PersonFamilyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D1DA1E6D484D00AD690B /* PersonFamilyViewController.xib */; };
 		7AE3D1E01E6D485F00AD690B /* PersonWareHouseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1DE1E6D485F00AD690B /* PersonWareHouseViewController.m */; };
 		7AE3D1E11E6D485F00AD690B /* PersonWareHouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D1DF1E6D485F00AD690B /* PersonWareHouseViewController.xib */; };
 		7AE3D1E51E6D487000AD690B /* PersonShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1E31E6D487000AD690B /* PersonShoppingViewController.m */; };
@@ -91,6 +93,12 @@
 		7AE3D1EA1E6D488400AD690B /* PersonIntegralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1E81E6D488400AD690B /* PersonIntegralViewController.m */; };
 		7AE3D1F21E6D489C00AD690B /* PersonBaseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1F01E6D489C00AD690B /* PersonBaseInfoViewController.m */; };
 		7AE3D1F31E6D489C00AD690B /* PersonBaseInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D1F11E6D489C00AD690B /* PersonBaseInfoViewController.xib */; };
+		7AFF4B761E70F53100008E49 /* FamilySectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFF4B751E70F53100008E49 /* FamilySectionView.m */; };
+		7AFF4B781E70F55000008E49 /* FamilySectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFF4B771E70F55000008E49 /* FamilySectionView.xib */; };
+		7AFF4B7C1E71008400008E49 /* FamilyMyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFF4B7A1E71008400008E49 /* FamilyMyTableViewCell.m */; };
+		7AFF4B7D1E71008400008E49 /* FamilyMyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFF4B7B1E71008400008E49 /* FamilyMyTableViewCell.xib */; };
+		7AFF4B811E71037A00008E49 /* FamilyMeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFF4B7F1E71037A00008E49 /* FamilyMeTableViewCell.m */; };
+		7AFF4B821E71037A00008E49 /* FamilyMeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFF4B801E71037A00008E49 /* FamilyMeTableViewCell.xib */; };
 		7CD36E545A891669B4AE43D7 /* Pods_MeiLe_Click_Simplify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053A0A97E4A6ACAC5B020E6F /* Pods_MeiLe_Click_Simplify.framework */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +125,11 @@
 		7A08C4231E6E4D3B00BD480F /* IntegralTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegralTableViewCell.h; sourceTree = "<group>"; };
 		7A08C4241E6E4D3B00BD480F /* IntegralTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegralTableViewCell.m; sourceTree = "<group>"; };
 		7A08C4251E6E4D3B00BD480F /* IntegralTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntegralTableViewCell.xib; sourceTree = "<group>"; };
+		7A08C4561E6E640600BD480F /* UINavigationBar+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Image.h"; sourceTree = "<group>"; };
+		7A08C4571E6E640600BD480F /* UINavigationBar+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Image.m"; sourceTree = "<group>"; };
+		7A08C4591E6E7C6F00BD480F /* FamilyHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyHeaderView.h; sourceTree = "<group>"; };
+		7A08C45A1E6E7C6F00BD480F /* FamilyHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyHeaderView.m; sourceTree = "<group>"; };
+		7A08C45C1E6E7CD700BD480F /* FamilyHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FamilyHeaderView.xib; sourceTree = "<group>"; };
 		7A0DBC321E5BD418006359D2 /* UIViewController+BarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BarButton.h"; sourceTree = "<group>"; };
 		7A0DBC331E5BD418006359D2 /* UIViewController+BarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BarButton.m"; sourceTree = "<group>"; };
 		7A0DBC351E5BD567006359D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -302,7 +315,6 @@
 		7AE3D1D51E6D483B00AD690B /* PersonAddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonAddressViewController.xib; sourceTree = "<group>"; };
 		7AE3D1D81E6D484D00AD690B /* PersonFamilyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonFamilyViewController.h; sourceTree = "<group>"; };
 		7AE3D1D91E6D484D00AD690B /* PersonFamilyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonFamilyViewController.m; sourceTree = "<group>"; };
-		7AE3D1DA1E6D484D00AD690B /* PersonFamilyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonFamilyViewController.xib; sourceTree = "<group>"; };
 		7AE3D1DD1E6D485F00AD690B /* PersonWareHouseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonWareHouseViewController.h; sourceTree = "<group>"; };
 		7AE3D1DE1E6D485F00AD690B /* PersonWareHouseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonWareHouseViewController.m; sourceTree = "<group>"; };
 		7AE3D1DF1E6D485F00AD690B /* PersonWareHouseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonWareHouseViewController.xib; sourceTree = "<group>"; };
@@ -314,6 +326,15 @@
 		7AE3D1EF1E6D489C00AD690B /* PersonBaseInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonBaseInfoViewController.h; sourceTree = "<group>"; };
 		7AE3D1F01E6D489C00AD690B /* PersonBaseInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonBaseInfoViewController.m; sourceTree = "<group>"; };
 		7AE3D1F11E6D489C00AD690B /* PersonBaseInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonBaseInfoViewController.xib; sourceTree = "<group>"; };
+		7AFF4B741E70F53100008E49 /* FamilySectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilySectionView.h; sourceTree = "<group>"; };
+		7AFF4B751E70F53100008E49 /* FamilySectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilySectionView.m; sourceTree = "<group>"; };
+		7AFF4B771E70F55000008E49 /* FamilySectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FamilySectionView.xib; sourceTree = "<group>"; };
+		7AFF4B791E71008400008E49 /* FamilyMyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyMyTableViewCell.h; sourceTree = "<group>"; };
+		7AFF4B7A1E71008400008E49 /* FamilyMyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyMyTableViewCell.m; sourceTree = "<group>"; };
+		7AFF4B7B1E71008400008E49 /* FamilyMyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FamilyMyTableViewCell.xib; sourceTree = "<group>"; };
+		7AFF4B7E1E71037A00008E49 /* FamilyMeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyMeTableViewCell.h; sourceTree = "<group>"; };
+		7AFF4B7F1E71037A00008E49 /* FamilyMeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyMeTableViewCell.m; sourceTree = "<group>"; };
+		7AFF4B801E71037A00008E49 /* FamilyMeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FamilyMeTableViewCell.xib; sourceTree = "<group>"; };
 		81F15D75BE9AEFE24E57458E /* Pods-MeiLe_Click_Simplify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiLe_Click_Simplify.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeiLe_Click_Simplify/Pods-MeiLe_Click_Simplify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -844,6 +865,8 @@
 				7A1FD9AF1E557FE5001857E4 /* NSArray+RemoveNull.m */,
 				7A0DBC321E5BD418006359D2 /* UIViewController+BarButton.h */,
 				7A0DBC331E5BD418006359D2 /* UIViewController+BarButton.m */,
+				7A08C4561E6E640600BD480F /* UINavigationBar+Image.h */,
+				7A08C4571E6E640600BD480F /* UINavigationBar+Image.m */,
 				7A14D1151E6513FB0034B42F /* UIButton+Badge.h */,
 				7A14D1161E6513FB0034B42F /* UIButton+Badge.m */,
 			);
@@ -1135,6 +1158,18 @@
 		7AE3D1A51E6D473900AD690B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7A08C4591E6E7C6F00BD480F /* FamilyHeaderView.h */,
+				7A08C45A1E6E7C6F00BD480F /* FamilyHeaderView.m */,
+				7A08C45C1E6E7CD700BD480F /* FamilyHeaderView.xib */,
+				7AFF4B741E70F53100008E49 /* FamilySectionView.h */,
+				7AFF4B751E70F53100008E49 /* FamilySectionView.m */,
+				7AFF4B771E70F55000008E49 /* FamilySectionView.xib */,
+				7AFF4B791E71008400008E49 /* FamilyMyTableViewCell.h */,
+				7AFF4B7A1E71008400008E49 /* FamilyMyTableViewCell.m */,
+				7AFF4B7B1E71008400008E49 /* FamilyMyTableViewCell.xib */,
+				7AFF4B7E1E71037A00008E49 /* FamilyMeTableViewCell.h */,
+				7AFF4B7F1E71037A00008E49 /* FamilyMeTableViewCell.m */,
+				7AFF4B801E71037A00008E49 /* FamilyMeTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1144,7 +1179,6 @@
 			children = (
 				7AE3D1D81E6D484D00AD690B /* PersonFamilyViewController.h */,
 				7AE3D1D91E6D484D00AD690B /* PersonFamilyViewController.m */,
-				7AE3D1DA1E6D484D00AD690B /* PersonFamilyViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1364,18 +1398,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AE3D1DC1E6D484D00AD690B /* PersonFamilyViewController.xib in Resources */,
 				7AE3D1D71E6D483B00AD690B /* PersonAddressViewController.xib in Resources */,
+				7A08C45D1E6E7CD700BD480F /* FamilyHeaderView.xib in Resources */,
 				7AE3D1CD1E6D47F100AD690B /* PersonSetViewController.xib in Resources */,
 				7AE3D1E11E6D485F00AD690B /* PersonWareHouseViewController.xib in Resources */,
 				7A14D12B1E6528BB0034B42F /* TitleTableViewCell.xib in Resources */,
 				7A0527A71E54247D0013D3C2 /* LaunchScreen.storyboard in Resources */,
 				7A1FD9A61E5573E6001857E4 /* rsa_private_key.pem in Resources */,
 				7A08C4271E6E4D3B00BD480F /* IntegralTableViewCell.xib in Resources */,
+				7AFF4B781E70F55000008E49 /* FamilySectionView.xib in Resources */,
 				7A14D13B1E6545420034B42F /* WuyetongTableViewCell.xib in Resources */,
 				7AE3D1F31E6D489C00AD690B /* PersonBaseInfoViewController.xib in Resources */,
 				7A0527A41E54247D0013D3C2 /* Assets.xcassets in Resources */,
 				7A0527CF1E542DDC0013D3C2 /* 美乐生活用户注册协议.html in Resources */,
+				7AFF4B821E71037A00008E49 /* FamilyMeTableViewCell.xib in Resources */,
 				7A14D1491E656ADE0034B42F /* FuwuhuiCollectionViewCell.xib in Resources */,
 				7AE3D1E61E6D487000AD690B /* PersonShoppingViewController.xib in Resources */,
 				7AE3D1911E6D37BB00AD690B /* PersonCollectionViewCell.xib in Resources */,
@@ -1384,6 +1420,7 @@
 				7AE3D1D21E6D482200AD690B /* PersonRecordViewController.xib in Resources */,
 				7AE3D1C81E6D47DE00AD690B /* PersonQRCodeViewController.xib in Resources */,
 				7A363D661E63EBDC004870C8 /* zhoubiangouTableViewCell.xib in Resources */,
+				7AFF4B7D1E71008400008E49 /* FamilyMyTableViewCell.xib in Resources */,
 				7A0527A21E54247D0013D3C2 /* Main.storyboard in Resources */,
 				7A1FD9A71E5573E6001857E4 /* rsa_public_key.pem in Resources */,
 				7A0527D01E542DDC0013D3C2 /* 用户积分.html in Resources */,
@@ -1448,9 +1485,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A08C45B1E6E7C6F00BD480F /* FamilyHeaderView.m in Sources */,
 				7A363D681E63EBDC004870C8 /* ZhouBianGouViewController.m in Sources */,
 				7A49282F1E5AC9B200F6AB93 /* WareHouseViewController.m in Sources */,
 				7A1FD9A81E5573E6001857E4 /* TEncryptorAES.m in Sources */,
+				7A08C4581E6E640600BD480F /* UINavigationBar+Image.m in Sources */,
 				7A49282C1E5AC9A500F6AB93 /* CustomizationViewController.m in Sources */,
 				7A0DBC501E5BED00006359D2 /* TitleCollectionViewCell.m in Sources */,
 				7AE3D1E01E6D485F00AD690B /* PersonWareHouseViewController.m in Sources */,
@@ -1491,13 +1530,16 @@
 				7AE3D1E51E6D487000AD690B /* PersonShoppingViewController.m in Sources */,
 				7A0DBC431E5BD68E006359D2 /* RootViewController.m in Sources */,
 				7AE3D1DB1E6D484D00AD690B /* PersonFamilyViewController.m in Sources */,
+				7AFF4B811E71037A00008E49 /* FamilyMeTableViewCell.m in Sources */,
 				7A1FD9401E553D75001857E4 /* UserLoginModel.m in Sources */,
+				7AFF4B761E70F53100008E49 /* FamilySectionView.m in Sources */,
 				7AE3D1D11E6D482200AD690B /* PersonRecordViewController.m in Sources */,
 				7A14D1481E656ADE0034B42F /* FuwuhuiCollectionViewCell.m in Sources */,
 				7A4928321E5AC9C000F6AB93 /* PersonViewController.m in Sources */,
 				7A1FD9441E553FD6001857E4 /* UserRequestModel.m in Sources */,
 				7A14D1281E6528BB0034B42F /* ContentTableViewCell.m in Sources */,
 				7AE3D1901E6D37BB00AD690B /* PersonCollectionViewCell.m in Sources */,
+				7AFF4B7C1E71008400008E49 /* FamilyMyTableViewCell.m in Sources */,
 				7AE3D18A1E6D04B600AD690B /* PersonTopView.m in Sources */,
 				7A0E5ED61E665EE00011778B /* ContentHeaderView.m in Sources */,
 				7A0527991E54247D0013D3C2 /* main.m in Sources */,

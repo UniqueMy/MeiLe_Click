@@ -21,7 +21,7 @@
 #import "PersonSetViewController.h"
 #import "PersonBaseInfoViewController.h"
 
-#import "AppDelegate.h"
+#import "UINavigationBar+Image.h"
 
 
 static NSString *identifier = @"PersonCollectionViewCell";
@@ -163,25 +163,26 @@ static NSString *identifier = @"PersonCollectionViewCell";
     }
 }
 
-
+- (void)changeNavigationBackgroundImage {
+    
+    UIImage *topImage = [UIImage imageNamed:@"person_topBaseImage_1"];
+    
+    [self.navigationController.navigationBar setCustomNavigationBarWithImage:topImage];
+   
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
     
-    UIImage *topImage = [UIImage imageNamed:@"person_topBaseImage_1"];
-    [self.navigationController.navigationBar setBackgroundImage:topImage forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:16]}];
+    [self changeNavigationBackgroundImage];
 }
 
-//- (void)viewDidDisappear:(BOOL)animated {
-//    
-//    [super viewDidDisappear:animated];
-//    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-//    self.navigationController.navigationBar.shadowImage = [UIImage new];
-//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
-//}
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    
+    [self.navigationController.navigationBar setResultNavigationBar];
+}
 
 @end
