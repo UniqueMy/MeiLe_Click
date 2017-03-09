@@ -411,7 +411,6 @@
     maskLayer.frame         = view.bounds;
     maskLayer.path          = maskPath.CGPath;
     view.layer.mask         = maskLayer;
-//    view.layer.masksToBounds = YES;
     
 }
 

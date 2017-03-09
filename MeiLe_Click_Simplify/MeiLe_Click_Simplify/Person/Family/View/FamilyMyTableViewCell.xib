@@ -59,6 +59,9 @@
                     <constraint firstItem="YDO-Ux-DEi" firstAttribute="top" secondItem="pdI-Wr-20W" secondAttribute="top" id="vJX-N8-wm5"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="headImageView" destination="pdI-Wr-20W" id="Rq0-yB-MAY"/>
+            </connections>
             <point key="canvasLocation" x="52.5" y="63"/>
         </tableViewCell>
     </objects>

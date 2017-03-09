@@ -8,11 +8,22 @@
 
 #import "FamilyMeTableViewCell.h"
 
+@interface FamilyMeTableViewCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
+
+
+@end
+
 @implementation FamilyMeTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+
+    _headImageView.layer.cornerRadius  = _headImageView.bounds.size.width / 2;
+    _headImageView.layer.masksToBounds = YES;
+    _headImageView.layer.borderColor   = [UIColor grayColor].CGColor;
+    _headImageView.layer.borderWidth   = .5;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,7 +18,64 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="请填写您的宝贵意见" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="is1-Aw-4Nu">
+                    <rect key="frame" x="15" y="14" width="345" height="207"/>
+                    <color key="backgroundColor" red="0.92931067943572998" green="0.92946994304656982" blue="0.92930072546005249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="207" id="Jks-i4-DiP"/>
+                    </constraints>
+                    <color key="textColor" red="0.56072109937667847" green="0.56082075834274292" blue="0.56071484088897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkc-XT-0sd">
+                    <rect key="frame" x="144" y="233" width="87" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="cNz-iO-GUs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="4008-929-822">
+                        <color key="titleColor" red="0.70184248685836792" green="0.15737184882164001" blue="0.17598119378089905" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如有疑问请致电：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqM-Lg-psq">
+                    <rect key="frame" x="45.5" y="235" width="98.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（可直接拨打）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9l-vU-Q62">
+                    <rect key="frame" x="231" y="235" width="86" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SiR-jM-ya4">
+                    <rect key="frame" x="15" y="277" width="345" height="32"/>
+                    <color key="backgroundColor" red="0.70581012964248657" green="0.157279372215271" blue="0.17574018239974976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="提交">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZqM-Lg-psq" firstAttribute="centerY" secondItem="Rkc-XT-0sd" secondAttribute="centerY" id="5Fh-ND-h5a"/>
+                <constraint firstAttribute="trailing" secondItem="is1-Aw-4Nu" secondAttribute="trailing" constant="15" id="8G1-9H-Qwd"/>
+                <constraint firstItem="Rkc-XT-0sd" firstAttribute="top" secondItem="is1-Aw-4Nu" secondAttribute="bottom" constant="12" id="9MU-4z-ONT"/>
+                <constraint firstItem="SiR-jM-ya4" firstAttribute="top" secondItem="Rkc-XT-0sd" secondAttribute="bottom" constant="27" id="ALF-pV-6PO"/>
+                <constraint firstItem="is1-Aw-4Nu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Lcm-Lf-z3z"/>
+                <constraint firstItem="SiR-jM-ya4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="PZp-LV-JFV"/>
+                <constraint firstItem="Rkc-XT-0sd" firstAttribute="centerX" secondItem="is1-Aw-4Nu" secondAttribute="centerX" id="TNw-SP-cWv"/>
+                <constraint firstItem="p9l-vU-Q62" firstAttribute="centerY" secondItem="Rkc-XT-0sd" secondAttribute="centerY" id="Y4o-Cg-hxJ"/>
+                <constraint firstItem="Rkc-XT-0sd" firstAttribute="leading" secondItem="ZqM-Lg-psq" secondAttribute="trailing" id="gEu-ig-mhn"/>
+                <constraint firstItem="p9l-vU-Q62" firstAttribute="leading" secondItem="Rkc-XT-0sd" secondAttribute="trailing" id="gwh-HW-huX"/>
+                <constraint firstItem="is1-Aw-4Nu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="14" id="iHS-B9-XTu"/>
+                <constraint firstAttribute="trailing" secondItem="SiR-jM-ya4" secondAttribute="trailing" constant="15" id="mAU-7Z-DFj"/>
+            </constraints>
+            <point key="canvasLocation" x="-216.5" y="56.5"/>
         </view>
     </objects>
 </document>

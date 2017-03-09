@@ -8,11 +8,23 @@
 
 #import "FamilyMyTableViewCell.h"
 
+@interface FamilyMyTableViewCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
+
+
+@end
+
 @implementation FamilyMyTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
+    _headImageView.layer.cornerRadius  = _headImageView.bounds.size.width / 2;
+    _headImageView.layer.masksToBounds = YES;
+    _headImageView.layer.borderColor   = [UIColor grayColor].CGColor;
+    _headImageView.layer.borderWidth   = .5;
+   
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

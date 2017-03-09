@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.title = @"收货地址";
 }
 
 - (void)didReceiveMemoryWarning {

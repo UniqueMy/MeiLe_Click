@@ -10,6 +10,7 @@
 #import "FuwuhuiHeadView.h"
 #import "FuwuhuiFootView.h"
 #import "FuwuhuiCollectionViewCell.h"
+#import "WuYeJiaoFeiViewController.h"
 
 static NSString *identifier = @"FuwuhuiCollectionViewCell";
 
@@ -88,4 +89,14 @@ static NSString *identifier = @"FuwuhuiCollectionViewCell";
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"indexPath %ld",(long)indexPath.row);
+    if (indexPath.row == 1) {
+        // 物业缴费
+        WuYeJiaoFeiViewController *wyjfVC = [[WuYeJiaoFeiViewController alloc] init];
+        [self.navigationController pushViewController:wyjfVC animated:YES];
+    }
+    
+}
 @end
