@@ -36,12 +36,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [_userNameTextField setBackground:[[UIImage imageNamed:@"login_textField"]resizableImageWithCapInsets:UIEdgeInsetsMake(8, 20, 8, 20) resizingMode:UIImageResizingModeTile]];
-    [_passwordTextField setBackground:[[UIImage imageNamed:@"login_textField"]resizableImageWithCapInsets:UIEdgeInsetsMake(8, 20, 8, 20) resizingMode:UIImageResizingModeTile]];
-    _userNameTextField.leftView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 15, 30)];
+
+    _userNameTextField.leftView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 5, 30)];
     _userNameTextField.leftViewMode = UITextFieldViewModeAlways;
-    _passwordTextField.leftView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 15, 30)];
+    _passwordTextField.leftView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 5, 30)];
     _passwordTextField.leftViewMode = UITextFieldViewModeAlways;
+    
+    [HttpRequest bezierPathToLayerRadiusWithView:_submitButton];
     
     // 登录事件
     _passwordTextField.returnKeyType = UIReturnKeyNext;

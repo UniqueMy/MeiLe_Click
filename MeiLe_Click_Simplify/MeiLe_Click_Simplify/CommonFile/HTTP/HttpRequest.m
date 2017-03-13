@@ -396,6 +396,24 @@
 #pragma mark - 贝塞尔曲线切圆角
 
 /**
+ 贝塞尔曲线画圆
+ 
+ @param view 圆角视图
+ @param rect 范围
+ @param corners 圆角方位
+ @param radiiSize 大小
+ */
++ (void)bezierPathToRingWithView:(UIView *)view {
+    
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:view.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(view.bounds.size.width / 2, view.bounds.size.height / 2)];
+    
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame         = view.bounds;
+    maskLayer.path          = maskPath.CGPath;
+    view.layer.mask         = maskLayer;
+    
+}
+/**
  贝塞尔曲线画圆角
  
  @param view 圆角视图
@@ -403,9 +421,9 @@
  @param corners 圆角方位
  @param radiiSize 大小
  */
-+ (void)bezierPathWithView:(UIView *)view corners:(UIRectCorner)corners radii:(CGSize)radiiSize {
++ (void)bezierPathToLayerRadiusWithView:(UIView *)view {
     
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:view.bounds byRoundingCorners:corners cornerRadii:radiiSize];
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:view.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(Radius, Radius)];
     
     CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
     maskLayer.frame         = view.bounds;

@@ -15,6 +15,7 @@
 		7A0527CF1E542DDC0013D3C2 /* 美乐生活用户注册协议.html in Resources */ = {isa = PBXBuildFile; fileRef = 7A0527CD1E542DDC0013D3C2 /* 美乐生活用户注册协议.html */; };
 		7A0527D01E542DDC0013D3C2 /* 用户积分.html in Resources */ = {isa = PBXBuildFile; fileRef = 7A0527CE1E542DDC0013D3C2 /* 用户积分.html */; };
 		7A07C7621E5FC9FB00E018F7 /* SHRollScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A07C7611E5FC9FB00E018F7 /* SHRollScrollView.m */; };
+		7A08A3B91E762C7200AFC847 /* ForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A08A3B81E762C7200AFC847 /* ForgetPasswordViewController.m */; };
 		7A08C41D1E6E45D800BD480F /* IntegralHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A08C41C1E6E45D800BD480F /* IntegralHtmlViewController.m */; };
 		7A08C4201E6E481F00BD480F /* IntegralTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A08C41F1E6E481F00BD480F /* IntegralTopView.m */; };
 		7A08C4221E6E482F00BD480F /* IntegralTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A08C4211E6E482F00BD480F /* IntegralTopView.xib */; };
@@ -119,6 +120,8 @@
 		7A0527CE1E542DDC0013D3C2 /* 用户积分.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "用户积分.html"; sourceTree = "<group>"; };
 		7A07C7601E5FC9FB00E018F7 /* SHRollScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRollScrollView.h; sourceTree = "<group>"; };
 		7A07C7611E5FC9FB00E018F7 /* SHRollScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRollScrollView.m; sourceTree = "<group>"; };
+		7A08A3B71E762C7200AFC847 /* ForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewController.h; sourceTree = "<group>"; };
+		7A08A3B81E762C7200AFC847 /* ForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordViewController.m; sourceTree = "<group>"; };
 		7A08C41B1E6E45D800BD480F /* IntegralHtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegralHtmlViewController.h; sourceTree = "<group>"; };
 		7A08C41C1E6E45D800BD480F /* IntegralHtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegralHtmlViewController.m; sourceTree = "<group>"; };
 		7A08C41E1E6E481F00BD480F /* IntegralTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegralTopView.h; sourceTree = "<group>"; };
@@ -730,6 +733,8 @@
 				7A1FD9361E553ADE001857E4 /* LoginViewController.m */,
 				7A49280E1E5ABC0500F6AB93 /* RegisterViewController.h */,
 				7A49280F1E5ABC0500F6AB93 /* RegisterViewController.m */,
+				7A08A3B71E762C7200AFC847 /* ForgetPasswordViewController.h */,
+				7A08A3B81E762C7200AFC847 /* ForgetPasswordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1616,6 +1621,7 @@
 				7A0DBC4D1E5BE07C006359D2 /* ChangeTitleView.m in Sources */,
 				7A0DBC421E5BD68E006359D2 /* MainViewController.m in Sources */,
 				7A363D651E63EBDC004870C8 /* zhoubiangouTableViewCell.m in Sources */,
+				7A08A3B91E762C7200AFC847 /* ForgetPasswordViewController.m in Sources */,
 				7A14D1351E653E3A0034B42F /* ShopDetailsViewController.m in Sources */,
 				7A14D12C1E6528BB0034B42F /* ShopListViewController.m in Sources */,
 				7A07C7621E5FC9FB00E018F7 /* SHRollScrollView.m in Sources */,

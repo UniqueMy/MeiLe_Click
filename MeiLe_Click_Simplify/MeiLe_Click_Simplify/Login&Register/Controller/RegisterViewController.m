@@ -24,42 +24,26 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    self.navigationController.navigationBar.translucent = YES;
-    self.navigationController.navigationBar.backIndicatorImage = [[UIImage alloc]init];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
     [self registerForKeyboardNotifications];
 }
+
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    self.navigationController.navigationBar.translucent = NO;
-    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setUitextFile:_registMobileTextField];
-    [self setUitextFile:_registCaptchasTextField];
-    [self setUitextFile:_registPasswordTextField];
-    
     _agreeButton.selected = YES;
     [_agreeButton addTarget:self action:@selector(stateChange:) forControlEvents:UIControlEventTouchUpInside];
+    [HttpRequest bezierPathToLayerRadiusWithView:_getVerCodeButton];
+    [HttpRequest bezierPathToLayerRadiusWithView:_registSubmitButton];
 }
 
 - (void)stateChange:(UIButton *)button
 {
     button.selected = !button.selected;
-}
-
-
-// 设置textField样式
-- (void)setUitextFile:(UITextField*)textFile
-{
-    [textFile setBackground:[[UIImage imageNamed:@"login_textField"]resizableImageWithCapInsets:UIEdgeInsetsMake(8, 20, 8, 20) resizingMode:UIImageResizingModeTile]];
-    textFile.leftView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 15, 30)];
-    textFile.leftViewMode = UITextFieldViewModeAlways;
-    
 }
 
 - (void)registerForKeyboardNotifications
@@ -80,7 +64,7 @@
     
     _offset = CGRectGetMaxY(_inputAreaView.frame) - kbSize.origin.y;
     
-    if (kbSize.origin.y<CGRectGetMaxY(_inputAreaView.frame)) {
+    if (kbSize.origin.y < CGRectGetMaxY(_inputAreaView.frame)) {
         [UIView animateWithDuration:duration animations:^{
             self.view.frame = CGRectMake(0.0f, -_offset, self.view.frame.size.width, self.view.frame.size.height);
         }];

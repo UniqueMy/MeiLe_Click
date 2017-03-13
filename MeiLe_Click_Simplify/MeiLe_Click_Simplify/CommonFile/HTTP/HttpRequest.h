@@ -67,14 +67,24 @@ typedef void(^HttpRequestBlockType_Failure)(NSString *path,NSError *error);
 
 
 /**
- 贝塞尔曲线画圆角
+ 贝塞尔曲线画圆
 
  @param view 圆角视图
  @param rect 范围
  @param corners 圆角方位
  @param radiiSize 大小
  */
-+ (void)bezierPathWithView:(UIView *)view corners:(UIRectCorner)corners radii:(CGSize)radiiSize;
++ (void)bezierPathToRingWithView:(UIView *)view;
+
+/**
+ 贝塞尔曲线画圆角
+ 
+ @param view 圆角视图
+ @param rect 范围
+ @param corners 圆角方位
+ @param radiiSize 大小
+ */
++ (void)bezierPathToLayerRadiusWithView:(UIView *)view;
 
 /**
  画虚线

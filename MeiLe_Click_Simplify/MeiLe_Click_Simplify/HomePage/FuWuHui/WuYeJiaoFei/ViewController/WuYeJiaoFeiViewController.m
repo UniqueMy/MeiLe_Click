@@ -26,11 +26,11 @@
     
     self.navigationItem.title = @"物业缴费";
     
-    [HttpRequest bezierPathWithView:_topView        corners:UIRectCornerAllCorners radii:CGSizeMake(4, 4)];
-    [HttpRequest bezierPathWithView:_bottomView     corners:UIRectCornerAllCorners radii:CGSizeMake(4, 4)];
-    [HttpRequest bezierPathWithView:_recordButton   corners:UIRectCornerAllCorners radii:CGSizeMake(4, 4)];
-    [HttpRequest bezierPathWithView:_payMoneyButton corners:UIRectCornerAllCorners radii:CGSizeMake(4, 4)];
-    _monthButton.layer.cornerRadius = 2;
+    [HttpRequest bezierPathToLayerRadiusWithView:_topView];
+    [HttpRequest bezierPathToLayerRadiusWithView:_bottomView];
+    [HttpRequest bezierPathToLayerRadiusWithView:_recordButton];
+    [HttpRequest bezierPathToLayerRadiusWithView:_payMoneyButton];
+    _monthButton.layer.cornerRadius  = 3;
     _monthButton.layer.masksToBounds = YES;
     _monthButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
     _monthButton.layer.borderWidth = .5f;

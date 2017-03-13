@@ -35,9 +35,7 @@
 }
 - (IBAction)MyButtonClick:(id)sender {
     
-    
-    
-    [_MeButton setTitleColor:RGB(70, 70, 70) forState:UIControlStateNormal];
+    [_MeButton setTitleColor:RGB(70, 70, 70)  forState:UIControlStateNormal];
     [_MyButton setTitleColor:RGB(180, 40, 45) forState:UIControlStateNormal];
     
     CGRect frame    = _MoveView.frame;

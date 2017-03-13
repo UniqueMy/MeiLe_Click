@@ -24,6 +24,7 @@ static NSString *const  HTTP_BASE_HOST = @"http://114.215.96.146"; // 测试
 
 #define Navigation_Height  64
 #define Tabbar_Height      49
+#define Radius              3
 
 #define BaseCommonRedColor RGB(180,40,45)
 
