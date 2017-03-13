@@ -21,7 +21,6 @@
 		7A08C4221E6E482F00BD480F /* IntegralTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A08C4211E6E482F00BD480F /* IntegralTopView.xib */; };
 		7A08C4261E6E4D3B00BD480F /* IntegralTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A08C4241E6E4D3B00BD480F /* IntegralTableViewCell.m */; };
 		7A08C4271E6E4D3B00BD480F /* IntegralTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A08C4251E6E4D3B00BD480F /* IntegralTableViewCell.xib */; };
-		7A08C4581E6E640600BD480F /* UINavigationBar+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A08C4571E6E640600BD480F /* UINavigationBar+Image.m */; };
 		7A08C45B1E6E7C6F00BD480F /* FamilyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A08C45A1E6E7C6F00BD480F /* FamilyHeaderView.m */; };
 		7A08C45D1E6E7CD700BD480F /* FamilyHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A08C45C1E6E7CD700BD480F /* FamilyHeaderView.xib */; };
 		7A0DBC341E5BD418006359D2 /* UIViewController+BarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DBC331E5BD418006359D2 /* UIViewController+BarButton.m */; };
@@ -134,8 +133,6 @@
 		7A08C4231E6E4D3B00BD480F /* IntegralTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegralTableViewCell.h; sourceTree = "<group>"; };
 		7A08C4241E6E4D3B00BD480F /* IntegralTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegralTableViewCell.m; sourceTree = "<group>"; };
 		7A08C4251E6E4D3B00BD480F /* IntegralTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntegralTableViewCell.xib; sourceTree = "<group>"; };
-		7A08C4561E6E640600BD480F /* UINavigationBar+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Image.h"; sourceTree = "<group>"; };
-		7A08C4571E6E640600BD480F /* UINavigationBar+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Image.m"; sourceTree = "<group>"; };
 		7A08C4591E6E7C6F00BD480F /* FamilyHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyHeaderView.h; sourceTree = "<group>"; };
 		7A08C45A1E6E7C6F00BD480F /* FamilyHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyHeaderView.m; sourceTree = "<group>"; };
 		7A08C45C1E6E7CD700BD480F /* FamilyHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FamilyHeaderView.xib; sourceTree = "<group>"; };
@@ -891,8 +888,6 @@
 				7A1FD9AF1E557FE5001857E4 /* NSArray+RemoveNull.m */,
 				7A0DBC321E5BD418006359D2 /* UIViewController+BarButton.h */,
 				7A0DBC331E5BD418006359D2 /* UIViewController+BarButton.m */,
-				7A08C4561E6E640600BD480F /* UINavigationBar+Image.h */,
-				7A08C4571E6E640600BD480F /* UINavigationBar+Image.m */,
 				7A14D1151E6513FB0034B42F /* UIButton+Badge.h */,
 				7A14D1161E6513FB0034B42F /* UIButton+Badge.m */,
 				7ACFD8D91E76515000CB8101 /* NSString+Zhengze.h */,
@@ -1629,7 +1624,6 @@
 				7ACFD8D81E764E3600CB8101 /* RegisterProtorlViewController.m in Sources */,
 				7A49282F1E5AC9B200F6AB93 /* WareHouseViewController.m in Sources */,
 				7A1FD9A81E5573E6001857E4 /* TEncryptorAES.m in Sources */,
-				7A08C4581E6E640600BD480F /* UINavigationBar+Image.m in Sources */,
 				7A49282C1E5AC9A500F6AB93 /* CustomizationViewController.m in Sources */,
 				7A0DBC501E5BED00006359D2 /* TitleCollectionViewCell.m in Sources */,
 				7AE3D1E01E6D485F00AD690B /* PersonWareHouseViewController.m in Sources */,

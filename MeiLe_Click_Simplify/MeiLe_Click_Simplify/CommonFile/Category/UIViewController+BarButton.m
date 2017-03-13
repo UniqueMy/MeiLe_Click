@@ -35,11 +35,11 @@ static NSString const *_newsButton = @"rightNewsButton";
 /**
  添加左视图 -- 扫描
  */
-- (void)addLeftScanQRCodeBarButtonItemIsPerson:(BOOL)isperson {
+- (void)addLeftScanQRCodeBarButtonItem {
     
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 22, 22)];
     
-    UIImage *image = isperson ? [UIImage imageNamed:@"common_scan_white"] : [UIImage imageNamed:@"common_scan"];
+    UIImage *image =  [UIImage imageNamed:@"common_scan"];
     
     [leftButton setImage:image forState:UIControlStateNormal];;
     [leftButton addTarget:self action:@selector(scanCodeController) forControlEvents:UIControlEventTouchUpInside];
@@ -70,10 +70,10 @@ static NSString const *_newsButton = @"rightNewsButton";
 /**
  添加右视图 -- 消息
  */
-- (void)addRightNewsBarButtonItemWithAlreadyRead:(BOOL)isRead isPerson:(BOOL)isperson {
+- (void)addRightNewsBarButtonItemWithAlreadyRead:(BOOL)isRead {
     
     if (!self.newsButton) {
-        UIImage *image = isperson ? [UIImage imageNamed:@"common_news_no_white"] : [UIImage imageNamed:@"common_news_no"];
+        UIImage *image =  [UIImage imageNamed:@"common_news_no"];
         
         self.newsButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 22, 22)];
         [self.newsButton setImage:image forState:UIControlStateNormal];;
@@ -84,11 +84,11 @@ static NSString const *_newsButton = @"rightNewsButton";
     }
     
     if (isRead) {
-        UIImage *image = isperson ? [UIImage imageNamed:@"common_news_yes_white"] : [UIImage imageNamed:@"common_news_yes"];
+        UIImage *image = [UIImage imageNamed:@"common_news_yes"];
         
         [self.newsButton setImage:image forState:UIControlStateNormal];
     } else {
-        UIImage *image = isperson ? [UIImage imageNamed:@"common_news_no_white"] : [UIImage imageNamed:@"common_news_no"];
+        UIImage *image = [UIImage imageNamed:@"common_news_no"];
         [self.newsButton setImage:image forState:UIControlStateNormal];
     }
 }

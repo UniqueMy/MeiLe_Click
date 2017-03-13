@@ -21,7 +21,7 @@
 #import "PersonSetViewController.h"
 #import "PersonBaseInfoViewController.h"
 
-#import "UINavigationBar+Image.h"
+
 
 
 static NSString *identifier = @"PersonCollectionViewCell";
@@ -41,15 +41,18 @@ static NSString *identifier = @"PersonCollectionViewCell";
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    
     /**
      添加左视图 -- 扫描
      */
-    [self addLeftScanQRCodeBarButtonItemIsPerson:YES];
+    [self addLeftScanQRCodeBarButtonItem];
     
     /**
      添加右视图 -- 消息
      */
-    [self addRightNewsBarButtonItemWithAlreadyRead:NO isPerson:YES];
+    [self addRightNewsBarButtonItemWithAlreadyRead:NO];
     
     [self loadTopViewFromXIB];
     
@@ -163,26 +166,5 @@ static NSString *identifier = @"PersonCollectionViewCell";
     }
 }
 
-- (void)changeNavigationBackgroundImage {
-    
-    UIImage *topImage = [UIImage imageNamed:@"person_topBaseImage_1"];
-    
-    [self.navigationController.navigationBar setCustomNavigationBarWithImage:topImage];
-   
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    
-    [super viewWillAppear:animated];
-    
-    [self changeNavigationBackgroundImage];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    
-    [super viewWillDisappear:animated];
-    
-    [self.navigationController.navigationBar setResultNavigationBar];
-}
 
 @end

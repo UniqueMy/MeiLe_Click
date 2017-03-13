@@ -90,7 +90,7 @@ static UserLoginModel * userLoginModel;
         // 查询用户所有信息
         [[HttpRequest sharedInstance] baseRequestNeedTicketCommonWithUrl:@"/tenement-service/user/user.selectSysUser.json" body_data:nil success:^(NSString *path, NSDictionary *responseJson, id responseBody, NSInteger code) {
             
-            NSDictionary *userModelDict = [responseJson objectForKey:@"data"];
+            NSDictionary *userModelDict = [responseBody objectForKey:@"data"];
             
             UserLoginModel *userLoginModel = [UserLoginModel yy_modelWithDictionary:userModelDict];
             [userLoginModel setTicket:ticket];

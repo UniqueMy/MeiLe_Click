@@ -10,7 +10,7 @@
 #import "IntegralHtmlViewController.h"
 #import "IntegralTopView.h"
 #import "IntegralTableViewCell.h"
-#import "UINavigationBar+Image.h"
+
 
 #define TopView_Height 149
  static NSString *identifier = @"IntegralTableViewCell";
@@ -55,8 +55,6 @@
 - (void)backItemClick {
     
     [self.navigationController popViewControllerAnimated:YES];
-    UIImage *topImage = [UIImage imageNamed:@"person_topBaseImage_1"];
-    [self.navigationController.navigationBar setCustomNavigationBarWithImage:topImage];
 }
 
 - (void)addRightBarItem {

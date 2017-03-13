@@ -103,8 +103,7 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         NSLog(@"----- ERROR ----- %@",error);
-        [SVProgressHUD showInfoWithStatus:[[error.userInfo objectForKey:@"head"] objectForKey:@"rtnMsg"]];
-        [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
+        [SVProgressHUD showImage:nil status:[[error.userInfo objectForKey:@"head"] objectForKey:@"rtnMsg"]];
     }];
 }
 
@@ -219,14 +218,13 @@
         } else {
             
             NSLog(@"----- Code == Other ----- ");
-            [SVProgressHUD showInfoWithStatus:[[responseObject objectForKey:@"head"] objectForKey:@"rtnMsg"]];
-            [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
+            [SVProgressHUD showImage:nil status:[[responseObject objectForKey:@"head"] objectForKey:@"rtnMsg"]];
         }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         NSLog(@"----- ERROR -----  %@",error);
-        [SVProgressHUD showInfoWithStatus:[[error.userInfo objectForKey:@"head"] objectForKey:@"rtnMsg"]];
+        [SVProgressHUD showImage:nil status:[[error.userInfo objectForKey:@"head"] objectForKey:@"rtnMsg"]];
     }];
     
 }
@@ -354,7 +352,7 @@
             } else {
                 
                 NSLog(@"----- 请求返回Other ----- ");
-                [SVProgressHUD showInfoWithStatus:[[responseObject objectForKey:@"head"] objectForKey:@"rtnMsg"]];
+                [SVProgressHUD showImage:nil status:[[responseObject objectForKey:@"head"] objectForKey:@"rtnMsg"]];
             }
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

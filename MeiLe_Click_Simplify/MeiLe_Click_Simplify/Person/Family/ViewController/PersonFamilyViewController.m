@@ -7,7 +7,6 @@
 //
 
 #import "PersonFamilyViewController.h"
-#import "UINavigationBar+Image.h"
 #import "FamilyHeaderView.h"
 #import "FamilySectionView.h"
 #import "FamilyMyTableViewCell.h"
@@ -56,8 +55,6 @@ static NSString *meIdentifier = @"FamilyMeTableViewCell";
 - (void)backItemClick {
     
     [self.navigationController popViewControllerAnimated:YES];
-    UIImage *topImage = [UIImage imageNamed:@"person_topBaseImage_1"];
-    [self.navigationController.navigationBar setCustomNavigationBarWithImage:topImage];
 }
 
 - (void)addselectView {

@@ -65,12 +65,12 @@ typedef NS_ENUM(NSInteger,TableView_Type) {
     /**
      添加左视图 -- 扫描
      */
-    [self addLeftScanQRCodeBarButtonItemIsPerson:NO];
+    [self addLeftScanQRCodeBarButtonItem];
     
     /**
      添加右视图 -- 消息
      */
-    [self addRightNewsBarButtonItemWithAlreadyRead:NO isPerson:NO];
+    [self addRightNewsBarButtonItemWithAlreadyRead:NO];
     
     
     
