@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReferenceViewController">
+            <connections>
+                <outlet property="referenceTextField" destination="wQ8-01-8TJ" id="OOV-2H-mHq"/>
+                <outlet property="submit" destination="KAx-KD-g5J" id="Kbt-P5-O3O"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Wap-9y-C9z">
+                    <rect key="frame" x="152.5" y="88" width="69.5" height="68.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="68.299999999999997" id="8kg-h7-XMJ"/>
+                        <constraint firstAttribute="width" constant="69.5" id="cxM-3W-SiO"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j27-Vp-wGf">
+                    <rect key="frame" x="324" y="32" width="32" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ALA-gG-bbN"/>
+                        <constraint firstAttribute="width" constant="32" id="reC-LB-tQy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="跳过">
+                        <color key="titleColor" red="0.70581012964248657" green="0.157279372215271" blue="0.17574018239974976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="jump:" destination="-1" eventType="touchUpInside" id="TZO-wn-7GI"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="推荐人手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQ8-01-8TJ">
+                    <rect key="frame" x="55" y="189" width="265" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="eYp-HG-tUg"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="填写推荐人，双方均会获得积分奖励" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCe-QB-rCs">
+                    <rect key="frame" x="55" y="232" width="265" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.70581012964248657" green="0.157279372215271" blue="0.17574018239974976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAx-KD-g5J">
+                    <rect key="frame" x="55" y="268.5" width="265" height="40"/>
+                    <color key="backgroundColor" red="0.70581012964248657" green="0.157279372215271" blue="0.17574018239974976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="mGH-Hg-b6F"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="submit:" destination="-1" eventType="touchUpInside" id="phM-H6-XLJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wQ8-01-8TJ" secondAttribute="trailing" constant="55" id="0P1-cN-MOK"/>
+                <constraint firstItem="KAx-KD-g5J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="Iej-bn-sj1"/>
+                <constraint firstAttribute="trailing" secondItem="GCe-QB-rCs" secondAttribute="trailing" constant="55" id="JBi-w6-Pzf"/>
+                <constraint firstAttribute="trailing" secondItem="KAx-KD-g5J" secondAttribute="trailing" constant="55" id="JSu-pH-rux"/>
+                <constraint firstItem="wQ8-01-8TJ" firstAttribute="top" secondItem="Wap-9y-C9z" secondAttribute="bottom" constant="32.5" id="MTj-je-kMr"/>
+                <constraint firstItem="GCe-QB-rCs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="NvZ-LR-4Qx"/>
+                <constraint firstItem="j27-Vp-wGf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="Qez-ug-3Ya"/>
+                <constraint firstItem="wQ8-01-8TJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="RWV-Ng-RMK"/>
+                <constraint firstAttribute="trailing" secondItem="j27-Vp-wGf" secondAttribute="trailing" constant="19" id="lOV-5l-SNd"/>
+                <constraint firstItem="KAx-KD-g5J" firstAttribute="top" secondItem="GCe-QB-rCs" secondAttribute="bottom" constant="22" id="mmb-Rf-4hd"/>
+                <constraint firstItem="GCe-QB-rCs" firstAttribute="top" secondItem="wQ8-01-8TJ" secondAttribute="bottom" constant="5" id="mrM-yU-Ue7"/>
+                <constraint firstItem="Wap-9y-C9z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oST-Yc-rNs"/>
+                <constraint firstItem="Wap-9y-C9z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="88.200000000000003" id="zlo-vE-goD"/>
+            </constraints>
+            <point key="canvasLocation" x="-39" y="49"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="70" height="70"/>
+    </resources>
+</document>

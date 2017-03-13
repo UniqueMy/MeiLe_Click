@@ -323,15 +323,15 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
         
         self.userInteractionEnabled = NO;
         _backgroundColor = [UIColor clearColor];
-        _foregroundColor = [UIColor blackColor];
+        _foregroundColor = [UIColor whiteColor];
         _backgroundLayerColor = [UIColor colorWithWhite:0 alpha:0.4];
         
-        self.alpha = 0.0f;
+        self.alpha         = 0.0f;
         self.activityCount = 0;
         
         // Set default values
-        _defaultMaskType = SVProgressHUDMaskTypeNone;
-        _defaultStyle = SVProgressHUDStyleLight;
+        _defaultMaskType      = SVProgressHUDMaskTypeNone;
+        _defaultStyle         = SVProgressHUDStyleLight;
         _defaultAnimationType = SVProgressHUDAnimationTypeFlat;
         
         if ([UIFont respondsToSelector:@selector(preferredFontForTextStyle:)]) {
@@ -358,13 +358,13 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
             _errorImage = errorImage;
         }
 
-        _ringThickness = 2.0f;
-        _ringRadius = 18.0f;
+        _ringThickness    = 2.0f;
+        _ringRadius       = 18.0f;
         _ringNoTextRadius = 24.0f;
         
-        _cornerRadius = 14.0f;
+        _cornerRadius     = 3.0f;
         
-        _minimumDismissTimeInterval = 5.0;
+        _minimumDismissTimeInterval = 1.5f;
 
         _fadeInAnimationDuration = SVProgressHUDDefaultAnimationDuration;
         _fadeOutAnimationDuration = SVProgressHUDDefaultAnimationDuration;

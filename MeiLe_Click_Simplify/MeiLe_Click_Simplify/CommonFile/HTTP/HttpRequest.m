@@ -227,7 +227,6 @@
         
         NSLog(@"----- ERROR -----  %@",error);
         [SVProgressHUD showInfoWithStatus:[[error.userInfo objectForKey:@"head"] objectForKey:@"rtnMsg"]];
-        [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
     }];
     
 }
@@ -244,7 +243,7 @@
     [self baseRequestWithUrl:urlString body_data:bodyData needTicket:HttpRequest_TicketType_NEED_TICKET success:^(NSString *path, NSDictionary *responseJson, id responseBody, NSInteger code) {
         
         
-        NSMutableDictionary *bodyJson = [NSMutableDictionary dictionaryWithDictionary:[responseJson objectForKey:@"body"]] ;
+        NSMutableDictionary *bodyJson = [NSMutableDictionary dictionaryWithDictionary:responseBody] ;
         bodyJson = [bodyJson dictionaryByRemovingNull];
         
         successBlock(urlString,responseJson,bodyJson,code);
@@ -323,7 +322,7 @@
                     NSMutableDictionary *bodyJson = [NSMutableDictionary dictionaryWithDictionary:responseJson] ;
                     bodyJson = [bodyJson dictionaryByRemovingNull];
                     
-                    successBlock(urlString,responseJson,bodyJson,code);
+                    successBlock(urlString,responseObject,bodyJson,code);
                     
                 }
             } else if (code == HttpRequest_ReCodeType_OVERDUE) {
@@ -356,7 +355,6 @@
                 
                 NSLog(@"----- 请求返回Other ----- ");
                 [SVProgressHUD showInfoWithStatus:[[responseObject objectForKey:@"head"] objectForKey:@"rtnMsg"]];
-                [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
             }
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

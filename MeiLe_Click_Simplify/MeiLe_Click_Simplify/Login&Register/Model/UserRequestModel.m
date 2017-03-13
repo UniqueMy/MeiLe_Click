@@ -114,4 +114,22 @@ static UserLoginModel * userLoginModel;
     }];
 }
 
+/**
+ 请求验证码
+ 
+ @param phoneNumber 电话号码
+ @param completedBlock 是否成功 返回信息
+ */
++ (void)sendCaptcha:(NSString *)phoneNumber completed:(void(^)(BOOL isSuccess))completedBlock {
+    
+    [[HttpRequest sharedInstance] baseRequestNeedTicketCommonWithUrl:@"/tenement-service/user/user.sendCaptchas.json" body_data:@{@"mobilePhone" : phoneNumber} success:^(NSString *path, NSDictionary *responseJson, NSDictionary *responseBody, NSInteger code) {
+        
+        completedBlock(true);
+        
+    } fail:^(NSString *path, NSError *error) {
+        
+    }];
+    
+}
+
 @end

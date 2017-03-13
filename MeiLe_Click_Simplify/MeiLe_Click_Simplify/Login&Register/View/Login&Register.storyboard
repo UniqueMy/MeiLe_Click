@@ -191,6 +191,9 @@
                                         <state key="normal" title="获取验证码">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="getCodeButton:" destination="Mt9-KT-1Q4" eventType="touchUpInside" id="ibJ-6N-vh2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKX-L5-Scc">
                                         <rect key="frame" x="55" y="164" width="18.5" height="18"/>
@@ -220,6 +223,9 @@
                                         <state key="normal" title="《众美社区用户注册协议》">
                                             <color key="titleColor" red="0.70581012964248657" green="0.157279372215271" blue="0.17574018239974976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerProtocol:" destination="Mt9-KT-1Q4" eventType="touchUpInside" id="uNv-1X-VyF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3s-SA-NEa">
                                         <rect key="frame" x="55" y="203.5" width="265" height="40"/>
@@ -230,6 +236,9 @@
                                         <state key="normal" title="创建账号">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="submitRegister:" destination="Mt9-KT-1Q4" eventType="touchUpInside" id="s8X-wE-jLW"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Anf-5F-9pO">
                                         <rect key="frame" x="55" y="112" width="265" height="38"/>
@@ -238,7 +247,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

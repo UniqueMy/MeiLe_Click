@@ -67,6 +67,10 @@
 		7A49282C1E5AC9A500F6AB93 /* CustomizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A49282B1E5AC9A500F6AB93 /* CustomizationViewController.m */; };
 		7A49282F1E5AC9B200F6AB93 /* WareHouseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A49282E1E5AC9B200F6AB93 /* WareHouseViewController.m */; };
 		7A4928321E5AC9C000F6AB93 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4928311E5AC9C000F6AB93 /* PersonViewController.m */; };
+		7ACFD8D81E764E3600CB8101 /* RegisterProtorlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACFD8D71E764E3600CB8101 /* RegisterProtorlViewController.m */; };
+		7ACFD8DB1E76515000CB8101 /* NSString+Zhengze.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACFD8DA1E76515000CB8101 /* NSString+Zhengze.m */; };
+		7ACFD8DF1E76689400CB8101 /* ReferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACFD8DD1E76689400CB8101 /* ReferenceViewController.m */; };
+		7ACFD8E01E76689400CB8101 /* ReferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ACFD8DE1E76689400CB8101 /* ReferenceViewController.xib */; };
 		7AE3D18A1E6D04B600AD690B /* PersonTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1891E6D04B600AD690B /* PersonTopView.m */; };
 		7AE3D18C1E6D04C300AD690B /* PersonTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D18B1E6D04C300AD690B /* PersonTopView.xib */; };
 		7AE3D1901E6D37BB00AD690B /* PersonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D18E1E6D37BB00AD690B /* PersonCollectionViewCell.m */; };
@@ -288,6 +292,13 @@
 		7A49282E1E5AC9B200F6AB93 /* WareHouseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WareHouseViewController.m; sourceTree = "<group>"; };
 		7A4928301E5AC9C000F6AB93 /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
 		7A4928311E5AC9C000F6AB93 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
+		7ACFD8D61E764E3600CB8101 /* RegisterProtorlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterProtorlViewController.h; sourceTree = "<group>"; };
+		7ACFD8D71E764E3600CB8101 /* RegisterProtorlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterProtorlViewController.m; sourceTree = "<group>"; };
+		7ACFD8D91E76515000CB8101 /* NSString+Zhengze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Zhengze.h"; sourceTree = "<group>"; };
+		7ACFD8DA1E76515000CB8101 /* NSString+Zhengze.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Zhengze.m"; sourceTree = "<group>"; };
+		7ACFD8DC1E76689400CB8101 /* ReferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenceViewController.h; sourceTree = "<group>"; };
+		7ACFD8DD1E76689400CB8101 /* ReferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferenceViewController.m; sourceTree = "<group>"; };
+		7ACFD8DE1E76689400CB8101 /* ReferenceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReferenceViewController.xib; sourceTree = "<group>"; };
 		7AE3D1881E6D04B600AD690B /* PersonTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonTopView.h; sourceTree = "<group>"; };
 		7AE3D1891E6D04B600AD690B /* PersonTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTopView.m; sourceTree = "<group>"; };
 		7AE3D18B1E6D04C300AD690B /* PersonTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonTopView.xib; sourceTree = "<group>"; };
@@ -733,8 +744,13 @@
 				7A1FD9361E553ADE001857E4 /* LoginViewController.m */,
 				7A49280E1E5ABC0500F6AB93 /* RegisterViewController.h */,
 				7A49280F1E5ABC0500F6AB93 /* RegisterViewController.m */,
+				7ACFD8DC1E76689400CB8101 /* ReferenceViewController.h */,
+				7ACFD8DD1E76689400CB8101 /* ReferenceViewController.m */,
+				7ACFD8DE1E76689400CB8101 /* ReferenceViewController.xib */,
 				7A08A3B71E762C7200AFC847 /* ForgetPasswordViewController.h */,
 				7A08A3B81E762C7200AFC847 /* ForgetPasswordViewController.m */,
+				7ACFD8D61E764E3600CB8101 /* RegisterProtorlViewController.h */,
+				7ACFD8D71E764E3600CB8101 /* RegisterProtorlViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -879,6 +895,8 @@
 				7A08C4571E6E640600BD480F /* UINavigationBar+Image.m */,
 				7A14D1151E6513FB0034B42F /* UIButton+Badge.h */,
 				7A14D1161E6513FB0034B42F /* UIButton+Badge.m */,
+				7ACFD8D91E76515000CB8101 /* NSString+Zhengze.h */,
+				7ACFD8DA1E76515000CB8101 /* NSString+Zhengze.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1545,6 +1563,7 @@
 				7A08C4221E6E482F00BD480F /* IntegralTopView.xib in Resources */,
 				7A14D1291E6528BB0034B42F /* ContentTableViewCell.xib in Resources */,
 				7AE3D18C1E6D04C300AD690B /* PersonTopView.xib in Resources */,
+				7ACFD8E01E76689400CB8101 /* ReferenceViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1607,12 +1626,14 @@
 				7A08C45B1E6E7C6F00BD480F /* FamilyHeaderView.m in Sources */,
 				7AFF4BA01E7127FB00008E49 /* FuWuHuiViewController.m in Sources */,
 				7A363D681E63EBDC004870C8 /* ZhouBianGouViewController.m in Sources */,
+				7ACFD8D81E764E3600CB8101 /* RegisterProtorlViewController.m in Sources */,
 				7A49282F1E5AC9B200F6AB93 /* WareHouseViewController.m in Sources */,
 				7A1FD9A81E5573E6001857E4 /* TEncryptorAES.m in Sources */,
 				7A08C4581E6E640600BD480F /* UINavigationBar+Image.m in Sources */,
 				7A49282C1E5AC9A500F6AB93 /* CustomizationViewController.m in Sources */,
 				7A0DBC501E5BED00006359D2 /* TitleCollectionViewCell.m in Sources */,
 				7AE3D1E01E6D485F00AD690B /* PersonWareHouseViewController.m in Sources */,
+				7ACFD8DB1E76515000CB8101 /* NSString+Zhengze.m in Sources */,
 				7A1FD94D1E554EEE001857E4 /* HttpRequest.m in Sources */,
 				7A46B1221E5D3F4F00B90799 /* WuYeTongViewController.m in Sources */,
 				7A1FD9B01E557FE5001857E4 /* NSArray+RemoveNull.m in Sources */,
@@ -1659,6 +1680,7 @@
 				7AFF4BA41E71284900008E49 /* WuYeJiaoFeiViewController.m in Sources */,
 				7AFF4B7C1E71008400008E49 /* FamilyMyTableViewCell.m in Sources */,
 				7AFF4B9C1E7127FB00008E49 /* FuwuhuiCollectionViewCell.m in Sources */,
+				7ACFD8DF1E76689400CB8101 /* ReferenceViewController.m in Sources */,
 				7AE3D18A1E6D04B600AD690B /* PersonTopView.m in Sources */,
 				7A0E5ED61E665EE00011778B /* ContentHeaderView.m in Sources */,
 				7A0527991E54247D0013D3C2 /* main.m in Sources */,

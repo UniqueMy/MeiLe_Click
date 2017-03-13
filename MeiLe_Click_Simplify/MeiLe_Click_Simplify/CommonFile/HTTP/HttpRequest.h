@@ -96,6 +96,8 @@ typedef void(^HttpRequestBlockType_Failure)(NSString *path,NSError *error);
  */
 + (void)drawDashLine:(UIView *)lineView lineLength:(int)lineLength lineSpacing:(int)lineSpacing lineColor:(UIColor *)lineColor;
 
+/********************************************************************/
+
 /**
  安全散列算法
  

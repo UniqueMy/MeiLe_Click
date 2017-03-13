@@ -37,9 +37,9 @@
     [super viewDidLoad];
     
 
-    _userNameTextField.leftView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 5, 30)];
+    _userNameTextField.leftView     = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 5, 30)];
     _userNameTextField.leftViewMode = UITextFieldViewModeAlways;
-    _passwordTextField.leftView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 5, 30)];
+    _passwordTextField.leftView     = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 5, 30)];
     _passwordTextField.leftViewMode = UITextFieldViewModeAlways;
     
     [HttpRequest bezierPathToLayerRadiusWithView:_submitButton];
@@ -74,15 +74,18 @@
 #pragma mark - 提交登录事件
 - (IBAction)onLoginSubmitAction:(id)sender {
     
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
+    [SVProgressHUD setBackgroundColor:RGBA(0, 0, 0, 0.6)];
+    
     if (_userNameTextField.text.length == 0) {
-        [SVProgressHUD showErrorWithStatus:@"手机号不能为空"];
-        [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
+
+        [SVProgressHUD showImage:nil status:@"手机号不能为空"];
         return;
     }
     
     if (_passwordTextField.text.length == 0) {
-        [SVProgressHUD showErrorWithStatus:@"密码不能为空"];
-        [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
+       
+        [SVProgressHUD showImage:nil status:@"密码不能为空"];
         return;
     }
     

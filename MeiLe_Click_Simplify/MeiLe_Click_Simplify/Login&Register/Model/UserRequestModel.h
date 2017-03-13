@@ -11,8 +11,10 @@
 
 typedef void(^CheckLoginSuccess)  (BOOL needLogin);
 typedef void(^CheckLoginFailure)  (NSError *error);
+
 typedef void(^HttpRequestBlockType_Success)(NSString *path,NSDictionary *responseJson,NSDictionary *responseBody,NSInteger code);
 typedef void(^HttpRequestBlockType_Failure)(NSString *path,NSError *error);
+
 
 
 @interface UserRequestModel : NSObject
@@ -46,4 +48,14 @@ typedef void(^HttpRequestBlockType_Failure)(NSString *path,NSError *error);
  @param failure 
  */
 + (void)requestLoginWithDictionary:(NSDictionary *)parameters success:(HttpRequestBlockType_Success)requestSuccess failure:(HttpRequestBlockType_Failure)requestFailure;
+
+
+/**
+ 请求验证码
+
+ @param phoneNumber 电话号码
+ @param completedBlock 是否成功 返回信息
+ */
++ (void)sendCaptcha:(NSString *)phoneNumber completed:(void(^)(BOOL isSuccess))completedBlock;
+
 @end

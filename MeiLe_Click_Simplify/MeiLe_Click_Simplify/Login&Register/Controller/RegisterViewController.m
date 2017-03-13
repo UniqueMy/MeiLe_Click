@@ -7,6 +7,11 @@
 //
 
 #import "RegisterViewController.h"
+#import "RegisterProtorlViewController.h"
+#import "NSString+Zhengze.h"
+#import "UserRequestModel.h"
+#import "ReferenceViewController.h"
+#import "RootViewController.h"
 
 @interface RegisterViewController ()
 
@@ -35,6 +40,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.title = @"注册";
+    
     _agreeButton.selected = YES;
     [_agreeButton addTarget:self action:@selector(stateChange:) forControlEvents:UIControlEventTouchUpInside];
     [HttpRequest bezierPathToLayerRadiusWithView:_getVerCodeButton];
@@ -44,6 +51,147 @@
 - (void)stateChange:(UIButton *)button
 {
     button.selected = !button.selected;
+}
+
+- (IBAction)registerProtocol:(id)sender {
+    
+    [self.navigationController pushViewController:[RegisterProtorlViewController new] animated:YES];
+    
+}
+
+- (IBAction)getCodeButton:(id)sender {
+    
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
+    [SVProgressHUD setBackgroundColor:RGBA(0, 0, 0, 0.6)];
+    
+    if (![_registMobileTextField.text isPhoneNumberString:_registMobileTextField.text]) {
+        
+        [SVProgressHUD showImage:nil status:@"请输入正确的手机号码"];
+        return;
+    }
+    
+    if (_registMobileTextField.text.length == 0) {
+        
+        [SVProgressHUD showImage:nil status:@"手机号不能为空"];
+        return;
+    }
+    
+    [UserRequestModel sendCaptcha:_registMobileTextField.text completed:^(BOOL isSuccess) {
+        
+        if (isSuccess) {
+            
+            [_registCaptchasTextField becomeFirstResponder];
+            [self performSelector:@selector(reflashGetKeyBt:) withObject:[NSNumber numberWithInt:60] afterDelay:0];
+        }
+        
+    }];
+}
+
+- (void)reflashGetKeyBt:(NSNumber *)second
+{
+    if ([second integerValue] == 0) {
+        [_getVerCodeButton setEnabled:YES];
+        [_getVerCodeButton setTitle:@"获取验证码" forState:UIControlStateNormal];
+    } else {
+        [_getVerCodeButton setEnabled:NO];
+        int i = [second intValue];
+        [_getVerCodeButton setTitle:[NSString stringWithFormat:@"剩余%d秒", i] forState:UIControlStateNormal];
+        [self performSelector:@selector(reflashGetKeyBt:) withObject:[NSNumber numberWithInt:i - 1] afterDelay:1];
+    }
+}
+
+
+- (IBAction)submitRegister:(id)sender {
+    
+//    ReferenceViewController *referenceVC = [[ReferenceViewController alloc] init];
+//     [self presentViewController:referenceVC animated:YES completion:nil];
+    
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
+    [SVProgressHUD setBackgroundColor:RGBA(0, 0, 0, 0.6)];
+    
+    if (!_agreeButton.isSelected) {
+        
+        [SVProgressHUD showImage:nil status:@"请同意《中美社区用户注册协议》"];
+        return;
+    }
+    
+    if (_registMobileTextField.text.length == 0) {
+        
+        [SVProgressHUD showImage:nil status:@"手机号不能为空"];
+        return;
+    }
+    
+    if (![_registMobileTextField.text isPhoneNumberString:_registMobileTextField.text]) {
+        
+        [SVProgressHUD showImage:nil status:@"请输入正确的手机号码"];
+        return;
+    }
+    
+    if (_registPasswordTextField.text.length == 0) {
+        
+        [SVProgressHUD showImage:nil status:@"密码不能为空"];
+        return;
+    }
+    
+    if (![NSString checkPassWordAndLenth:_registPasswordTextField.text]) {
+        
+        [SVProgressHUD showImage:nil status:@"密码为6～20位的字母或数字"];
+        return;
+    }
+    
+    if (_registCaptchasTextField.text.length == 0) {
+        
+        [SVProgressHUD showImage:nil status:@"验证码不能为空"];
+        return;
+    }
+    
+    NSString *mobilePhone = _registMobileTextField.text;
+    NSString *password    = _registPasswordTextField.text;
+    NSString *captchas    = _registCaptchasTextField.text;
+    
+    NSDictionary *parameters = @{@"mobilePhone":mobilePhone,
+                                 @"password":[HttpRequest secureHashAlgorithmWithNSString:password],
+                                 @"captchas":captchas};
+    [[HttpRequest sharedInstance] baseRequestNeedTicketCommonWithUrl:@"/tenement-service/user/user.toRegist.json" body_data:parameters success:^(NSString *path, NSDictionary *responseJson, NSDictionary *responseBody, NSInteger code) {
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"InputloginNameAndPassword" object:nil userInfo:@{@"mobilePhone":mobilePhone, @"password":password}];
+        
+        _registMobileTextField.text   = @"";
+        _registPasswordTextField.text = @"";
+        _registCaptchasTextField.text = @"";
+        
+        NSDictionary *parameters = @{@"loginName":mobilePhone,
+                                     @"password" :password};
+        
+        [UserRequestModel requestLoginWithDictionary:parameters success:^(NSString *path, NSDictionary *responseJson, NSDictionary *responseBody, NSInteger code) {
+            
+            ReferenceViewController *referenceVC = [[ReferenceViewController alloc] init];
+            [self presentViewController:referenceVC animated:YES completion:nil];
+            
+        } failure:^(NSString *path, NSError *error) {
+            
+            [RootViewController presentViewControllerType:RootViewControllerTypeLogin];
+            
+        }];
+        
+    } fail:^(NSString *path, NSError *error) {
+        
+    }];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if ([_registPasswordTextField isFirstResponder]) {
+        [_registCaptchasTextField becomeFirstResponder];
+    }
+    
+    return YES;
+}
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_registCaptchasTextField resignFirstResponder];
+    [_registMobileTextField resignFirstResponder];
+    [_registPasswordTextField resignFirstResponder];
 }
 
 - (void)registerForKeyboardNotifications
