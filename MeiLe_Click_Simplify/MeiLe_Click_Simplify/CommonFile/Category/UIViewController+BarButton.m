@@ -63,8 +63,17 @@ static NSString const *_newsButton = @"rightNewsButton";
         return;
     }
     
-    ScanQRCodeViewController *scanVC = [[ScanQRCodeViewController alloc] init];
-    [self.navigationController pushViewController:scanVC animated:NO];
+//    CATransition *transition = [CATransition animation];
+//    transition.duration = .3f;
+//    transition.type    = kCATransitionPush;
+//    transition.subtype = kCATransitionFromLeft;
+//    [self.navigationController.view.layer addAnimation:transition forKey:nil];
+//    self.navigationController.navigationBarHidden = NO;
+    
+//    [self.navigationController pushViewController:[LifeCircleViewController new] animated:YES];
+    
+//    ScanQRCodeViewController *scanVC = [[ScanQRCodeViewController alloc] init];
+    [self.navigationController pushViewController:[ScanQRCodeViewController new] animated:YES];
 }
 
 /**

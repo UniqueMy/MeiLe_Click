@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LifeCircleTableSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNB-fC-aaP">
+                    <rect key="frame" x="8" y="10" width="57.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5X-lq-7UE">
+                    <rect key="frame" x="0.0" y="36" width="375" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京市丰台区六圈路16号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSt-2H-sTO">
+                            <rect key="frame" x="8" y="14" width="158" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.4979824423789978" green="0.49807190895080566" blue="0.49797677993774414" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoA-G0-a0d">
+                            <rect key="frame" x="336" y="12" width="22" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21.899999999999999" id="9q3-Tm-AsG"/>
+                                <constraint firstAttribute="width" constant="21.899999999999999" id="BG8-AR-q8i"/>
+                            </constraints>
+                            <state key="normal" image="common_location"/>
+                            <connections>
+                                <action selector="startLocation:" destination="iN0-l3-epB" eventType="touchUpInside" id="eXJ-ow-L7P"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="lSt-2H-sTO" firstAttribute="centerY" secondItem="s5X-lq-7UE" secondAttribute="centerY" id="E9L-2D-VBN"/>
+                        <constraint firstItem="lSt-2H-sTO" firstAttribute="leading" secondItem="s5X-lq-7UE" secondAttribute="leading" constant="8" id="Zrt-5G-KLU"/>
+                        <constraint firstAttribute="height" constant="45" id="dKP-y7-P4W"/>
+                        <constraint firstItem="EoA-G0-a0d" firstAttribute="centerY" secondItem="lSt-2H-sTO" secondAttribute="centerY" id="nlx-Pz-dyW"/>
+                        <constraint firstAttribute="trailing" secondItem="EoA-G0-a0d" secondAttribute="trailing" constant="17.100000000000001" id="yW4-Xm-JYf"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="附近地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Cz-ds-wgP">
+                    <rect key="frame" x="8" y="92" width="57.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.27447596190000001" green="0.27452921870000002" blue="0.27447256450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.95675891637802124" green="0.95692259073257446" blue="0.95674854516983032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eNB-fC-aaP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="0fd-b2-SFP"/>
+                <constraint firstAttribute="trailing" secondItem="s5X-lq-7UE" secondAttribute="trailing" id="7XM-zW-u0a"/>
+                <constraint firstItem="9Cz-ds-wgP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="GOg-l3-BxV"/>
+                <constraint firstItem="s5X-lq-7UE" firstAttribute="top" secondItem="eNB-fC-aaP" secondAttribute="bottom" constant="9" id="S5K-oj-q79"/>
+                <constraint firstItem="9Cz-ds-wgP" firstAttribute="top" secondItem="s5X-lq-7UE" secondAttribute="bottom" constant="11" id="XLx-vx-rp8"/>
+                <constraint firstItem="eNB-fC-aaP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="m2m-Z2-pt9"/>
+                <constraint firstItem="s5X-lq-7UE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xcR-qF-Y55"/>
+            </constraints>
+            <connections>
+                <outlet property="locationButton" destination="EoA-G0-a0d" id="bQB-61-uRX"/>
+                <outlet property="locationLabel" destination="lSt-2H-sTO" id="zaW-wi-vXX"/>
+            </connections>
+            <point key="canvasLocation" x="31.5" y="57.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_location" width="24" height="24"/>
+    </resources>
+</document>

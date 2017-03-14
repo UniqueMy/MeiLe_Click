@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LifecircleCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="49"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="49"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_lifecircle_no" translatesAutoresizingMaskIntoConstraints="NO" id="FyP-c7-CZg">
+                        <rect key="frame" x="0.0" y="0.0" width="145" height="49"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天津市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vO6-91-y3x">
+                        <rect key="frame" x="51" y="16" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.6705138087272644" green="0.67063111066818237" blue="0.67050635814666748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="FyP-c7-CZg" secondAttribute="bottom" id="1BI-dj-w4E"/>
+                <constraint firstItem="vO6-91-y3x" firstAttribute="centerX" secondItem="FyP-c7-CZg" secondAttribute="centerX" id="6xz-S6-jax"/>
+                <constraint firstAttribute="trailing" secondItem="FyP-c7-CZg" secondAttribute="trailing" id="HGM-uo-hgV"/>
+                <constraint firstItem="FyP-c7-CZg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Rj0-cj-8Qp"/>
+                <constraint firstItem="FyP-c7-CZg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="X7I-Vh-xEe"/>
+                <constraint firstItem="vO6-91-y3x" firstAttribute="centerY" secondItem="FyP-c7-CZg" secondAttribute="centerY" id="iMj-Po-9WR"/>
+            </constraints>
+            <size key="customSize" width="145" height="49"/>
+            <connections>
+                <outlet property="backgroundImage" destination="FyP-c7-CZg" id="Il6-g3-4Nk"/>
+                <outlet property="cityName" destination="vO6-91-y3x" id="ctS-Wm-bEE"/>
+            </connections>
+            <point key="canvasLocation" x="72.5" y="51.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="common_lifecircle_no" width="93" height="32"/>
+    </resources>
+</document>

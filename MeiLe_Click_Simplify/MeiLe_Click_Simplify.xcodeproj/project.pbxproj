@@ -59,6 +59,14 @@
 		7A363D651E63EBDC004870C8 /* zhoubiangouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A363D5D1E63EBDC004870C8 /* zhoubiangouTableViewCell.m */; };
 		7A363D661E63EBDC004870C8 /* zhoubiangouTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A363D5E1E63EBDC004870C8 /* zhoubiangouTableViewCell.xib */; };
 		7A363D681E63EBDC004870C8 /* ZhouBianGouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A363D631E63EBDC004870C8 /* ZhouBianGouViewController.m */; };
+		7A3DFD4A1E778F7600D71D0C /* LifeCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3DFD471E778F7600D71D0C /* LifeCircleViewController.m */; };
+		7A3DFD4B1E778F7600D71D0C /* SearchResultTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3DFD491E778F7600D71D0C /* SearchResultTVC.m */; };
+		7A3DFD4E1E778F9D00D71D0C /* LifeCircleHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3DFD4D1E778F9D00D71D0C /* LifeCircleHeaderView.m */; };
+		7A3DFD541E77BCFA00D71D0C /* LifecircleCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3DFD521E77BCFA00D71D0C /* LifecircleCollectionHeaderView.m */; };
+		7A3DFD591E77BEF700D71D0C /* LifecircleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3DFD571E77BEF700D71D0C /* LifecircleCollectionViewCell.m */; };
+		7A3DFD5A1E77BEF700D71D0C /* LifecircleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A3DFD581E77BEF700D71D0C /* LifecircleCollectionViewCell.xib */; };
+		7A3DFD5D1E77D18F00D71D0C /* LifeCircleTableSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3DFD5C1E77D18F00D71D0C /* LifeCircleTableSectionView.m */; };
+		7A3DFD5F1E77D57900D71D0C /* LifeCircleTableSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A3DFD5E1E77D57900D71D0C /* LifeCircleTableSectionView.xib */; };
 		7A46B1221E5D3F4F00B90799 /* WuYeTongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A46B1211E5D3F4F00B90799 /* WuYeTongViewController.m */; };
 		7A49280D1E5A87AA00F6AB93 /* Login&Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A49280C1E5A87AA00F6AB93 /* Login&Register.storyboard */; };
 		7A4928101E5ABC0500F6AB93 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A49280F1E5ABC0500F6AB93 /* RegisterViewController.m */; };
@@ -276,6 +284,20 @@
 		7A363D5E1E63EBDC004870C8 /* zhoubiangouTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = zhoubiangouTableViewCell.xib; sourceTree = "<group>"; };
 		7A363D621E63EBDC004870C8 /* ZhouBianGouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhouBianGouViewController.h; sourceTree = "<group>"; };
 		7A363D631E63EBDC004870C8 /* ZhouBianGouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhouBianGouViewController.m; sourceTree = "<group>"; };
+		7A3DFD461E778F7600D71D0C /* LifeCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeCircleViewController.h; sourceTree = "<group>"; };
+		7A3DFD471E778F7600D71D0C /* LifeCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeCircleViewController.m; sourceTree = "<group>"; };
+		7A3DFD481E778F7600D71D0C /* SearchResultTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultTVC.h; sourceTree = "<group>"; };
+		7A3DFD491E778F7600D71D0C /* SearchResultTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultTVC.m; sourceTree = "<group>"; };
+		7A3DFD4C1E778F9D00D71D0C /* LifeCircleHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeCircleHeaderView.h; sourceTree = "<group>"; };
+		7A3DFD4D1E778F9D00D71D0C /* LifeCircleHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeCircleHeaderView.m; sourceTree = "<group>"; };
+		7A3DFD511E77BCFA00D71D0C /* LifecircleCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifecircleCollectionHeaderView.h; sourceTree = "<group>"; };
+		7A3DFD521E77BCFA00D71D0C /* LifecircleCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifecircleCollectionHeaderView.m; sourceTree = "<group>"; };
+		7A3DFD561E77BEF700D71D0C /* LifecircleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifecircleCollectionViewCell.h; sourceTree = "<group>"; };
+		7A3DFD571E77BEF700D71D0C /* LifecircleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifecircleCollectionViewCell.m; sourceTree = "<group>"; };
+		7A3DFD581E77BEF700D71D0C /* LifecircleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LifecircleCollectionViewCell.xib; sourceTree = "<group>"; };
+		7A3DFD5B1E77D18F00D71D0C /* LifeCircleTableSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeCircleTableSectionView.h; sourceTree = "<group>"; };
+		7A3DFD5C1E77D18F00D71D0C /* LifeCircleTableSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeCircleTableSectionView.m; sourceTree = "<group>"; };
+		7A3DFD5E1E77D57900D71D0C /* LifeCircleTableSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LifeCircleTableSectionView.xib; sourceTree = "<group>"; };
 		7A46B1201E5D3F4F00B90799 /* WuYeTongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuYeTongViewController.h; sourceTree = "<group>"; };
 		7A46B1211E5D3F4F00B90799 /* WuYeTongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuYeTongViewController.m; sourceTree = "<group>"; };
 		7A49280C1E5A87AA00F6AB93 /* Login&Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Login&Register.storyboard"; sourceTree = "<group>"; };
@@ -440,6 +462,7 @@
 		7A0527B81E542A9A0013D3C2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7A3DFD3D1E777E6000D71D0C /* LifeCircle */,
 				7A0DBC3B1E5BD68E006359D2 /* Root */,
 				7A0DBC371E5BD669006359D2 /* Navigation */,
 			);
@@ -937,6 +960,43 @@
 			children = (
 				7A363D621E63EBDC004870C8 /* ZhouBianGouViewController.h */,
 				7A363D631E63EBDC004870C8 /* ZhouBianGouViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7A3DFD3D1E777E6000D71D0C /* LifeCircle */ = {
+			isa = PBXGroup;
+			children = (
+				7A3DFD451E778F7600D71D0C /* ViewController */,
+				7A3DFD441E778F7600D71D0C /* View */,
+			);
+			path = LifeCircle;
+			sourceTree = "<group>";
+		};
+		7A3DFD441E778F7600D71D0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7A3DFD4C1E778F9D00D71D0C /* LifeCircleHeaderView.h */,
+				7A3DFD4D1E778F9D00D71D0C /* LifeCircleHeaderView.m */,
+				7A3DFD511E77BCFA00D71D0C /* LifecircleCollectionHeaderView.h */,
+				7A3DFD521E77BCFA00D71D0C /* LifecircleCollectionHeaderView.m */,
+				7A3DFD561E77BEF700D71D0C /* LifecircleCollectionViewCell.h */,
+				7A3DFD571E77BEF700D71D0C /* LifecircleCollectionViewCell.m */,
+				7A3DFD581E77BEF700D71D0C /* LifecircleCollectionViewCell.xib */,
+				7A3DFD5B1E77D18F00D71D0C /* LifeCircleTableSectionView.h */,
+				7A3DFD5C1E77D18F00D71D0C /* LifeCircleTableSectionView.m */,
+				7A3DFD5E1E77D57900D71D0C /* LifeCircleTableSectionView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7A3DFD451E778F7600D71D0C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7A3DFD461E778F7600D71D0C /* LifeCircleViewController.h */,
+				7A3DFD471E778F7600D71D0C /* LifeCircleViewController.m */,
+				7A3DFD481E778F7600D71D0C /* SearchResultTVC.h */,
+				7A3DFD491E778F7600D71D0C /* SearchResultTVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1539,6 +1599,7 @@
 				7AFF4B781E70F55000008E49 /* FamilySectionView.xib in Resources */,
 				7A14D13B1E6545420034B42F /* WuyetongTableViewCell.xib in Resources */,
 				7AE3D1F31E6D489C00AD690B /* PersonBaseInfoViewController.xib in Resources */,
+				7A3DFD5A1E77BEF700D71D0C /* LifecircleCollectionViewCell.xib in Resources */,
 				7A0527A41E54247D0013D3C2 /* Assets.xcassets in Resources */,
 				7A0527CF1E542DDC0013D3C2 /* 美乐生活用户注册协议.html in Resources */,
 				7AFF4B821E71037A00008E49 /* FamilyMeTableViewCell.xib in Resources */,
@@ -1549,6 +1610,7 @@
 				7AE3D1C31E6D47C900AD690B /* PersonFeedbackViewController.xib in Resources */,
 				7A49280D1E5A87AA00F6AB93 /* Login&Register.storyboard in Resources */,
 				7AE3D1D21E6D482200AD690B /* PersonRecordViewController.xib in Resources */,
+				7A3DFD5F1E77D57900D71D0C /* LifeCircleTableSectionView.xib in Resources */,
 				7AE3D1C81E6D47DE00AD690B /* PersonQRCodeViewController.xib in Resources */,
 				7A363D661E63EBDC004870C8 /* zhoubiangouTableViewCell.xib in Resources */,
 				7AFF4B7D1E71008400008E49 /* FamilyMyTableViewCell.xib in Resources */,
@@ -1621,6 +1683,7 @@
 				7A08C45B1E6E7C6F00BD480F /* FamilyHeaderView.m in Sources */,
 				7AFF4BA01E7127FB00008E49 /* FuWuHuiViewController.m in Sources */,
 				7A363D681E63EBDC004870C8 /* ZhouBianGouViewController.m in Sources */,
+				7A3DFD4E1E778F9D00D71D0C /* LifeCircleHeaderView.m in Sources */,
 				7ACFD8D81E764E3600CB8101 /* RegisterProtorlViewController.m in Sources */,
 				7A49282F1E5AC9B200F6AB93 /* WareHouseViewController.m in Sources */,
 				7A1FD9A81E5573E6001857E4 /* TEncryptorAES.m in Sources */,
@@ -1630,11 +1693,14 @@
 				7ACFD8DB1E76515000CB8101 /* NSString+Zhengze.m in Sources */,
 				7A1FD94D1E554EEE001857E4 /* HttpRequest.m in Sources */,
 				7A46B1221E5D3F4F00B90799 /* WuYeTongViewController.m in Sources */,
+				7A3DFD541E77BCFA00D71D0C /* LifecircleCollectionHeaderView.m in Sources */,
 				7A1FD9B01E557FE5001857E4 /* NSArray+RemoveNull.m in Sources */,
 				7A0DBC471E5BD69E006359D2 /* ScanQRCodeViewController.m in Sources */,
 				7A0DBC3A1E5BD669006359D2 /* NavigationController.m in Sources */,
 				7A0DBC4D1E5BE07C006359D2 /* ChangeTitleView.m in Sources */,
 				7A0DBC421E5BD68E006359D2 /* MainViewController.m in Sources */,
+				7A3DFD4A1E778F7600D71D0C /* LifeCircleViewController.m in Sources */,
+				7A3DFD5D1E77D18F00D71D0C /* LifeCircleTableSectionView.m in Sources */,
 				7A363D651E63EBDC004870C8 /* zhoubiangouTableViewCell.m in Sources */,
 				7A08A3B91E762C7200AFC847 /* ForgetPasswordViewController.m in Sources */,
 				7A14D1351E653E3A0034B42F /* ShopDetailsViewController.m in Sources */,
@@ -1663,9 +1729,11 @@
 				7AE3D1E51E6D487000AD690B /* PersonShoppingViewController.m in Sources */,
 				7A0DBC431E5BD68E006359D2 /* RootViewController.m in Sources */,
 				7AE3D1DB1E6D484D00AD690B /* PersonFamilyViewController.m in Sources */,
+				7A3DFD591E77BEF700D71D0C /* LifecircleCollectionViewCell.m in Sources */,
 				7AFF4B811E71037A00008E49 /* FamilyMeTableViewCell.m in Sources */,
 				7A1FD9401E553D75001857E4 /* UserLoginModel.m in Sources */,
 				7AFF4B761E70F53100008E49 /* FamilySectionView.m in Sources */,
+				7A3DFD4B1E778F7600D71D0C /* SearchResultTVC.m in Sources */,
 				7AE3D1D11E6D482200AD690B /* PersonRecordViewController.m in Sources */,
 				7A4928321E5AC9C000F6AB93 /* PersonViewController.m in Sources */,
 				7A1FD9441E553FD6001857E4 /* UserRequestModel.m in Sources */,

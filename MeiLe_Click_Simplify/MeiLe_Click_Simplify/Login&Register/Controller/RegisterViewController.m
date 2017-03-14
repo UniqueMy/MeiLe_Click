@@ -103,9 +103,6 @@
 
 - (IBAction)submitRegister:(id)sender {
     
-//    ReferenceViewController *referenceVC = [[ReferenceViewController alloc] init];
-//     [self presentViewController:referenceVC animated:YES completion:nil];
-    
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
     [SVProgressHUD setBackgroundColor:RGBA(0, 0, 0, 0.6)];
     
@@ -235,7 +232,5 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
 }
-
-
 
 @end

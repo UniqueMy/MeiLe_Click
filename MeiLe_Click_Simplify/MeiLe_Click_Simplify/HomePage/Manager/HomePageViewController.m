@@ -14,6 +14,7 @@
 #import "FuWuHuiViewController.h"
 #import "WuYeTongViewController.h"
 #import "ZhouBianGouViewController.h"
+#import "LifeCircleViewController.h"
 
 @interface HomePageViewController ()<UIScrollViewDelegate,ChangeTitleViewDelegate>
 
@@ -26,7 +27,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    
+    // 生活圈
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        CATransition *transition = [CATransition animation];
+        transition.duration = .3f;
+        transition.type    = kCATransitionPush;
+        transition.subtype = kCATransitionFromBottom;
+        [self.navigationController.view.layer addAnimation:transition forKey:nil];
+        self.navigationController.navigationBarHidden = NO;
+        
+        [self.navigationController pushViewController:[LifeCircleViewController new] animated:NO];
+        
+    });
+    
     /**
      添加左视图 -- 扫描
      */
@@ -80,6 +96,9 @@
     [self addChildViewController:fuwuhuiVC];
     fuwuhuiVC.view.frame = CGRectMake(viewWidth * 2, 0, CGRectGetWidth(_scrollView.frame), CGRectGetHeight(_scrollView.frame));
     [self.scrollView addSubview:fuwuhuiVC.view];
+    
+    
+    
     
 }
 
