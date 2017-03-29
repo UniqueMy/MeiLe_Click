@@ -16,6 +16,8 @@
 #import "ZhouBianGouViewController.h"
 #import "LifeCircleViewController.h"
 
+#import "JingDongViewController.h"
+
 @interface HomePageViewController ()<UIScrollViewDelegate,ChangeTitleViewDelegate>
 
 @property (nonatomic,strong) ResolveConflicScrollView *scrollView;
@@ -30,18 +32,18 @@
     
     // 生活圈
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
-        CATransition *transition = [CATransition animation];
-        transition.duration = .3f;
-        transition.type    = kCATransitionPush;
-        transition.subtype = kCATransitionFromBottom;
-        [self.navigationController.view.layer addAnimation:transition forKey:nil];
-        self.navigationController.navigationBarHidden = NO;
-        
-        [self.navigationController pushViewController:[LifeCircleViewController new] animated:NO];
-        
-    });
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        
+//        CATransition *transition = [CATransition animation];
+//        transition.duration = .3f;
+//        transition.type    = kCATransitionPush;
+//        transition.subtype = kCATransitionFromBottom;
+//        [self.navigationController.view.layer addAnimation:transition forKey:nil];
+//        self.navigationController.navigationBarHidden = NO;
+//        
+//        [self.navigationController pushViewController:[LifeCircleViewController new] animated:NO];
+//        
+//    });
     
     /**
      添加左视图 -- 扫描
@@ -61,7 +63,7 @@
     NSArray *titleArray = @[@"周边购",@"物业通",@"服务汇"];
     _titleCollectView   = [[ChangeTitleView alloc] initWithFrame:CGRectMake(0, 0, viewWidth, 40)];
     _titleCollectView.dataArray = titleArray;
-    _titleCollectView.delegate = self;
+    _titleCollectView.delegate  = self;
     [_titleCollectView selectedTitle:0];
     [self.view addSubview:_titleCollectView];
     
@@ -81,7 +83,6 @@
     _scrollView.scrollEnabled = YES;
     [self.view addSubview: _scrollView];
     
-    
     ZhouBianGouViewController *zhoubiangouVC = [[ZhouBianGouViewController alloc] init];
     zhoubiangouVC.view.frame = CGRectMake(0, 0, CGRectGetWidth(_scrollView.frame), CGRectGetHeight(_scrollView.frame));
     [self addChildViewController:zhoubiangouVC];
@@ -96,10 +97,7 @@
     [self addChildViewController:fuwuhuiVC];
     fuwuhuiVC.view.frame = CGRectMake(viewWidth * 2, 0, CGRectGetWidth(_scrollView.frame), CGRectGetHeight(_scrollView.frame));
     [self.scrollView addSubview:fuwuhuiVC.view];
-    
-    
-    
-    
+
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
@@ -112,4 +110,7 @@
     
     [_scrollView setContentOffset:CGPointMake(index*viewWidth, 0) animated:YES];
 }
+
+
+
 @end

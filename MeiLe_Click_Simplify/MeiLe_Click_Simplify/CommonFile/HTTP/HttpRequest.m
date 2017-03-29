@@ -401,7 +401,7 @@
  */
 + (void)bezierPathToRingWithView:(UIView *)view {
     
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:view.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(view.bounds.size.width / 2, view.bounds.size.height / 2)];
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:view.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(view.bounds.size.width / 2, view.bounds.size.width / 2)];
     
     CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
     maskLayer.frame         = view.bounds;

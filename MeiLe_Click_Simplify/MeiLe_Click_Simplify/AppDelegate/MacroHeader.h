@@ -37,6 +37,8 @@ static NSString *const  HTTP_BASE_HOST = @"http://114.215.96.146"; // 测试
 #define USER_ADMIN_IMGHOST_KEY        @"com.hdzc.tenement.user.admin.imghost"
 #define USER_ADMIN_FRONTURL_KEY       @"com.hdzc.tenement.user.admin.frontUrl"
 
+#define JingDong_Access_token         @"JingDong_Access_token"
+
 // 用于缓存的用户信息
 #define USER_MODEL_CACHE_KEY          @"com.hdzc.tenement.user.model.cache"
 
@@ -50,6 +52,21 @@ static NSString *const  HTTP_BASE_HOST = @"http://114.215.96.146"; // 测试
 
 #define BaiduMap_Appkey               @"GWDbonG1Gmlv8fsb5zxSEh6CNVsAFNlw"
 
+#define JingDong_Appkey               @"847CB249F0D19F46B1EE254EF665956D"
+
+#define JingDong_PopularizeUrl        [NSString stringWithFormat:@"http://union-click.jd.com/jdc?e=%@&p=AyIPZRprFDJWWA1FBCVbV0IUWVALHFRBEwQAQB1AWQkrMG9SWX1dYVpwdGxaIlkCfl1ABSprDRkOIgFWGVMTARMHXStbFAMTB1MeXRQCIjdVHmtebBM3UxlbFAYQBlQeaxUHGgZSHFMRARAPXBNrFwAi0dqkj6yox4z2wuuwMiI3ZQ%3D%3D&t=W1dCFFlQCxxUQRMEAEAdQFkJ",[[NSUserDefaults standardUserDefaults] objectForKey:USER_ADMIN_LOGINNAME_KEY]]
+
+#define JingDong_HuiDiaoAddress       @"http://devonios.com/app"
+
+/**
+ *  微信
+ */
+#define WeiXin_AppID  @"wx94c6106d64708148"
+/**
+ 阿里云推送
+ */
+#define BAICHUAN_CLOUD_APPID        @"23548193"
+#define BAICHUAN_CLOUD_APPSECREAT   @"5c9410283931d3a534a31a0f1cb9a313"
 
 
 

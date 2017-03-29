@@ -8,11 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol PersonTopViewDelegate <NSObject>
+
+- (void)pushMessageView;
+
+@end
+
 @interface PersonTopView : UIView
 
 + (instancetype)viewFromXIB;
 
 @property (weak, nonatomic) IBOutlet UIImageView *headImage;
 
+@property (weak, nonatomic) IBOutlet UIButton *messageButton;
+
+@property (nonatomic,weak) id <PersonTopViewDelegate> delegate;
 
 @end

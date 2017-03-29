@@ -19,4 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *registButton;
 
 @property (weak, nonatomic) IBOutlet UIButton *forgetPasswordButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *weixinButton;
+
 @end

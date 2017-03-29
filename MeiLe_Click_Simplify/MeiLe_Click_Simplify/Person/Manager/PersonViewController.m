@@ -24,9 +24,10 @@
 
 
 
+
 static NSString *identifier = @"PersonCollectionViewCell";
 
-@interface PersonViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface PersonViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,PersonTopViewDelegate>
 
 @property (nonatomic,strong) PersonTopView    *topView;
 @property (nonatomic,strong) UICollectionViewFlowLayout *flowLayout;
@@ -64,10 +65,16 @@ static NSString *identifier = @"PersonCollectionViewCell";
 
 - (void)loadTopViewFromXIB {
     
-    self.topView  = [PersonTopView viewFromXIB];
-    self.topView.frame = CGRectMake(0, 0, viewWidth, 121);
+    self.topView          = [PersonTopView viewFromXIB];
+    self.topView.frame    = CGRectMake(0, 0, viewWidth, 121);
+    self.topView.delegate = self;
     [self.view addSubview:self.topView];
     
+}
+
+- (void)pushMessageView {
+    
+    [self.navigationController pushViewController:[PersonBaseInfoViewController new] animated:YES];
 }
 
 - (void)createUI {

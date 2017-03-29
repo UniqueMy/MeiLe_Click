@@ -56,6 +56,12 @@ typedef void(^HttpRequestBlockType_Failure)(NSString *path,NSError *error);
                                fail:(HttpRequestBlockType_Failure)error;
 
 
+- (void)baseRequestWithUrl:(NSString *)urlString
+                 body_data:(NSDictionary *)bodyData
+                needTicket:(BOOL)needTicket
+                   success:(HttpRequestBlockType_Success)successBlock
+                      fail:(HttpRequestBlockType_Failure)failBlock;
+
 /*
  *  公有都需要ticket的基础请求方法
  */

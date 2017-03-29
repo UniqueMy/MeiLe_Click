@@ -8,9 +8,6 @@
 
 #import "PersonTopView.h"
 
-
-
-
 @implementation PersonTopView
 
 + (instancetype)viewFromXIB {
@@ -29,6 +26,17 @@
     self.headImage.layer.borderColor = [UIColor whiteColor].CGColor;
     self.headImage.layer.borderWidth = 1.f;
     
+    
 }
+- (IBAction)setMessageClick:(id)sender {
+    
+    if ([_delegate respondsToSelector:@selector(pushMessageView)]) {
+        
+        [_delegate pushMessageView];
+    }
+    
+}
+
+
 
 @end

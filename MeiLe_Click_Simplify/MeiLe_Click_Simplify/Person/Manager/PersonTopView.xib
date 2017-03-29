@@ -46,6 +46,9 @@
                         <constraint firstAttribute="height" constant="31" id="oM9-aJ-01c"/>
                     </constraints>
                     <state key="normal" image="common_rightArrow_gry"/>
+                    <connections>
+                        <action selector="setMessageClick:" destination="1Mm-CS-Him" eventType="touchUpInside" id="lDf-Us-pMk"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -61,6 +64,7 @@
             </constraints>
             <connections>
                 <outlet property="headImage" destination="ieS-3r-u0U" id="aPn-rZ-jzq"/>
+                <outlet property="messageButton" destination="9O8-Yb-oRN" id="JGW-Tb-Jbp"/>
             </connections>
             <point key="canvasLocation" x="-147.5" y="-147.5"/>
         </view>

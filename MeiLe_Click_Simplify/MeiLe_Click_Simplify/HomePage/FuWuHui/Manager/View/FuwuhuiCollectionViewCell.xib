@@ -40,6 +40,10 @@
                 <constraint firstItem="RKI-mF-bpM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="pT8-bL-Hod"/>
             </constraints>
             <size key="customSize" width="120" height="108"/>
+            <connections>
+                <outlet property="iconImage" destination="RKI-mF-bpM" id="t2t-mw-x33"/>
+                <outlet property="nameLabel" destination="xfe-dQ-Was" id="phR-Lx-4kj"/>
+            </connections>
             <point key="canvasLocation" x="60" y="81"/>
         </collectionViewCell>
     </objects>

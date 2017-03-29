@@ -11,6 +11,8 @@
 #import "FuwuhuiFootView.h"
 #import "FuwuhuiCollectionViewCell.h"
 #import "WuYeJiaoFeiViewController.h"
+#import "JingDongViewController.h"
+#import "JingDongDetailViewController.h"
 
 static NSString *identifier = @"FuwuhuiCollectionViewCell";
 
@@ -86,17 +88,51 @@ static NSString *identifier = @"FuwuhuiCollectionViewCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     FuwuhuiCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    
+    if (indexPath.section == 0 && indexPath.row == 1) {
+        cell.nameLabel.text = @"物业缴费";
+    }
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        cell.nameLabel.text = @"京东专享";
+        cell.iconImage.image = [UIImage imageNamed:@"jingdongLogo"];
+    }
+    
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
     NSLog(@"indexPath %ld",(long)indexPath.row);
-    if (indexPath.row == 1) {
+    if (indexPath.section == 0 && indexPath.row == 1) {
         // 物业缴费
         WuYeJiaoFeiViewController *wyjfVC = [[WuYeJiaoFeiViewController alloc] init];
         [self.navigationController pushViewController:wyjfVC animated:YES];
     }
     
+    if (indexPath.section == 0 && indexPath.row == 0) {
+    
+    JingDongDetailViewController *jingdongVC = [[JingDongDetailViewController alloc] init];
+    [self.navigationController pushViewController:jingdongVC animated:YES];
+    
+        // 京东授权 、 京东专享
+        // 判断是否有access_token
+//        NSString *tokenString = [[NSUserDefaults standardUserDefaults] objectForKey:JingDong_Access_token];
+//        if (![tokenString isKindOfClass:[NSNull class]] && tokenString.length != 0) {
+//            
+//             NSLog(@"token存在 %@  跳转推广页",tokenString);
+//            JingDongDetailViewController *jingdongVC = [[JingDongDetailViewController alloc] init];
+//            [self.navigationController pushViewController:jingdongVC animated:YES];
+//            
+//        } else {
+//            
+//             NSLog(@"token不存在 %@  跳转授权页",tokenString);
+//            JingDongViewController *jingdongVC = [[JingDongViewController alloc] init];
+//            [self.navigationController pushViewController:jingdongVC animated:YES];
+//            
+//        }
+    }
+        
+        
 }
+
 @end

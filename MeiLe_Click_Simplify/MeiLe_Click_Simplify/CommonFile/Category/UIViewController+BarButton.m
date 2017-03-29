@@ -8,6 +8,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "UIViewController+BarButton.h"
 #import "ScanQRCodeViewController.h"
+#import "NewsViewController.h"
 
 #import <objc/runtime.h>
 
@@ -63,17 +64,8 @@ static NSString const *_newsButton = @"rightNewsButton";
         return;
     }
     
-//    CATransition *transition = [CATransition animation];
-//    transition.duration = .3f;
-//    transition.type    = kCATransitionPush;
-//    transition.subtype = kCATransitionFromLeft;
-//    [self.navigationController.view.layer addAnimation:transition forKey:nil];
-//    self.navigationController.navigationBarHidden = NO;
-    
-//    [self.navigationController pushViewController:[LifeCircleViewController new] animated:YES];
-    
-//    ScanQRCodeViewController *scanVC = [[ScanQRCodeViewController alloc] init];
-    [self.navigationController pushViewController:[ScanQRCodeViewController new] animated:YES];
+    ScanQRCodeViewController *scanVC = [[ScanQRCodeViewController alloc] init];
+    [self.navigationController pushViewController:scanVC animated:YES];
 }
 
 /**
@@ -104,6 +96,7 @@ static NSString const *_newsButton = @"rightNewsButton";
 
 - (void)onMessageButtonTouchAction:(id)sender {
     
-    
+    NewsViewController *news = [[NewsViewController alloc] init];
+    [self.navigationController pushViewController:news animated:YES];
 }
 @end

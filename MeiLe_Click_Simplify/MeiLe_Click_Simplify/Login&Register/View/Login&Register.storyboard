@@ -109,6 +109,17 @@
                                     <segue destination="8o8-HJ-wDG" kind="show" id="Sc3-VM-DLx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdA-w6-qRz">
+                                <rect key="frame" x="55" y="560" width="265" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="v5C-He-Ey9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="     微信账号登录" image="login_weixin">
+                                    <color key="titleColor" red="0.27447596192359924" green="0.27452921867370605" blue="0.27447256445884705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -116,12 +127,15 @@
                             <constraint firstItem="wPQ-lS-f2S" firstAttribute="leading" secondItem="9zO-hT-TVK" secondAttribute="leading" id="D7n-yz-Nob"/>
                             <constraint firstAttribute="trailing" secondItem="Crx-PS-T9H" secondAttribute="trailing" id="EW0-6S-VAc"/>
                             <constraint firstItem="Crx-PS-T9H" firstAttribute="top" secondItem="odQ-Hs-a5B" secondAttribute="top" constant="-114.2" id="K7d-Ba-rCG"/>
+                            <constraint firstItem="OC3-2g-le0" firstAttribute="top" secondItem="xdA-w6-qRz" secondAttribute="bottom" constant="67" id="Mms-SQ-Ff4"/>
                             <constraint firstItem="wPQ-lS-f2S" firstAttribute="top" secondItem="9zO-hT-TVK" secondAttribute="bottom" constant="10" id="PZd-NE-1cn"/>
+                            <constraint firstItem="xdA-w6-qRz" firstAttribute="leading" secondItem="2r8-CO-1WX" secondAttribute="leading" constant="55" id="R3g-GW-RIJ"/>
                             <constraint firstItem="Crx-PS-T9H" firstAttribute="leading" secondItem="2r8-CO-1WX" secondAttribute="leading" id="RZu-Zu-A6Y"/>
                             <constraint firstAttribute="trailing" secondItem="dpK-bl-8vK" secondAttribute="trailing" id="YVZ-rq-WbJ"/>
                             <constraint firstItem="Crx-PS-T9H" firstAttribute="top" secondItem="2r8-CO-1WX" secondAttribute="top" id="aCq-vB-ZA1"/>
                             <constraint firstItem="dpK-bl-8vK" firstAttribute="top" secondItem="odQ-Hs-a5B" secondAttribute="bottom" constant="82.5" id="b6t-0h-Aao"/>
                             <constraint firstItem="dpK-bl-8vK" firstAttribute="leading" secondItem="2r8-CO-1WX" secondAttribute="leading" id="euy-J4-7h3"/>
+                            <constraint firstAttribute="trailing" secondItem="xdA-w6-qRz" secondAttribute="trailing" constant="55" id="f29-dP-2sa"/>
                             <constraint firstItem="odQ-Hs-a5B" firstAttribute="centerX" secondItem="2r8-CO-1WX" secondAttribute="centerX" id="fz7-Q7-vdf"/>
                             <constraint firstItem="RId-2a-OPZ" firstAttribute="top" secondItem="9zO-hT-TVK" secondAttribute="bottom" constant="10" id="gcd-wt-NuW"/>
                             <constraint firstItem="OC3-2g-le0" firstAttribute="top" secondItem="Crx-PS-T9H" secondAttribute="bottom" id="jtO-ox-jFH"/>
@@ -134,6 +148,7 @@
                         <outlet property="registButton" destination="wPQ-lS-f2S" id="qIi-e3-pBt"/>
                         <outlet property="submitButton" destination="9zO-hT-TVK" id="geH-9u-Uxs"/>
                         <outlet property="userNameTextField" destination="iff-VA-20D" id="cWU-wI-nWx"/>
+                        <outlet property="weixinButton" destination="xdA-w6-qRz" id="joQ-eF-JpG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wEk-eM-CiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -395,6 +410,7 @@
         <image name="login_agree_no" width="20" height="20"/>
         <image name="login_agree_yes" width="22" height="22"/>
         <image name="login_background" width="375" height="667"/>
+        <image name="login_weixin" width="29" height="26"/>
         <image name="logo" width="70" height="70"/>
     </resources>
 </document>

@@ -36,6 +36,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _weixinButton.layer.cornerRadius  = Radius;
+    _weixinButton.layer.masksToBounds = YES;
+    _weixinButton.layer.borderColor   = RGB(70, 70, 70).CGColor;
+    _weixinButton.layer.borderWidth   = 1.f;
+    
 
     _userNameTextField.leftView     = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 5, 30)];
     _userNameTextField.leftViewMode = UITextFieldViewModeAlways;
@@ -66,9 +71,9 @@
 - (void)inputloginNameAndPassword:(NSNotification *)info
 {
     NSString    *mobilePhone = [info.userInfo objectForKey:@"loginName"];
-    NSString    *password = [info.userInfo objectForKey:@"password"];
-    _userNameTextField.text = mobilePhone;
-    _passwordTextField.text = password;
+    NSString    *password    = [info.userInfo objectForKey:@"password"];
+    _userNameTextField.text  = mobilePhone;
+    _passwordTextField.text  = password;
 }
 
 #pragma mark - 提交登录事件
