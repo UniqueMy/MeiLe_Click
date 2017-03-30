@@ -58,6 +58,8 @@ static NSString *const  HTTP_BASE_HOST = @"http://114.215.96.146"; // 测试
 
 #define JingDong_HuiDiaoAddress       @"http://devonios.com/app"
 
+#define TaoBao_PopularizeUrl @"https://ai.m.taobao.com/search.html?catmap=50019393&q=U%E7%9B%98%20%E9%97%AA%E5%AD%98%E5%8D%A1%20%E5%AD%98%E5%82%A8%20%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98&pid=mm_122040611_23126017_76650081"
+
 /**
  *  微信
  */
