@@ -14,7 +14,7 @@
  京东   3700      0
  
  
-总计：            8903
+ 总计：            8903
  
  
  */
@@ -23,6 +23,7 @@
 #import "RootViewController.h"
 #import "NSArray+RemoveNull.h"
 #import "NSDictionary+RemoveNull.h"
+#import <JDKeplerSDK/KeplerApiManager.h>
 @interface AppDelegate ()
 
 @end
@@ -56,6 +57,17 @@
         NSLog(@"百度地图初始化失败！");
     }
     
+    
+    // 京东开普勒
+    [[KeplerApiManager sharedKPService]asyncInitSdk:JingDongKPL_AppKey secretKey:JingDongKPL_AppSecret sucessCallback:^(){
+        
+        
+    }failedCallback:^(NSError *error){
+        
+        
+        
+    }];
+    
 }
 
 #pragma mark - Make window visible
@@ -69,6 +81,15 @@
     [self.window makeKeyAndVisible];
     
 }
+
+// SSO登录授权回调(必须调用,如果SDK接收不到授权回调信息会造成重复授权的问题).
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)
+sourceApplication annotation:(id)annotation NS_AVAILABLE_IOS(4_2){
+    
+    return [[KeplerApiManager sharedKPService] handleOpenURL:url];
+    
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

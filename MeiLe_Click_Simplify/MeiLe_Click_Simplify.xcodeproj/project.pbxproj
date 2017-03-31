@@ -85,6 +85,7 @@
 		7A49A3811E8115950062957A /* PersonSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A49A37F1E8115950062957A /* PersonSignatureViewController.m */; };
 		7A49A3821E8115950062957A /* PersonSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A49A3801E8115950062957A /* PersonSignatureViewController.xib */; };
 		7A4B6E641E8CFEBF007B6640 /* ZhuanXiangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B6E631E8CFEBF007B6640 /* ZhuanXiangViewController.m */; };
+		7A4B6E891E8D070C007B6640 /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A4B6E881E8D070C007B6640 /* yw_1222.jpg */; };
 		7AA094531E811C6E00347C85 /* PersonFamilyAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA094511E811C6D00347C85 /* PersonFamilyAddressViewController.m */; };
 		7AA094541E811C6E00347C85 /* PersonFamilyAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AA094521E811C6D00347C85 /* PersonFamilyAddressViewController.xib */; };
 		7ACA95061E889CCA008E6C99 /* JingDongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA95051E889CCA008E6C99 /* JingDongViewController.m */; };
@@ -114,6 +115,13 @@
 		7AE3D1EA1E6D488400AD690B /* PersonIntegralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1E81E6D488400AD690B /* PersonIntegralViewController.m */; };
 		7AE3D1F21E6D489C00AD690B /* PersonBaseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3D1F01E6D489C00AD690B /* PersonBaseInfoViewController.m */; };
 		7AE3D1F31E6D489C00AD690B /* PersonBaseInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE3D1F11E6D489C00AD690B /* PersonBaseInfoViewController.xib */; };
+		7AF06A271E8DE71A00F7141E /* JDKeplerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF06A251E8DE71A00F7141E /* JDKeplerSDK.framework */; };
+		7AF06A281E8DE71A00F7141E /* Kepler.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7AF06A261E8DE71A00F7141E /* Kepler.bundle */; };
+		7AF06A2A1E8DE74D00F7141E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF06A291E8DE74D00F7141E /* UIKit.framework */; };
+		7AF06A2C1E8DE75700F7141E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF06A2B1E8DE75700F7141E /* Foundation.framework */; };
+		7AF06A2E1E8DE76600F7141E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF06A2D1E8DE76600F7141E /* libsqlite3.0.tbd */; };
+		7AF06A301E8DE76E00F7141E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF06A2F1E8DE76D00F7141E /* SystemConfiguration.framework */; };
+		7AF06A321E8DE77500F7141E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF06A311E8DE77500F7141E /* libz.tbd */; };
 		7AFF4B761E70F53100008E49 /* FamilySectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFF4B751E70F53100008E49 /* FamilySectionView.m */; };
 		7AFF4B781E70F55000008E49 /* FamilySectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFF4B771E70F55000008E49 /* FamilySectionView.xib */; };
 		7AFF4B7C1E71008400008E49 /* FamilyMyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFF4B7A1E71008400008E49 /* FamilyMyTableViewCell.m */; };
@@ -343,6 +351,7 @@
 		7A49A3801E8115950062957A /* PersonSignatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonSignatureViewController.xib; sourceTree = "<group>"; };
 		7A4B6E621E8CFEBF007B6640 /* ZhuanXiangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhuanXiangViewController.h; sourceTree = "<group>"; };
 		7A4B6E631E8CFEBF007B6640 /* ZhuanXiangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhuanXiangViewController.m; sourceTree = "<group>"; };
+		7A4B6E881E8D070C007B6640 /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
 		7AA094501E811C6D00347C85 /* PersonFamilyAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonFamilyAddressViewController.h; sourceTree = "<group>"; };
 		7AA094511E811C6D00347C85 /* PersonFamilyAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonFamilyAddressViewController.m; sourceTree = "<group>"; };
 		7AA094521E811C6D00347C85 /* PersonFamilyAddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonFamilyAddressViewController.xib; sourceTree = "<group>"; };
@@ -389,6 +398,13 @@
 		7AE3D1EF1E6D489C00AD690B /* PersonBaseInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonBaseInfoViewController.h; sourceTree = "<group>"; };
 		7AE3D1F01E6D489C00AD690B /* PersonBaseInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonBaseInfoViewController.m; sourceTree = "<group>"; };
 		7AE3D1F11E6D489C00AD690B /* PersonBaseInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonBaseInfoViewController.xib; sourceTree = "<group>"; };
+		7AF06A251E8DE71A00F7141E /* JDKeplerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JDKeplerSDK.framework; sourceTree = "<group>"; };
+		7AF06A261E8DE71A00F7141E /* Kepler.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Kepler.bundle; sourceTree = "<group>"; };
+		7AF06A291E8DE74D00F7141E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7AF06A2B1E8DE75700F7141E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7AF06A2D1E8DE76600F7141E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		7AF06A2F1E8DE76D00F7141E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7AF06A311E8DE77500F7141E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		7AFF4B741E70F53100008E49 /* FamilySectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilySectionView.h; sourceTree = "<group>"; };
 		7AFF4B751E70F53100008E49 /* FamilySectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilySectionView.m; sourceTree = "<group>"; };
 		7AFF4B771E70F55000008E49 /* FamilySectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FamilySectionView.xib; sourceTree = "<group>"; };
@@ -418,7 +434,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF06A321E8DE77500F7141E /* libz.tbd in Frameworks */,
+				7AF06A301E8DE76E00F7141E /* SystemConfiguration.framework in Frameworks */,
+				7AF06A2E1E8DE76600F7141E /* libsqlite3.0.tbd in Frameworks */,
+				7AF06A2C1E8DE75700F7141E /* Foundation.framework in Frameworks */,
+				7AF06A2A1E8DE74D00F7141E /* UIKit.framework in Frameworks */,
 				7A0DBC361E5BD567006359D2 /* AVFoundation.framework in Frameworks */,
+				7AF06A271E8DE71A00F7141E /* JDKeplerSDK.framework in Frameworks */,
 				7A1FD9A41E5573E6001857E4 /* libcrypto.a in Frameworks */,
 				7CD36E545A891669B4AE43D7 /* Pods_MeiLe_Click_Simplify.framework in Frameworks */,
 				7A1FD9A51E5573E6001857E4 /* libssl.a in Frameworks */,
@@ -509,6 +531,8 @@
 		7A0527BC1E542B750013D3C2 /* CommonFile */ = {
 			isa = PBXGroup;
 			children = (
+				7AF06A241E8DE71A00F7141E /* JD_KaiPuLe */,
+				7A4B6E651E8D06FD007B6640 /* ALiBaiChuan */,
 				7A1FD9AA1E557F97001857E4 /* Category */,
 				7A1FD94E1E5573E6001857E4 /* LTEncryptor */,
 				7A1FD9331E553A46001857E4 /* HTTP */,
@@ -1208,6 +1232,14 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		7A4B6E651E8D06FD007B6640 /* ALiBaiChuan */ = {
+			isa = PBXGroup;
+			children = (
+				7A4B6E881E8D070C007B6640 /* yw_1222.jpg */,
+			);
+			path = ALiBaiChuan;
+			sourceTree = "<group>";
+		};
 		7ACA95031E889CB6008E6C99 /* JingDongZhuanXiang */ = {
 			isa = PBXGroup;
 			children = (
@@ -1489,6 +1521,15 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		7AF06A241E8DE71A00F7141E /* JD_KaiPuLe */ = {
+			isa = PBXGroup;
+			children = (
+				7AF06A251E8DE71A00F7141E /* JDKeplerSDK.framework */,
+				7AF06A261E8DE71A00F7141E /* Kepler.bundle */,
+			);
+			path = JD_KaiPuLe;
+			sourceTree = "<group>";
+		};
 		7AFF4B831E7127FB00008E49 /* KuaiDiDaiShou */ = {
 			isa = PBXGroup;
 			children = (
@@ -1628,6 +1669,11 @@
 		AC79DF30C462413F76204A2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7AF06A311E8DE77500F7141E /* libz.tbd */,
+				7AF06A2F1E8DE76D00F7141E /* SystemConfiguration.framework */,
+				7AF06A2D1E8DE76600F7141E /* libsqlite3.0.tbd */,
+				7AF06A2B1E8DE75700F7141E /* Foundation.framework */,
+				7AF06A291E8DE74D00F7141E /* UIKit.framework */,
 				7A0DBC351E5BD567006359D2 /* AVFoundation.framework */,
 				053A0A97E4A6ACAC5B020E6F /* Pods_MeiLe_Click_Simplify.framework */,
 			);
@@ -1670,6 +1716,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RQN4654QNP;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -1696,6 +1747,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF06A281E8DE71A00F7141E /* Kepler.bundle in Resources */,
 				7A2090F31E78D31600E8BE56 /* NewsListTableViewCell.xib in Resources */,
 				7AE3D1D71E6D483B00AD690B /* PersonAddressViewController.xib in Resources */,
 				7A08C45D1E6E7CD700BD480F /* FamilyHeaderView.xib in Resources */,
@@ -1732,6 +1784,7 @@
 				7A0527D01E542DDC0013D3C2 /* 用户积分.html in Resources */,
 				7A08C4221E6E482F00BD480F /* IntegralTopView.xib in Resources */,
 				7A14D1291E6528BB0034B42F /* ContentTableViewCell.xib in Resources */,
+				7A4B6E891E8D070C007B6640 /* yw_1222.jpg in Resources */,
 				7AE3D18C1E6D04C300AD690B /* PersonTopView.xib in Resources */,
 				7ACFD8E01E76689400CB8101 /* ReferenceViewController.xib in Resources */,
 			);
@@ -1993,6 +2046,11 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				DEVELOPMENT_TEAM = RQN4654QNP;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MeiLe_Click_Simplify/CommonFile/ALiBaiChuan/Frameworks",
+					"$(PROJECT_DIR)/MeiLe_Click_Simplify/CommonFile/JD_KaiPuLe",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MeiLe_Click_Simplify/AppDelegate/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MeiLe_Click_Simplify/CommonFile/LTEncryptor/include";
@@ -2002,6 +2060,51 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MeiLe_Click_Simplify/CommonFile/LTEncryptor/include",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"sqlite3.0\"",
+					"-l\"stdc++.6.0.9\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"BaiduMapAPI_Base\"",
+					"-framework",
+					"\"BaiduMapAPI_Cloud\"",
+					"-framework",
+					"\"BaiduMapAPI_Location\"",
+					"-framework",
+					"\"BaiduMapAPI_Map\"",
+					"-framework",
+					"\"BaiduMapAPI_Radar\"",
+					"-framework",
+					"\"BaiduMapAPI_Search\"",
+					"-framework",
+					"\"BaiduMapAPI_Utils\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"EAIntroView\"",
+					"-framework",
+					"\"EARestrictedScrollView\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"YYModel\"",
+					"-lstdc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhongmei.yonghuduan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2017,6 +2120,11 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				DEVELOPMENT_TEAM = RQN4654QNP;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MeiLe_Click_Simplify/CommonFile/ALiBaiChuan/Frameworks",
+					"$(PROJECT_DIR)/MeiLe_Click_Simplify/CommonFile/JD_KaiPuLe",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MeiLe_Click_Simplify/AppDelegate/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MeiLe_Click_Simplify/CommonFile/LTEncryptor/include";
@@ -2026,6 +2134,51 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MeiLe_Click_Simplify/CommonFile/LTEncryptor/include",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"sqlite3.0\"",
+					"-l\"stdc++.6.0.9\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"BaiduMapAPI_Base\"",
+					"-framework",
+					"\"BaiduMapAPI_Cloud\"",
+					"-framework",
+					"\"BaiduMapAPI_Location\"",
+					"-framework",
+					"\"BaiduMapAPI_Map\"",
+					"-framework",
+					"\"BaiduMapAPI_Radar\"",
+					"-framework",
+					"\"BaiduMapAPI_Search\"",
+					"-framework",
+					"\"BaiduMapAPI_Utils\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"EAIntroView\"",
+					"-framework",
+					"\"EARestrictedScrollView\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"YYModel\"",
+					"-lstdc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhongmei.yonghuduan;
 				PRODUCT_NAME = "$(TARGET_NAME)";

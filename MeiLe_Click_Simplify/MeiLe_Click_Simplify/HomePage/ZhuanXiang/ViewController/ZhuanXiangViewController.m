@@ -110,6 +110,8 @@
     urlString           = [urlString stringByRemovingPercentEncoding];
     
     NSLog(@"---%@ ---- urlString ----- %@",_titleString,urlString);
+       
+    
     
     decisionHandler(WKNavigationActionPolicyAllow);
 }
